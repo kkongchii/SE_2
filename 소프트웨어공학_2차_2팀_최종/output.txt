@@ -1,0 +1,36 @@
+kkongchi Thu May 11 22:21:33 2023 +0900 final 77e1320
+Haneol Wed May 10 22:59:26 2023 +0900 communication diagram 진짜 최종 0008304
+Haneol Wed May 10 22:10:36 2023 +0900 communication diagram 최종 04b563a
+kkongchi Wed May 10 17:35:31 2023 +0900 helpme 61969a0
+kkongchi Wed May 10 04:07:13 2023 +0900 uml_merge eaad3fc
+sjj00 Wed May 10 03:28:01 2023 +0900 Add files via upload c11c9c8
+sjj00 Wed May 10 03:26:08 2023 +0900 Add files via upload 53da48a
+sjj00 Wed May 10 03:23:08 2023 +0900 Add files via upload 789e451
+sjj00 Wed May 10 03:22:26 2023 +0900 Add files via upload 83905ee
+sjj00 Wed May 10 03:06:41 2023 +0900 classdiagram부분 dc0a224
+Haneol Wed May 10 02:44:10 2023 +0900 usecase description 번호 누락 수정 ab6ce81
+Haneol Wed May 10 02:34:46 2023 +0900 일반 회원가입 usecase description 2번 오류 수정 881a11c
+gwwqrtegd7 Wed May 10 02:24:40 2023 +0900 class 4d6d2a3
+Haneol Wed May 10 02:01:23 2023 +0900 usecase description 합침 6e8ff6d
+gwwqrtegd7 Wed May 10 01:08:09 2023 +0900 communication, description b495119
+gwwqrtegd7 Tue May 9 22:55:53 2023 +0900 communication 82f5e42
+sjj00 Tue May 9 22:39:46 2023 +0900 Add files via upload 5021f5d
+sjj00 Tue May 9 22:39:06 2023 +0900 Delete 회사회원 채용 정보 상세 확인.png 8d20595
+sjj00 Tue May 9 22:36:54 2023 +0900 Add files via upload 8ce4458
+sjj00 Tue May 9 18:54:05 2023 +0900 Add files via upload f50d467
+sjj00 Tue May 9 18:53:44 2023 +0900 Delete 3번부분.docx 7d7ab59
+sjj00 Tue May 9 18:51:04 2023 +0900 Add files via upload 2983d8c
+sjj00 Tue May 9 18:50:32 2023 +0900 Delete SE_assignment2.mdj 0f1af30
+Haneol Tue May 9 01:51:00 2023 +0900 Merge branch 'main' of https://github.com/kkongchii/SE_2 8983205
+Haneol Tue May 9 01:50:41 2023 +0900 지원관리 Communication Diagram 1차 수정 39c1a37
+kkongchi Mon May 8 23:48:23 2023 +0900 user_class_diagram_update bfe6dee
+kkongchi Mon May 8 23:40:20 2023 +0900 user개체업데이트, staruml파일전체정리 32734e3
+sjj00 Mon May 8 17:46:03 2023 +0900 Add files via upload a513806
+gwwqrtegd7 Mon May 8 09:19:26 2023 +0900 no.4 communication diagram, class diagram a7ebab8
+gwwqrtegd7 Mon May 8 09:10:17 2023 +0900 Add files via upload b26685b
+sujin_Ju Mon May 8 03:46:54 2023 +0900 Recruitment Management, communication diagrams 4cf8e08
+sujin_Ju Mon May 8 03:29:01 2023 +0900 recruitment Management ceedc52
+kkongchidesktop Mon May 8 00:54:46 2023 +0900 add userManagement_communication_class_diagram a6f2f7a
+Haneol Sun May 7 23:09:42 2023 +0900 지원 관리 usecase description, communication diagram, class diagram 추가 4f2a0d6
+kkongchii Fri May 5 13:35:06 2023 +0900 Update README.md d6f0f4d
+kkongchii Fri May 5 13:30:58 2023 +0900 Initial commit 8f929b0
