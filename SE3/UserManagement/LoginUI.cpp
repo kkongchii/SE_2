@@ -28,6 +28,10 @@ void LogInUI::login(string id, string pw) {
     }
 }
 
+LogIn *LogInUI::getControl() {
+    return this->loginControl;
+}
+
 #endif //USERMANAGEMENT_LOGINUI_CPP
 
 

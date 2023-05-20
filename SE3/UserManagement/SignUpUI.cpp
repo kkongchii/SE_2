@@ -17,7 +17,8 @@ void SignUpUI::startInterface() {
 }
 
 void SignUpUI::signupGeneralUser(string name, int personalNum, string id, string password) {
-    if(signupControl->createGeneralUser(name, personalNum, id, password) == -1){ // 입력한 id와 동일한 id가 userDB에 존재 시.
+    if(signupControl->addGeneralUser(name, personalNum, id, password) == -1){
+        // Control Class에 일반 유저 생성 요청 후 입력한 id와 동일한 id가 userDB에 존재 시.
         cout << "The same id exists." << endl; // 중복을 알림
         return;
     }
@@ -26,12 +27,17 @@ void SignUpUI::signupGeneralUser(string name, int personalNum, string id, string
 }
 
 void SignUpUI::signupCompanyUser(string name, int companyNum, string id, string password) {
-    if(signupControl->createCompanyUser(name, companyNum, id, password) == -1){ // 입력한 id와 동일한 id가 userDB에 존재 시.
+    if(signupControl->addCompanyUser(name, companyNum, id, password) == -1){
+        // Control Class에 회사 유저 생성 요청 후 입력한 id와 동일한 id가 userDB에 존재 시.
         cout << "The same id exists." << endl; // 중복을 알림
         return;
     }
     cout << "Company user with id \"" << id << "\" has been created." << endl; // 디버깅용 출력문
     cout << "> 1 " << name << ' ' << companyNum << ' ' << id << ' ' << password << endl; // 출력 양식
+}
+
+SignUp *SignUpUI::getControl() {
+    return this->signupControl;
 }
 
 #endif //USERMANAGEMENT_SIGNUPUI_CPP

@@ -16,6 +16,10 @@ void LogOutUI::logout() {
     cout << "> " << id << endl; // 출력 양식
 }
 
+LogOut *LogOutUI::getControl() {
+    return this->logoutControl;
+}
+
 #endif //USERMANAGEMENT_LOGOUTUI_CPP
 
 

@@ -20,6 +20,10 @@ void WithdrawalUI::withdrawalUser(string id) {
     cout << "> " << id << endl; // 출력 양식
 }
 
+Withdrawal *WithdrawalUI::getContol() {
+    return this->withdrawalControl;
+}
+
 #endif //USERMANAGEMENT_WITHDRAWALUI_CPP
 
 

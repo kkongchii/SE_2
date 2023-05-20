@@ -12,5 +12,11 @@ void LogIn::userLogin(string id, string pw) {
     User* user = userDB.userCheck(id, pw); // UserList에 회원 확인 요청, 2.1.1.userCheck()
     userDB.userStateChange(user); // UserList에 회원 상태 갱신 요청, 2.1.2.userStateChange()
 }
+
+LogInUI *LogIn::getUI() {
+    return this->logInUI;
+}
+
+
 #endif //USERMANAGEMENT_LOGIN_CPP
 

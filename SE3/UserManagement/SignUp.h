@@ -7,12 +7,14 @@ using namespace std;
 class SignUpUI;
 
 class SignUp{
-public:
+private:
     SignUpUI* signupUI; // UI Class를 저장할 변수
+public:
     SignUp(); // 생성자
-    int createGeneralUser(string name, int personalNum, string id, string password);
+    int addGeneralUser(string name, int personalNum, string id, string password);
     // UI가 이용하는 Control의 일반 회원 가입 함수
-    int createCompanyUser(string name, int companyNum, string id, string password);
+    int addCompanyUser(string name, int companyNum, string id, string password);
     // UI가 이용하는 Control의 회사 회원 가입 함수
+    SignUpUI* getUI(); // getter
 };
 #endif //USERMANAGEMENT_SIGNUP_H

@@ -52,8 +52,8 @@ void doTask() {
                     case 1: // "1.1. 회원가입“ 메뉴 부분
                     {
                         cout << "1.1. 회원가입" << endl; // 출력 양식
-                        SignUp controlSignUP = SignUp(); // Control Class 생성, 생성자를 통해 Boundary Class 생성 및 서로 레퍼런스 교환
-                        controlSignUP.signupUI->startInterface(); // 회원 가입 인터페이스 출력, 1.startInterface()
+                        SignUp controlSignUp = SignUp(); // Control Class 생성, 생성자를 통해 Boundary Class 생성 및 서로 레퍼런스 교환
+                        controlSignUp.getUI()->startInterface(); // 회원 가입 인터페이스 출력, 1.startInterface()
                         int signupType; // 회사 회원 가입인지 일반 회원 가입인지 판단 하는 flag 변수
                         fscanf(in_fp, "%d ", &signupType); // 가입 유형 읽어오기
                         char name[MAX_STRING], id[MAX_STRING], pw[MAX_STRING]; // 가입 정보 저장 할 변수들
@@ -62,13 +62,13 @@ void doTask() {
                             fscanf(in_fp, "%s %d %s %s", name, &number, id, pw); // 가입 정보 읽어오기
                             cout << "name: " << name << " number: " << number << " id: " << id << " pw: " << pw
                                  << endl; // 디버깅용 출력문, 가입 정보 제대로 읽어 왔는지 확인
-                            controlSignUP.signupUI->signupCompanyUser(name, number, id, pw);
+                            controlSignUp.getUI()->signupCompanyUser(name, number, id, pw);
                             // UI를 통해 회사 회원 가입 요청, 2.signupCompanyUser()
                         } else if (signupType == 2) { // 일반 회원 가입이라면
                             fscanf(in_fp, "%s %d %s %s", name, &number, id, pw);
                             cout << "name: " << name << " number: " << number << " id: " << id << " pw: " << pw
                                  << endl;
-                            controlSignUP.signupUI->signupGeneralUser(name, number, id, pw);
+                            controlSignUp.getUI()->signupGeneralUser(name, number, id, pw);
                             // UI를 통해 일반 회원 가입 요청, 2.signupGeneralUser()
                         }
 
@@ -90,8 +90,8 @@ void doTask() {
                             cout << "Please log in first.\n" << endl;
                             continue;
                         }
-                        controlWithdrawal.withdrawalUI->startInterface(); // 회원 탈퇴 인터페이스 출력, 1.startInterface()
-                        controlWithdrawal.withdrawalUI->withdrawalUser(currentLoginUser->getId());
+                        controlWithdrawal.getUI()->startInterface(); // 회원 탈퇴 인터페이스 출력, 1.startInterface()
+                        controlWithdrawal.getUI()->withdrawalUser(currentLoginUser->getId());
                         // UI를 통해 회원 탈퇴 요청, 2.withdrawalUser()
 
                         // 정상적으로 DB에서 삭제되었는지 user DB 전체를 출력하는 디버깅용 출력문
@@ -119,9 +119,9 @@ void doTask() {
                             continue;
                         }
                         LogIn controlLogin = LogIn();
-                        controlLogin.logInUI->startInterface(); // Control Class 생성, 생성자를 통해 Boundary Class 생성 및 서로 레퍼런스 교환
+                        controlLogin.getUI()->startInterface(); // Control Class 생성, 생성자를 통해 Boundary Class 생성 및 서로 레퍼런스 교환
                         cout << "id : " << id << " pw : " << pw << endl; // 디버깅용 출력문, 로그인 정보 제대로 읽어 왔는지 확인
-                        controlLogin.logInUI->login(id, pw); // UI를 통해 로그인 요청, 2.login()
+                        controlLogin.getUI()->login(id, pw); // UI를 통해 로그인 요청, 2.login()
                         if(currentLoginUser == nullptr){ // 로그인 실패 시
                             cout << "Nobody Login, isLogin: " << isLogin << endl << endl; // 로그인 되어 있지 않음을 알림
                         }else{
@@ -134,7 +134,7 @@ void doTask() {
                         cout << "2.2. 로그아웃" << endl; // 출력 양식
                         if(isLogin){ // 로그인 되어 있지 않으면 로그아웃 불가능
                             LogOut controlLogout = LogOut(); // Control Class 생성, 생성자를 통해 Boundary Class 생성 및 서로 레퍼런스 교환
-                            controlLogout.logOutUI->logout(); // UI를 통해 로그아웃 요청, 1.logout()
+                            controlLogout.getUI()->logout(); // UI를 통해 로그아웃 요청, 1.logout()
                         }else{ // 로그인 되어 있지 않은 상태
                             cout << "You are not logged in.\n" << endl;
                         }

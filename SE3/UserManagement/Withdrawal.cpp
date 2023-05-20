@@ -14,5 +14,9 @@ void Withdrawal::deleteUser(string id) {
     userDB.deleteUser(id); // UserList에 회원 삭제 요청, 2.1.1.deleteUser()
 }
 
+WithdrawalUI *Withdrawal::getUI() {
+    return this->withdrawalUI;
+}
+
 #endif //USERMANAGEMENT_WITHDRAWAL_CPP
 

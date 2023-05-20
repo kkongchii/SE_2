@@ -12,6 +12,11 @@ void LogOut::userLogout() {
     extern UserList userDB; // main 함수에 선언 된 userDB 사용
     userDB.userStateChange(nullptr); // UserList에 상태 갱신 요청, 1.1.1.userStateChange()
 }
+
+LogOutUI *LogOut::getUI() {
+    return this->logOutUI;
+}
+
 #endif //USERMANAGEMENT_LOGOUT_CPP
 
 
