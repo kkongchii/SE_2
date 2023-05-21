@@ -1,0 +1,138 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "Entity",
+					"jsonFile" : "directory-Entity-Debug-74aa86f5b4cc655b4d13.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Entity",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "UserManagement",
+					"jsonFile" : "directory-UserManagement-Debug-bdda4061e390da012265.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "UserManagement",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "JobApplicationManagement",
+					"jsonFile" : "directory-JobApplicationManagement-Debug-bbab9f2fac245571ef63.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "JobApplicationManagement",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "RecruitmentSystem",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "Entity::@63e448c03557eac2e596",
+					"jsonFile" : "target-Entity-Debug-0d3fadcb8f281c32f0a9.json",
+					"name" : "Entity",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "JobApplicationManagement::@c4bb6e6567dc25ddb4e9",
+					"jsonFile" : "target-JobApplicationManagement-Debug-9ef1c25e1cda3996ce30.json",
+					"name" : "JobApplicationManagement",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "RecruitmentSystem::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RecruitmentSystem-Debug-38970f5eea9b2e4af06f.json",
+					"name" : "RecruitmentSystem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "UserManagement::@8db7da39cc6566c697d8",
+					"jsonFile" : "target-UserManagement-Debug-e254d1ac7c581d51734d.json",
+					"name" : "UserManagement",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/haneo/Desktop/SoftwareEngineering/source/SE_2/SE3/RecruitmentSystem/out/build/x64-debug",
+		"source" : "C:/Users/haneo/Desktop/SoftwareEngineering/source/SE_2/SE3/RecruitmentSystem"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}
