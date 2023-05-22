@@ -1,3 +1,0 @@
-C:/Develop/4-1/SE_team2/SE_2/SE3/UserManagement/cmake-build-debug/CMakeFiles/UserManagement.dir
-C:/Develop/4-1/SE_team2/SE_2/SE3/UserManagement/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Develop/4-1/SE_team2/SE_2/SE3/UserManagement/cmake-build-debug/CMakeFiles/rebuild_cache.dir
