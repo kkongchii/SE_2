@@ -4,6 +4,11 @@
 
 GeneralUser::GeneralUser(string name, int personalNum, string id, string pw): User(name, id, pw) {
     this->personalRegistrationNumber = personalNum;
+    this->ownJobApplicationList = new JobApplicationList();
+}
+
+GeneralUser::~GeneralUser() {
+    
 }
 
 int GeneralUser::getPersonalRegistrationNumber() {
@@ -16,6 +21,10 @@ void GeneralUser::setPersonalRegistrationNumber(int personalNum) {
 
 string GeneralUser::getClassType(){
     return "General"; // 어떤 자식 타입인지 반환하는 함수
+}
+
+JobApplicationList* GeneralUser::getJobApplicationList() {
+    return this->ownJobApplicationList;
 }
 
 #endif //USERMANAGEMENT_GENERALUSER_CPP
