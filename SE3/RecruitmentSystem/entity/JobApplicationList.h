@@ -8,11 +8,11 @@ class Recruitment;
 
 class JobApplicationList {
 private:
-    vector<Recruitment*> jobApplicationList;
+    vector<Recruitment*> ownedJobApplication;
 public:
-    vector<Recruitment*> getJobApplicationList();
     void addJobApplication(Recruitment* recruitment);
-    void deleteJobApplication();
+    vector<Recruitment*> getJobApplicationList();
+    string deleteJobApplication(Recruitment* recruitment);
 };
 
 

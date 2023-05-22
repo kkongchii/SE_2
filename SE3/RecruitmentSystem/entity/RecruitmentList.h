@@ -11,10 +11,9 @@ class Recruitment;
 
 class RecruitmentList {
 private:
-    vector<Recruitment*> recruitmentList;
+    vector<Recruitment*> ownedRecruitment;
 public:
-    RecruitmentList();
-
+    void addNewRecruitment(string task, int limitApplicantNum, string deadline);
     vector<Recruitment*> getRecruitmentList();
 };
 

@@ -2,7 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "UserManagement"
+			"path" : "UserManagement.exe"
+		},
+		{
+			"path" : "UserManagement.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -42,14 +45,14 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+					"fragment" : "-g"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/Users/haneol/Desktop/HNEL/\ud559\uad50/4-1/\uc18c\uacf5/SE_2/SE3/RecruitmentSystem/."
+					"path" : "C:/Users/haneo/Desktop/SoftwareEngineering/source/SE_2/SE3/RecruitmentSystem/."
 				}
 			],
 			"language" : "CXX",
@@ -110,12 +113,16 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "UserManagement",
-	"nameOnDisk" : "UserManagement",
+	"nameOnDisk" : "UserManagement.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -204,7 +211,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "UserManagement/LogIn.cpp",
+			"path" : "UserManagement/Login.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -215,7 +222,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "UserManagement/LogInUI.cpp",
+			"path" : "UserManagement/LoginUI.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

@@ -23,8 +23,12 @@ string CompanyUser::getClassType() {
     return "Company"; // 어떤 자식 타입인지 반환하는 함수
 }
 
-RecruitmentList* CompanyUser::getRecruitmentList() {
+RecruitmentList* CompanyUser::getOwnRecruitmentList() {
     return this->ownRecruitmentList;
+}
+
+pair<string, int> CompanyUser::getCompanyUserDetails() {
+    return {this->getName(), this->companyRegistrationNumber};
 }
 
 #endif //USERMANAGEMENT_COMPANYUSER_CPP

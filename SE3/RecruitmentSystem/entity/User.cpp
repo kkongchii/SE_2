@@ -8,9 +8,7 @@ User::User(string name, string id, string pw){
     this->password = pw;
 };
 
-User::~User() {
-    
-}
+User::~User() {}
 
 string User::getName() {
     return this->name;

@@ -23,7 +23,7 @@ string GeneralUser::getClassType(){
     return "General"; // 어떤 자식 타입인지 반환하는 함수
 }
 
-JobApplicationList* GeneralUser::getJobApplicationList() {
+JobApplicationList* GeneralUser::getOwnJobApplicationList() {
     return this->ownJobApplicationList;
 }
 

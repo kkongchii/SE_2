@@ -19,7 +19,7 @@ public:
     string getClassType() override; // 자식 클래스의 타입을 파악하기 위해서 재정의한 함수
     int getPersonalRegistrationNumber();
     void setPersonalRegistrationNumber(int personalNum);
-    JobApplicationList* getJobApplicationList(); // 지원정보 리스트 반환
+    JobApplicationList* getOwnJobApplicationList(); // 지원정보 리스트 반환
     // 이상 getter, setter
 };
 #endif //USERMANAGEMENT_GENERALUSER_H
