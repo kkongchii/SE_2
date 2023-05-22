@@ -1,6 +1,3 @@
-//
-// Created by YeongBin on 2023-05-20.
-//
 #ifndef USERMANAGEMENT_USERLIST_CPP
 #define USERMANAGEMENT_USERLIST_CPP
 #include "UserList.h"
@@ -33,7 +30,7 @@ void UserList::deleteUser(string id) {
     for(auto it=userList.begin(); it!=userList.end(); ++it){ // userList vector에 저장 된 모든 정보를 순회
         if((*it)->getId() == id){ // 인자로 받은 지울 id와 같다면
             delete *it; // 메모리 확보
-            userList.erase(it); // userList에서 삭제
+            userList.erase(it); // userLiddst에서 삭제
             isLogin = 0; // 회원이 탈퇴하였으므로 현재 로그인 상태를 0으로 설정
             currentLoginUser = nullptr; // 회원이 탈퇴하였으므로 현재 유저 상태를 null로 설정
             return;

@@ -1,4 +1,0 @@
-1 1 2 hankook 3456 hk pwd1
-2 1 hk pwd1
-4 3
-6 1

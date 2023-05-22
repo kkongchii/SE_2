@@ -2,7 +2,7 @@
 #define USERMANAGEMENT_SIGNUP_CPP
 
 #include "SignUp.h"
-#include "../Entity/UserList.h"
+#include "entity/UserList.h"
 
 SignUp::SignUp(){
     this->signupUI = new SignUpUI(this);

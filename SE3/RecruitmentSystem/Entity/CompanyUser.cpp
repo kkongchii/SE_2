@@ -1,6 +1,3 @@
-//
-// Created by YeongBin on 2023-05-20.
-//
 #ifndef USERMANAGEMENT_COMPANYUSER_CPP
 #define USERMANAGEMENT_COMPANYUSER_CPP
 #include "CompanyUser.h"

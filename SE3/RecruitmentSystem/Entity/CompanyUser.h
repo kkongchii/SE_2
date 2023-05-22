@@ -1,14 +1,9 @@
-//
-// Created by YeongBin on 2023-05-20.
-//
-
-
 #ifndef USERMANAGEMENT_COMPANYUSER_H
 #define USERMANAGEMENT_COMPANYUSER_H
 
 #include <iostream>
 #include <string>
-#include "User.h"
+#include "entity/User.h"
 
 using namespace std;
 

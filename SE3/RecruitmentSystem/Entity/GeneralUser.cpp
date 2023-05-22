@@ -1,7 +1,3 @@
-//
-// Created by YeongBin on 2023-05-20.
-//
-
 #ifndef USERMANAGEMENT_GENERALUSER_CPP
 #define USERMANAGEMENT_GENERALUSER_CPP
 #include "GeneralUser.h"
@@ -20,10 +16,6 @@ void GeneralUser::setPersonalRegistrationNumber(int personalNum) {
 
 string GeneralUser::getClassType(){
     return "General"; // 어떤 자식 타입인지 반환하는 함수
-}
-
-JobApplicationList GeneralUser::listJobApplication() {
-    return this->ownJobApplicationList;
 }
 
 #endif //USERMANAGEMENT_GENERALUSER_CPP

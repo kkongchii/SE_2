@@ -2,7 +2,7 @@
 #define USERMANAGEMENT_WITHDRAWAL_CPP
 
 #include "Withdrawal.h"
-#include "../Entity/UserList.h"
+#include "entity/UserList.h"
 
 Withdrawal::Withdrawal() {
     this->withdrawalUI = new WithdrawalUI(this);

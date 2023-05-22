@@ -2,7 +2,7 @@
 #define USERMANAGEMENT_LOGOUT_H
 #include <iostream>
 #include <vector>
-#include "../Entity/UserList.h"
+#include "entity/UserList.h"
 #include "LogOutUI.h"
 
 class LogOutUI;

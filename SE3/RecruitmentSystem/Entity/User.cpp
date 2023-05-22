@@ -1,6 +1,3 @@
-//
-// Created by YeongBin on 2023-05-20.
-//
 #ifndef USERMANAGEMENT_USER_CPP
 #define USERMANAGEMENT_USER_CPP
 #include "User.h"

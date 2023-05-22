@@ -1,14 +1,10 @@
-//
-// Created by YeongBin on 2023-05-20.
-//
-
 #ifndef USERMANAGEMENT_USERLIST_H
 #define USERMANAGEMENT_USERLIST_H
 #include <iostream>
 #include <string>
 #include <vector>
-#include "GeneralUser.h"
-#include "CompanyUser.h"
+#include "entity/GeneralUser.h"
+#include "entity/CompanyUser.h"
 using namespace std;
 
 class UserList{

@@ -1,16 +1,10 @@
-#ifndef ENTITY_RECRUITMENT_LIST_H
-#define ENTITY_RECRUITMENT_LIST_H
-#include <iostream>
-#include <string>
-#include <vector>
+#ifndef USERMANAGEMENT_RECRUITMENTLIST_H
+#define USERMANAGEMENT_RECRUITMENTLIST_H
 #include "Recruitment.h"
-using namespace std;
 
-class RecruitmentList{
-private:
-    vector<Recruitment*> recruitmentList;
-public:
-    RecruitmentList();
+class RecruitmentList {
+
 };
 
-#endif
+
+#endif //USERMANAGEMENT_RECRUITMENTLIST_H

@@ -1,6 +1,3 @@
-//
-// Created by YeongBin on 2023-05-20.
-//
 #ifndef USERMANAGEMENT_USER_H
 #define USERMANAGEMENT_USER_H
 #include <iostream>
