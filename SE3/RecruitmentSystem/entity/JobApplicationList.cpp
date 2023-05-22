@@ -7,11 +7,11 @@ vector<Recruitment*> JobApplicationList::getJobApplicationList() {
 }
 
 void JobApplicationList::addJobApplication(Recruitment* recruitment) {
-    
+
 }
 
 void JobApplicationList::deleteJobApplication() {
-    
+
 }
 
 

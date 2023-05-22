@@ -71,5 +71,22 @@ vector<User *> UserList::getUserList() {
     return this->userList;
 }
 
+User *UserList::getSpecificUserByName(string name) {
+    for (User *user: userList) {
+        if(name == user->getName())
+            return user;
+    }
+    return nullptr;
+}
+
+CompanyUser *UserList::getSpecificUserBySSN(int number) {
+    for (User* user: userList) {
+        CompanyUser* CUser = (CompanyUser*) user;
+        if(number == CUser->getCompanyRegistrationNumber())
+            return CUser;
+    }
+    return nullptr;
+}
+
 
 #endif //USERMANAGEMENT_USERLIST_CPP

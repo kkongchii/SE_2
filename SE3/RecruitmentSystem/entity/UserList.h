@@ -16,6 +16,8 @@ public:
     void deleteUser(string id); // 실제로 유저를 삭제하는 함수, 2.1.1.deleteUser()
     User* userCheck(string id, string pw);
     void userStateChange(User* user);
+    User* getSpecificUserByName(string name);
+    CompanyUser* getSpecificUserBySSN(int number);
     vector<User*> getUserList();
 
 };

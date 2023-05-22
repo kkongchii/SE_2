@@ -18,7 +18,7 @@ private:
     string deadline;
 public:
     Recruitment(CompanyUser* CUser, string task, int limitApplicantNum, string deadline); // Recruitment Class 생성자
-    
+
     // Recruitment의 전체 멤버변수에 대한 Getter
     // [0] string CompanyName,
     // [1] int SSN,
