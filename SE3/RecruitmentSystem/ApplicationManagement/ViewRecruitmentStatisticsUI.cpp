@@ -3,5 +3,28 @@
 
 #include "ViewRecruitmentStatisticsUI.h"
 
+ViewRecruitmentStatisticsUI::ViewRecruitmentStatisticsUI(ViewRecruitmentStatistics* viewRecruitmentStatistics) {
+    this->viewRecruitmentStatisticsControl = viewRecruitmentStatistics;
+}
+
+void ViewRecruitmentStatisticsUI::showStatistics() {
+    vector<pair<string, int>> recruitmentStatistics = this->viewRecruitmentStatisticsControl->showRecruitmentStatistics();
+
+    for(auto it = recruitmentStatistics.begin(); it != recruitmentStatistics.end(); it++) {
+        if(it == recruitmentStatistics.begin()) {
+            printf("> %s %d",
+                (*it).first.c_str(),
+                (*it).second);
+        } else {
+            printf("  %s %d",
+                (*it).first.c_str(),
+                (*it).second);
+        }
+    }
+}
+
+ViewRecruitmentStatistics* ViewRecruitmentStatisticsUI::getControl() {
+    return this->viewRecruitmentStatisticsControl;
+}
 
 #endif //USERMANAGEMENT_VIEWRECRUITMENTSTATISTICSUI_CPP

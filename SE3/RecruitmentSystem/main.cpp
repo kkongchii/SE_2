@@ -7,6 +7,10 @@
 #include "UserManagement/LogOut.h"
 #include "UserManagement/SignUp.h"
 #include "UserManagement/Withdrawal.h"
+#include "ApplicationManagement/ViewJobApplications.h"
+#include "ApplicationManagement/ViewJobApplicationStatistics.h"
+#include "ApplicationManagement/ViewRecruitmentStatistics.h"
+#include "ApplicationManagement/CancelJobApplication.h"
 #include "entity/UserList.h"
 
 using namespace std;
@@ -172,11 +176,21 @@ void doTask() {
                     case 3: {
                         // 4.3 지원 정보 조회
                         cout << "4.1. 지원 정보 조회\n";
+                        if(isLogin == 0) break;
+                        ViewJobApplications viewJobApplications = ViewJobApplications();
+                        viewJobApplications.getUI()->showJobApplication();
                         break;
                     }
                     case 4: {
                         // 4.4 지원 취소
                         cout << "4.4. 지원 취소\n";
+                        if(isLogin == 0) break;
+                        CancelJobApplication cancelJobApplication = CancelJobApplication();
+                        cancelJobApplication.getUI()->startInterface(); // 해당 과제에서는 미구현
+                        int SSN;
+                        fscanf(in_fp, "%d ", &SSN); // 사업자번호 읽어오기
+                        cancelJobApplication.getUI()->cancelJobApplication(SSN);
+                        break;
                     }
                 }
                 break;
@@ -186,6 +200,13 @@ void doTask() {
                     case 1: {
                         // 4.1 지원 정보 통계
                         cout << "5.1. 지원 정보 통계\n";
+                        if(isLogin == 1) {  // 회사 유저
+                            ViewRecruitmentStatistics viewRecruitmentStatistics = ViewRecruitmentStatistics();
+                            viewRecruitmentStatistics.getUI()->showStatistics();
+                        } else if(isLogin == 2) { // 일반 유저
+                            ViewJobApplicationStatistics viewJobApplicationStatistics = ViewJobApplicationStatistics();
+                            viewJobApplicationStatistics.getUI()->showStatistics();
+                        }
                         break;
                     }
                 }

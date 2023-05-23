@@ -734,4 +734,8 @@ CMakeFiles/UserManagement.dir/entity/UserList.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Users/haneol/Desktop/HNEL/학교/4-1/소공/SE_2/SE3/RecruitmentSystem/./entity/GeneralUser.h \
   /Users/haneol/Desktop/HNEL/학교/4-1/소공/SE_2/SE3/RecruitmentSystem/./entity/User.h \
+  /Users/haneol/Desktop/HNEL/학교/4-1/소공/SE_2/SE3/RecruitmentSystem/entity/JobApplicationList.h \
+  /Users/haneol/Desktop/HNEL/학교/4-1/소공/SE_2/SE3/RecruitmentSystem/entity/Recruitment.h \
+  /Users/haneol/Desktop/HNEL/학교/4-1/소공/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.h \
+  /Users/haneol/Desktop/HNEL/학교/4-1/소공/SE_2/SE3/RecruitmentSystem/entity/RecruitmentList.h \
   /Users/haneol/Desktop/HNEL/학교/4-1/소공/SE_2/SE3/RecruitmentSystem/./entity/CompanyUser.h
