@@ -9,6 +9,8 @@
 #include "UserManagement/Withdrawal.h"
 #include "RecruitmentManagement/SearchRecruitments.h"
 #include "RecruitmentManagement/ApplyForRecruitment.h"
+#include "RecruitmentManagement/InquireCompanyRecruitments.h"
+#include "RecruitmentManagement/RegisterRecruitment.h"
 #include "ApplicationManagement/ViewJobApplications.h"
 #include "ApplicationManagement/ViewJobApplicationStatistics.h"
 #include "ApplicationManagement/ViewRecruitmentStatistics.h"
@@ -153,11 +155,19 @@ void doTask() {
                     case 1: {
                         // 3.1 채용 정보 등록
                         cout << "3.1. 채용 정보 등록\n";
+                        RegisterRecruitment registerRecruitment = RegisterRecruitment();
+                        char task[MAX_STRING], deadLine[MAX_STRING];
+                        int limitApplicantNum;
+                        fscanf(in_fp, "%s %d %s", task, &limitApplicantNum, deadLine);
+                        registerRecruitment.getUI()->registerNewRecruitments(task, limitApplicantNum, deadLine);
                         break;
                     }
                     case 2: {
                         // 3.2 등록된 채용 정보 조회
                         cout << "3.2. 등록된 채용 정보 조회\n";
+                        InquireCompanyRecruitments inquireCompanyRecruitments = InquireCompanyRecruitments();
+                        cout << "make control class\n";
+                        inquireCompanyRecruitments.getUI()->inquireRecruitments();
                         break;
                     }
                 }

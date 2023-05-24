@@ -10,6 +10,7 @@ void RecruitmentList::addNewRecruitment(string task, int limitApplicantNum, stri
 }
 
 vector<Recruitment*> RecruitmentList::getRecruitmentList() {
+    cout << "RecruitmentList::getRecruitmentList()\n";
     return this->ownedRecruitment;
 }
 
