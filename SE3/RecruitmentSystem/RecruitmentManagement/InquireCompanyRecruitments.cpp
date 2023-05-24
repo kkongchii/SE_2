@@ -4,5 +4,32 @@
 
 #include "InquireCompanyRecruitments.h"
 
+InquireCompanyRecruitments::InquireCompanyRecruitments() {
+    this->inquireCompanyRecruitmentsUI = new InquireCompanyRecruitmentsUI(this);
+}
+
+vector<tuple<string, int, string, int, string>> InquireCompanyRecruitments::showRecruitments() {
+    extern User* currentLoginUser;
+    vector<Recruitment*> recruitmentList = ((CompanyUser*) currentLoginUser)->getOwnRecruitmentList()->getRecruitmentList();
+    vector<tuple<string, int, string, int, string>> recruitmentDetails;
+
+    for(const auto& recruitment: recruitmentList){
+        recruitmentDetails.push_back(recruitment->getRecruitmentDetails());
+    }
+//    tuple<string, int, string, int, string> t1("company1", 123, "develop", 30, "22/05/20");
+//    recruitmentDetails.push_back(t1);
+
+    return recruitmentDetails;
+}
+
+InquireCompanyRecruitmentsUI *InquireCompanyRecruitments::getUI() {
+    cout << "get UI\n";
+    return this->inquireCompanyRecruitmentsUI;
+}
+
 
 #endif //USERMANAGEMENT_INQUIRECOMPANYRECRUITMENTS_CPP
+
+
+
+
