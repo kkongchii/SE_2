@@ -5,7 +5,7 @@
 #include "RegisterRecruitmentsUI.h"
 
 RegisterRecruitmentsUI::RegisterRecruitmentsUI(RegisterRecruitment *registerRecruitment) {
-    this->registerRecruitmentControl = registerRecruitmentControl;
+    this->registerRecruitmentControl = registerRecruitment;
 }
 
 void RegisterRecruitmentsUI::registerNewRecruitments(string task, int limitApplicantNum, string deadLine) {

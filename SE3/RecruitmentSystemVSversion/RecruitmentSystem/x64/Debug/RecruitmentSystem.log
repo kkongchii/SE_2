@@ -1,0 +1,47 @@
+﻿  ApplyForRecruitment.cpp
+  ApplyForRecruitmentUI.cpp
+  CancelJobApplication.cpp
+  CancelJobApplicationUI.cpp
+  CompanyUser.cpp
+  GeneralUser.cpp
+  InquireCompanyRecruitments.cpp
+  InquireCompanyRecruitmentsUI.cpp
+  JobApplicationList.cpp
+  Login.cpp
+  LoginUI.cpp
+  LogOut.cpp
+  LogOutUI.cpp
+  main.cpp
+C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(38,13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(39,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(54,9): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(67,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(69,21): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(76,21): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(124,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(164,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(187,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(202,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(226,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Recruitment.cpp
+  RecruitmentList.cpp
+  RegisterRecruitment.cpp
+  RegisterRecruitmentsUI.cpp
+  SearchRecruitments.cpp
+  SearchRecruitmentsUI.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  SignUp.cpp
+  SignUpUI.cpp
+  User.cpp
+  UserList.cpp
+  ViewJobApplications.cpp
+  ViewJobApplicationStatistics.cpp
+  ViewJobApplicationStatisticsUI.cpp
+  ViewJobApplicationsUI.cpp
+  ViewRecruitmentStatistics.cpp
+  ViewRecruitmentStatisticsUI.cpp
+  Withdrawal.cpp
+  WithdrawalUI.cpp
+  코드를 생성하고 있습니다...
+  RecruitmentSystem.vcxproj -> C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\x64\Debug\RecruitmentSystem.exe

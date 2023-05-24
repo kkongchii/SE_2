@@ -17,16 +17,20 @@ tuple<string, int, string> CancelJobApplication::dropJobApplication(int SSN) {
 
     vector<Recruitment*> recruitmentList = userDB.getSpecificUserBySSN(SSN)->getOwnRecruitmentList()->getRecruitmentList();
     Recruitment* validRecruitment = recruitmentList[0];
-    validRecruitment->setApplicantNum(validRecruitment->getApplicantNum()-1);
+    validRecruitment->setApplicantNum(validRecruitment->getApplicantNum() - 1);
 
-    ((GeneralUser*) currentLoginUser)->getOwnJobApplicationList()->deleteJobApplication(validRecruitment);
+    int result = ((GeneralUser*)currentLoginUser)->getOwnJobApplicationList()->deleteJobApplication(validRecruitment);
+    if (result == -1) {
+        tuple<string, int, string> fail = make_tuple("", -1, "");
+        return fail;
+    }
 
     tuple<string, int, string, int, string, int> canceledRecuitment = validRecruitment->getRecruitmentDetails();
 
     return {
-        get<0>(canceledRecuitment),
-        get<1>(canceledRecuitment),
-        get<2>(canceledRecuitment)
+            get<0>(canceledRecuitment),
+            get<1>(canceledRecuitment),
+            get<2>(canceledRecuitment)
     };
 }
 
