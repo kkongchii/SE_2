@@ -6,7 +6,7 @@
 using namespace std;
 class WithdrawalUI;
 
-class Withdrawal {
+class Withdrawal{
 private:
     WithdrawalUI* withdrawalUI; // UI Class를 저장할 변수
 public:

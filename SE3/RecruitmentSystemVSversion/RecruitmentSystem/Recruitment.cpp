@@ -10,7 +10,7 @@ Recruitment::Recruitment(string task, int limitApplicantNum, string deadline, Co
     this->applicantNum = 0;
 }
 
-// RecruitmentÀÇ ÀüÃ¼ ¸â¹öº¯¼ö¿¡ ´ëÇÑ Getter
+// Recruitment의 전체 멤버변수에 대한 Getter
 // [0] string CompanyName,
 // [1] int SSN,
 // [2] string task,

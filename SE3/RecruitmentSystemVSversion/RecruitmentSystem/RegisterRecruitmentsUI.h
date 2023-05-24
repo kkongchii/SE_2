@@ -14,7 +14,8 @@ private:
     RegisterRecruitment* registerRecruitmentControl;
 public:
     RegisterRecruitmentsUI(RegisterRecruitment* registerRecruitment);
-    void registerNewRecruitments(string task, int limitApplicantNum, string deadLine);
+    void startInterface();
+    void registerNewRecruitments(FILE *fp, string task, int limitApplicantNum, string deadLine);
 };
 
 

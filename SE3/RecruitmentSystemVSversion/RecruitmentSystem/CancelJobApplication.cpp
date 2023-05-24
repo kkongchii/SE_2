@@ -12,8 +12,8 @@ CancelJobApplication::CancelJobApplication() {
 // [1] int SSN,
 // [2] string task
 tuple<string, int, string> CancelJobApplication::dropJobApplication(int SSN) {
-    extern UserList userDB; // main í•¨ìˆ˜ì˜ userDB ì‚¬ìš©
-    extern User* currentLoginUser; // main í•¨ìˆ˜ì˜ currentLoginUserë¥¼ ì‚¬ìš©
+    extern UserList userDB; // main ÇÔ¼öÀÇ userDB »ç¿ë
+    extern User* currentLoginUser; // main ÇÔ¼öÀÇ currentLoginUser¸¦ »ç¿ë
 
     vector<Recruitment*> recruitmentList = userDB.getSpecificUserBySSN(SSN)->getOwnRecruitmentList()->getRecruitmentList();
     Recruitment* validRecruitment = recruitmentList[0];
@@ -28,9 +28,9 @@ tuple<string, int, string> CancelJobApplication::dropJobApplication(int SSN) {
     tuple<string, int, string, int, string, int> canceledRecuitment = validRecruitment->getRecruitmentDetails();
 
     return {
-        get<0>(canceledRecuitment),
-        get<1>(canceledRecuitment),
-        get<2>(canceledRecuitment)
+            get<0>(canceledRecuitment),
+            get<1>(canceledRecuitment),
+            get<2>(canceledRecuitment)
     };
 }
 

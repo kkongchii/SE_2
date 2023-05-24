@@ -15,7 +15,7 @@ private:
     ViewRecruitmentStatistics* viewRecruitmentStatisticsControl;
 public:
     ViewRecruitmentStatisticsUI(ViewRecruitmentStatistics* viewRecruitmentStatistics);
-    void showStatistics();
+    void showStatistics(FILE* fp);
     ViewRecruitmentStatistics* getControl();
 };
 

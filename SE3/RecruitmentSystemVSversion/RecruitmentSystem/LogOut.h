@@ -7,7 +7,7 @@
 
 class LogOutUI;
 
-class LogOut {
+class LogOut{
 private:
     LogOutUI* logOutUI; // UI Class를 저장할 변수
 public:

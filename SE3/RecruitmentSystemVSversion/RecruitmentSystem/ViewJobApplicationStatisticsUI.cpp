@@ -8,11 +8,11 @@ ViewJobApplicationStatisticsUI::ViewJobApplicationStatisticsUI(ViewJobApplicatio
     this->viewJobApplicationStatisticsControl = viewJobApplicationStatistics;
 }
 
-void ViewJobApplicationStatisticsUI::showStatistics() {
+void ViewJobApplicationStatisticsUI::showStatistics(FILE* fp) {
     vector<pair<string, int>> jobApplicationStatistics = this->viewJobApplicationStatisticsControl->showJobApplicationStatistics();
 
     for (const auto& jobApplication : jobApplicationStatistics) {
-        printf("> %s %d\n",
+        fprintf(fp, "> %s %d\n",
             jobApplication.first.c_str(),
             jobApplication.second);
     }

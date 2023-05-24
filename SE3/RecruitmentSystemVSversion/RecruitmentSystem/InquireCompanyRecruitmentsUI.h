@@ -15,7 +15,7 @@ private:
     InquireCompanyRecruitments* inquireCompanyRecruitmentsControl;
 public:
     InquireCompanyRecruitmentsUI(InquireCompanyRecruitments* inquireCompanyRecruitmentsControl);
-    void inquireRecruitments();
+    void inquireRecruitments(FILE* fp);
 };
 
 

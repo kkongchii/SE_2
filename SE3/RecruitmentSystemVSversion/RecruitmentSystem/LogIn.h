@@ -7,7 +7,7 @@
 
 class LogInUI;
 
-class LogIn {
+class LogIn{
 private:
     LogInUI* logInUI; // UI Class를 저장할 변수
 public:

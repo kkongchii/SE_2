@@ -17,7 +17,7 @@ private:
     ViewRecruitmentStatisticsUI* viewRecruitmentStatisticsUI;
 public:
     ViewRecruitmentStatistics();
-    vector<pair<string, int>> showRecruitmentStatistics();
+    vector<pair<string,int>> showRecruitmentStatistics();
     ViewRecruitmentStatisticsUI* getUI();
 };
 

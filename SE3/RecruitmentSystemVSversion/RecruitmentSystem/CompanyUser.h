@@ -12,21 +12,21 @@ class RecruitmentList;
 
 class CompanyUser : public User {
 private:
-    int companyRegistrationNumber; // ì‚¬ì—…ìë²ˆí˜¸
+    int companyRegistrationNumber; // »ç¾÷ÀÚ¹øÈ£
     RecruitmentList* ownRecruitmentList;
 public:
     CompanyUser(string name, int companyNum, string id, string pw);
     ~CompanyUser();
-    string getClassType() override; // ìì‹ í´ë˜ìŠ¤ì˜ íƒ€ì…ì„ íŒŒì•…í•˜ê¸° ìœ„í•´ì„œ ì¬ì •ì˜í•œ í•¨ìˆ˜
+    string getClassType() override; // ÀÚ½Ä Å¬·¡½ºÀÇ Å¸ÀÔÀ» ÆÄ¾ÇÇÏ±â À§ÇØ¼­ ÀçÁ¤ÀÇÇÑ ÇÔ¼ö
     int getCompanyRegistrationNumber();
     void setCompanyRegistrationNumber(int companyNum);
     RecruitmentList* getOwnRecruitmentList();
 
-    // Recruitmentì˜ ì „ì²´ ë©¤ë²„ë³€ìˆ˜ì— ëŒ€í•œ Getter
+    // RecruitmentÀÇ ÀüÃ¼ ¸â¹öº¯¼ö¿¡ ´ëÇÑ Getter
     // [0] string CompanyName,
     // [1] int SSN,
     pair<string, int> getCompanyUserDetails();
-    // ì´ìƒ getter, setter
+    // ÀÌ»ó getter, setter
 
 };
 

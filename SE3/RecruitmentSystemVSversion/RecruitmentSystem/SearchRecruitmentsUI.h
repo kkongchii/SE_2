@@ -15,8 +15,8 @@ private:
 	SearchRecruitments* searchRecruitmentsControl;
 public:
 	SearchRecruitmentsUI(SearchRecruitments* searchRecruitmentsControl);
-	void startInterface(); // interface ì¶œë ¥
-	void searchRecruitments(string companyName); // íšŒì‚¬ ì´ë¦„ìœ¼ë¡œ ê²€ìƒ‰
+	void startInterface(); // interface Ãâ·Â
+	void searchRecruitments(FILE* fp, string companyName); // È¸»ç ÀÌ¸§À¸·Î °Ë»ö
 	SearchRecruitments* getControl();
 };
 

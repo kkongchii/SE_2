@@ -7,7 +7,7 @@
 #include "CompanyUser.h"
 using namespace std;
 
-class UserList {
+class UserList{
 private:
     vector<User*> userList;
 public:

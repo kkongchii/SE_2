@@ -9,13 +9,12 @@ InquireCompanyRecruitmentsUI::InquireCompanyRecruitmentsUI(
     this->inquireCompanyRecruitmentsControl = inquireCompanyRecruitmentsControl;
 }
 
-void InquireCompanyRecruitmentsUI::inquireRecruitments() {
+void InquireCompanyRecruitmentsUI::inquireRecruitments(FILE* fp) {
     vector<tuple<string, int, string, int, string, int>> list = this->inquireCompanyRecruitmentsControl->showRecruitments();
     for (const auto& detail : list) {
-        cout << get<2>(detail) << " " << get<3>(detail) << " " << get<4>(detail) << endl;
+        fprintf(fp, "> %s %d %s\n", get<2>(detail).c_str(), get<3>(detail), get<4>(detail).c_str());
     }
 }
-
 
 #endif //USERMANAGEMENT_INQUIRECOMPANYRECRUITMENTSUI_CPP
 

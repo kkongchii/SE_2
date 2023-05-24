@@ -8,19 +8,18 @@ using namespace std;
 
 ApplyForRecruitmentUI::ApplyForRecruitmentUI(ApplyForRecruitment* applyforrecruitmentControl) {
     this->applyForRecruitmentControl = applyforrecruitmentControl;
-    // ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ì€ Control Classë¥¼ ë³¸ì¸ì˜ ë³€ìˆ˜ì— ì €ì¥
+    // ¸Å°³º¯¼ö·Î ¹ŞÀº Control Class¸¦ º»ÀÎÀÇ º¯¼ö¿¡ ÀúÀå
 }
 
 void ApplyForRecruitmentUI::startInterface() {
-    cout << "start Interface" << endl;
-    // UIë¥¼ ì¶œë ¥
+    // UI¸¦ Ãâ·Â
 }
 
-void ApplyForRecruitmentUI::applyForRecruitment(int SSN) {
-    tuple<string, int, string> applyforprint = applyForRecruitmentControl->addNewJobApplication(SSN);
+void ApplyForRecruitmentUI::applyForRecruitment(FILE* fp, int SSN) {
+    tuple<string, int, string> applyForPrint = applyForRecruitmentControl->addNewJobApplication(SSN);
 
-    // í™•ì¸ìš©
-    cout << get<0>(applyforprint) << ' ' << get<1>(applyforprint) << ' ' << get<2>(applyforprint) << endl;
+    // È®ÀÎ¿ë
+    fprintf(fp, "> %s %d %s\n", get<0>(applyForPrint).c_str(), get<1>(applyForPrint), get<2>(applyForPrint).c_str());
 }
 
 ApplyForRecruitment* ApplyForRecruitmentUI::getControl() {

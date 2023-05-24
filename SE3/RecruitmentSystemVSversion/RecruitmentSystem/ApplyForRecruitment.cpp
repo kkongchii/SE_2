@@ -9,26 +9,26 @@
 
 ApplyForRecruitment::ApplyForRecruitment() {
     this->applyForRecruitmentUI = new ApplyForRecruitmentUI(this);
-    // ë ˆí¼ëŸ°ìŠ¤ êµí™˜
+    // ·¹ÆÛ·±½º ±³È¯
 }
 
 tuple < string, int, string> ApplyForRecruitment::addNewJobApplication(int SSN) {
-    extern UserList userDB; // main í•¨ìˆ˜ì— ì„ ì–¸ ëœ userDB ì‚¬ìš©
-    extern User* currentLoginUser; // main í•¨ìˆ˜ì˜ currentLoginUserë¥¼ ì‚¬ìš©
+    extern UserList userDB; // main ÇÔ¼ö¿¡ ¼±¾ğ µÈ userDB »ç¿ë
+    extern User* currentLoginUser; // main ÇÔ¼öÀÇ currentLoginUser¸¦ »ç¿ë
 
-    CompanyUser* searchedCUser = (CompanyUser*)userDB.getSpecificUserBySSN(SSN); // 2.1.1 ì‚¬ì—…ìë²ˆí˜¸ ê°™ì€ íšŒì‚¬íšŒì› ê°€ì ¸ì˜´
-    vector<Recruitment*> searchedRList = searchedCUser->getOwnRecruitmentList()->getRecruitmentList(); // 2.1.2 ê·¸ íšŒì‚¬íšŒì›ì˜ ì±„ìš©ì •ë³´ ë¦¬ìŠ¤íŠ¸ ê°€ì ¸ì˜´
+    CompanyUser* searchedCUser = (CompanyUser*)userDB.getSpecificUserBySSN(SSN); // 2.1.1 »ç¾÷ÀÚ¹øÈ£ °°Àº È¸»çÈ¸¿ø °¡Á®¿È
+    vector<Recruitment*> searchedRList = searchedCUser->getOwnRecruitmentList()->getRecruitmentList(); // 2.1.2 ±× È¸»çÈ¸¿øÀÇ Ã¤¿ëÁ¤º¸ ¸®½ºÆ® °¡Á®¿È
 
-    // ì„ íƒ ì•„ë‹ˆë¼ ì¦‰ì‹œ ì§€ì›ì´ë¯€ë¡œ ì‚¬ì‹¤ìƒ í•˜ë‚˜ë§Œ ì¶œë ¥ë˜ì–´ ë‚˜ì˜¨ë‹¤ê³  ë³´ë©´ ë  ê²ƒ ê°™ë‹¤
-    // ê·¸ë˜ì„œ ì—¬ê¸°ì—ì„œëŠ” forë¬¸ ì•ˆ ì”€
-    Recruitment* addRecruitment = searchedRList[0]; // í•˜ë‚˜ë§Œ ìˆì„ ê²ƒì´ë¼ê³  ê°€ì •í•´ì„œ
-    // ì—…ë¬´ë³„ ì§€ì›ììˆ˜ ì¶œë ¥ì„ ìœ„í•´ ì±„ìš© ì •ë³´ì— ì§€ì›ììˆ˜ ìš”ì†Œë¥¼ ì¶”ê°€í•  í•¨ìˆ˜ í•„ìš”
+    // ¼±ÅÃ ¾Æ´Ï¶ó Áï½Ã Áö¿øÀÌ¹Ç·Î »ç½Ç»ó ÇÏ³ª¸¸ Ãâ·ÂµÇ¾î ³ª¿Â´Ù°í º¸¸é µÉ °Í °°´Ù
+    // ±×·¡¼­ ¿©±â¿¡¼­´Â for¹® ¾È ¾¸
+    Recruitment* addRecruitment = searchedRList[0]; // ÇÏ³ª¸¸ ÀÖÀ» °ÍÀÌ¶ó°í °¡Á¤ÇØ¼­
+    // ¾÷¹«º° Áö¿øÀÚ¼ö Ãâ·ÂÀ» À§ÇØ Ã¤¿ë Á¤º¸¿¡ Áö¿øÀÚ¼ö ¿ä¼Ò¸¦ Ãß°¡ÇÒ ÇÔ¼ö ÇÊ¿ä
 
-    ((GeneralUser*)currentLoginUser)->getOwnJobApplicationList()->addJobApplication(addRecruitment); // ì§€ì›ìì˜ ì§€ì› ì •ë³´ ë¦¬ìŠ¤íŠ¸ì— ì¶”ê°€
+    ((GeneralUser*)currentLoginUser)->getOwnJobApplicationList()->addJobApplication(addRecruitment); // Áö¿øÀÚÀÇ Áö¿ø Á¤º¸ ¸®½ºÆ®¿¡ Ãß°¡
 
     tuple <string, int, string, int, string, int> apply = addRecruitment->getRecruitmentDetails();
 
-    // ì¶œë ¥í•˜ëŠ” ê°’ì€ ì´ 3ê°œë¿
+    // Ãâ·ÂÇÏ´Â °ªÀº ÀÌ 3°³»Ó
     return {
         get<0>(apply),
         get<1>(apply),

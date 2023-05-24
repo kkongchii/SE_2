@@ -36,13 +36,11 @@ void UserList::deleteUser(string id) {
             return;
         }
     }
-    cout << "User" << id << "not found" << endl; // 입력받은 id가 userDB에 없을 시 출력
 }
 
 User* UserList::userCheck(string id, string pw) {
     for (const auto& user : userList) {
         if (user->getId() == id && user->getPW() == pw) {
-            cout << "User " << id << " checked." << endl;
             return user;
         }
     }
@@ -64,7 +62,6 @@ void UserList::userStateChange(User* user) {
     else if (classType == "General") {
         isLogin = 2;
     }
-    //    cout << "id : " << user->getId() << " userType : " << isLogin << endl;
 }
 
 vector<User*> UserList::getUserList() {

@@ -8,18 +8,17 @@ CancelJobApplicationUI::CancelJobApplicationUI(CancelJobApplication* cancelJobAp
 }
 
 void CancelJobApplicationUI::startInterface() {
-    cout << "start Interface" << endl;
     // 지원 취소를 위해 본인의 지원정보 리스트를 보여주는 UI를 출력
     // 해당 과제에서는 미구현
 }
 
-void CancelJobApplicationUI::cancelJobApplication(int SSN) {
+void CancelJobApplicationUI::cancelJobApplication(FILE* fp, int SSN) {
     tuple<string, int, string> canceledJobApplication = this->cancelJobApplicationControl->dropJobApplication(SSN);
     if (get<1>(canceledJobApplication) == -1) {
-        printf("No JobApplication");
+        fprintf(fp, "No JobApplication");
     }
 
-    printf("> %s %d %s\n",
+    fprintf(fp, "> %s %d %s\n",
         get<0>(canceledJobApplication).c_str(),
         get<1>(canceledJobApplication),
         get<2>(canceledJobApplication).c_str()

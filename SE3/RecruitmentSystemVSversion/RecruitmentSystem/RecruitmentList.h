@@ -15,7 +15,7 @@ private:
     vector<Recruitment*> ownedRecruitment;
 public:
     void addNewRecruitment(string task, int limitApplicantNum, string deadline);
-    //    bool compareByDeadline(Recruitment* a, Recruitment* b);
+//    bool compareByDeadline(Recruitment* a, Recruitment* b);
     vector<Recruitment*> getRecruitmentList();
 };
 

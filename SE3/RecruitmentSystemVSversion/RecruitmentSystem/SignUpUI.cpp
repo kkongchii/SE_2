@@ -11,29 +11,26 @@ SignUpUI::SignUpUI(SignUp* signupControl) {
 }
 
 void SignUpUI::startInterface() {
-    cout << "start Interface" << endl;
-    // id와 pw를 입력하는 login UI를 출력
+    // id와 pw를 입력하는 회원 가입 UI를 출력
     // 해당 과제에서는 미구현
 }
 
-void SignUpUI::signupGeneralUser(string name, int personalNum, string id, string password) {
+void SignUpUI::signupGeneralUser(FILE* fp, string name, int personalNum, string id, string password) {
     if (signupControl->addGeneralUser(name, personalNum, id, password) == -1) {
         // Control Class에 일반 유저 생성 요청 후 입력한 id와 동일한 id가 userDB에 존재 시.
-        cout << "The same id exists." << endl; // 중복을 알림
+        fprintf(fp, "> The same id exists.\n");// 중복을 알림
         return;
     }
-    cout << "General user with id \"" << id << "\" has been created." << endl; // 디버깅용 출력문
-    cout << "> 2 " << name << ' ' << personalNum << ' ' << id << ' ' << password << endl; // 출력 양식
+    fprintf(fp, "> 2 %s %d %s %s\n", name.c_str(), personalNum, id.c_str(), password.c_str());
 }
 
-void SignUpUI::signupCompanyUser(string name, int companyNum, string id, string password) {
+void SignUpUI::signupCompanyUser(FILE* fp, string name, int companyNum, string id, string password) {
     if (signupControl->addCompanyUser(name, companyNum, id, password) == -1) {
         // Control Class에 회사 유저 생성 요청 후 입력한 id와 동일한 id가 userDB에 존재 시.
-        cout << "The same id exists." << endl; // 중복을 알림
+        fprintf(fp, "> The same id exists.\n");// 중복을 알림
         return;
     }
-    cout << "Company user with id \"" << id << "\" has been created." << endl; // 디버깅용 출력문
-    cout << "> 1 " << name << ' ' << companyNum << ' ' << id << ' ' << password << endl; // 출력 양식
+    fprintf(fp, "> 2 %s %d %s %s\n", name.c_str(), companyNum, id.c_str(), password.c_str());
 }
 
 SignUp* SignUpUI::getControl() {

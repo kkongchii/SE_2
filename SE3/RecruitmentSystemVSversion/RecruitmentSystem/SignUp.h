@@ -6,7 +6,7 @@
 using namespace std;
 class SignUpUI;
 
-class SignUp {
+class SignUp{
 private:
     SignUpUI* signupUI; // UI Class를 저장할 변수
 public:

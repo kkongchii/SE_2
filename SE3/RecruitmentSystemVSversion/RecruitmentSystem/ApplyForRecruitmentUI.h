@@ -14,10 +14,8 @@ private:
 	ApplyForRecruitment* applyForRecruitmentControl;
 public:
 	ApplyForRecruitmentUI(ApplyForRecruitment* applyForRecruitmentControl);
-	void startInterface(); // interface ì¶œë ¥
-	void applyForRecruitment(int SSN); // ì‚¬ì—…ìë²ˆí˜¸ë¡œ ê²€ìƒ‰
+	void startInterface(); // interface Ãâ·Â
+	void applyForRecruitment(FILE* fp, int SSN); // »ç¾÷ÀÚ¹øÈ£·Î °Ë»ö
 	ApplyForRecruitment* getControl();
 };
-
-
 #endif //USERMANAGEMENT_APPLYFORRECRUITMENTUI_H
