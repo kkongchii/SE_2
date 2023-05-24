@@ -16982,7 +16982,7 @@
 														"$ref": "AAAAAAGH/79b6Rj7xbk="
 													},
 													"font": "Arial;13;0",
-													"left": 96.72998046875,
+													"left": 120.72998046875,
 													"top": 133,
 													"width": 40,
 													"height": 13,
@@ -16995,7 +16995,7 @@
 														"$ref": "AAAAAAGH/79b6Rj7xbk="
 													},
 													"font": "Arial;13;1",
-													"left": 77,
+													"left": 101,
 													"top": 133,
 													"width": 14.72998046875,
 													"height": 13,
@@ -17003,7 +17003,7 @@
 												}
 											],
 											"font": "Arial;13;0",
-											"left": 72,
+											"left": 96,
 											"top": 128,
 											"width": 993,
 											"height": 609,
@@ -28778,7 +28778,7 @@
 															"font": "Arial;20;0",
 															"left": 20,
 															"top": -524,
-															"width": 235.546875,
+															"width": 243.0078125,
 															"height": 20,
 															"text": "(from 전체 채용 정보 조회)"
 														},
@@ -29199,7 +29199,7 @@
 															"font": "Arial;20;0",
 															"left": -688,
 															"top": -216,
-															"width": 235.546875,
+															"width": 243.0078125,
 															"height": 20,
 															"text": "(from 전체 채용 정보 조회)"
 														},
@@ -37357,7 +37357,7 @@
 															"font": "Arial;20;0",
 															"left": 160,
 															"top": -120,
-															"width": 235.546875,
+															"width": 243.0078125,
 															"height": 20,
 															"text": "(from 일반 회원 통계 조회)"
 														},
@@ -37458,7 +37458,7 @@
 															"font": "Arial;20;0",
 															"left": -1196,
 															"top": -24,
-															"width": 235.546875,
+															"width": 243.0078125,
 															"height": 20,
 															"text": "(from 일반 회원 통계 조회)"
 														},
@@ -39358,7 +39358,7 @@
 															"font": "Arial;20;0",
 															"left": 364,
 															"top": -66,
-															"width": 235.546875,
+															"width": 243.0078125,
 															"height": 20,
 															"text": "(from 회사 회원 통계 조회)"
 														},
@@ -39779,7 +39779,7 @@
 															"font": "Arial;20;0",
 															"left": 336,
 															"top": -26,
-															"width": 235.546875,
+															"width": 243.0078125,
 															"height": 20,
 															"text": "(from 회사 회원 통계 조회)"
 														},
@@ -44097,7 +44097,7 @@
 															"font": "Arial;20;0",
 															"left": 68,
 															"top": -264,
-															"width": 144.43359375,
+															"width": 148.9453125,
 															"height": 20,
 															"text": "(from 지원 취소)"
 														},
@@ -44518,7 +44518,7 @@
 															"font": "Arial;20;0",
 															"left": 122,
 															"top": -68,
-															"width": 144.43359375,
+															"width": 148.9453125,
 															"height": 20,
 															"text": "(from 지원 취소)"
 														},
@@ -44619,7 +44619,7 @@
 															"font": "Arial;20;0",
 															"left": 214,
 															"top": -72,
-															"width": 144.43359375,
+															"width": 148.9453125,
 															"height": 20,
 															"text": "(from 지원 취소)"
 														},
@@ -50573,7 +50573,7 @@
 							"left": 136,
 							"top": 2328,
 							"width": 291.77880859375,
-							"height": 177,
+							"height": 169,
 							"nameCompartment": {
 								"$ref": "AAAAAAGIAGxACXQDT9A="
 							},
@@ -51273,7 +51273,7 @@
 											"top": 1378,
 											"width": 394.46240234375,
 											"height": 13,
-											"text": "+cancelJobApplication(SSN: Integer): Tuple<String, Integer, String>",
+											"text": "+dropJobApplication(SSN: Integer): Tuple<String, Integer, String>",
 											"horizontalAlignment": 0
 										}
 									],
@@ -52135,13 +52135,30 @@
 											"height": 13,
 											"text": "+startInterface(): Void",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGITaIeKx8qlAg=",
+											"_parent": {
+												"$ref": "AAAAAAGIAHiqqXYjEQE="
+											},
+											"model": {
+												"$ref": "AAAAAAGITaIeCR8noDg="
+											},
+											"font": "Arial;13;0",
+											"left": 517,
+											"top": 529,
+											"width": 310.72412109375,
+											"height": 13,
+											"text": "+cancelJobApplication(SSN: Integer): Void",
+											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 512,
 									"top": 509,
 									"width": 320.72412109375,
-									"height": 23
+									"height": 38
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -55990,8 +56007,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 367,
-									"top": 2562,
+									"left": 366,
+									"top": 2558,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -56011,8 +56028,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 355,
-									"top": 2571,
+									"left": 354,
+									"top": 2566,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -56032,8 +56049,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 392,
-									"top": 2545,
+									"left": 391,
+									"top": 2541,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -56053,8 +56070,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 390,
-									"top": 2596,
+									"left": 392,
+									"top": 2595,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
@@ -56074,7 +56091,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 378,
+									"left": 379,
 									"top": 2601,
 									"height": 13,
 									"alpha": 0.7853981633974483,
@@ -56094,7 +56111,7 @@
 										"$ref": "AAAAAAGITMj+uz3JFeQ="
 									},
 									"font": "Arial;13;0",
-									"left": 406,
+									"left": 408,
 									"top": 2584,
 									"width": 19.5126953125,
 									"height": 13,
@@ -56117,8 +56134,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 344,
-									"top": 2528,
+									"left": 341,
+									"top": 2520,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
@@ -56137,8 +56154,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 334,
-									"top": 2538,
+									"left": 331,
+									"top": 2530,
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
@@ -56156,8 +56173,8 @@
 										"$ref": "AAAAAAGITMj+uz3Kblc="
 									},
 									"font": "Arial;13;0",
-									"left": 355,
-									"top": 2509,
+									"left": 352,
+									"top": 2501,
 									"width": 19.5126953125,
 									"height": 13,
 									"alpha": 0.5235987755982988,
@@ -56204,7 +56221,7 @@
 								"$ref": "AAAAAAGIAG2Q5HRK1bQ="
 							},
 							"lineStyle": 1,
-							"points": "418:2615;342:2505",
+							"points": "419:2615;339:2497",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGITMj+uz3NRN4="
@@ -57511,6 +57528,34 @@
 													"direction": "return"
 												}
 											]
+										},
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAGITaIeCR8noDg=",
+											"_parent": {
+												"$ref": "AAAAAAGIAHfs23XN1fI="
+											},
+											"name": "cancelJobApplication",
+											"parameters": [
+												{
+													"_type": "UMLParameter",
+													"_id": "AAAAAAGITaQvLzcUyos=",
+													"_parent": {
+														"$ref": "AAAAAAGITaIeCR8noDg="
+													},
+													"name": "SSN",
+													"type": "Integer"
+												},
+												{
+													"_type": "UMLParameter",
+													"_id": "AAAAAAGITaQvMjcVQHY=",
+													"_parent": {
+														"$ref": "AAAAAAGITaIeCR8noDg="
+													},
+													"type": "Void",
+													"direction": "return"
+												}
+											]
 										}
 									]
 								},
@@ -58262,7 +58307,7 @@
 											"_parent": {
 												"$ref": "AAAAAAGIAHS9/HTfDbE="
 											},
-											"name": "cancelJobApplication",
+											"name": "dropJobApplication",
 											"parameters": [
 												{
 													"_type": "UMLParameter",
