@@ -3,8 +3,20 @@
 #define USERMANAGEMENT_SEARCHRECRUITMENTS_H
 
 
-class SearchRecruitments {
+#include <iostream>
+#include "SearchRecruitmentsUI.h"
+#include "entity/Recruitment.h"
 
+using namespace std;
+class SearchRecruitmentsUI;
+
+class SearchRecruitments {
+private:
+    SearchRecruitmentsUI* searchrecruitmentsUI;
+public:
+    SearchRecruitments();
+    vector<tuple<string, int, string, int, string>> showRecruitment(string companyName);
+    SearchRecruitmentsUI* getUI();
 };
 
 

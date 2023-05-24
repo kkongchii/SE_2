@@ -7,6 +7,8 @@
 #include "UserManagement/LogOut.h"
 #include "UserManagement/SignUp.h"
 #include "UserManagement/Withdrawal.h"
+#include "RecruitmentManagement/SearchRecruitments.h"
+#include "RecruitmentManagement/ApplyForRecruitment.h"
 #include "ApplicationManagement/ViewJobApplications.h"
 #include "ApplicationManagement/ViewJobApplicationStatistics.h"
 #include "ApplicationManagement/ViewRecruitmentStatistics.h"
@@ -166,11 +168,31 @@ void doTask() {
                     case 1: {
                         // 4.1 채용 정보 검색
                         cout << "4.1. 채용 정보 검색\n";
+                        SearchRecruitments controlRSearch = SearchRecruitments(); // Control Class 생성, 생성자를 통해 Boundary Class 생성 및 서로 레퍼런스 교환
+                        controlRSearch.getUI()->startInterface(); // 회원 가입 인터페이스 출력, 1.startInterface()
+                        char name[MAX_STRING]; // 검색 이름 저장 할 변수
+                        fscanf(in_fp, "%s", name);
+
+                        // 확인용
+                        cout << "검색이름은: " << name << endl;
+
+                        controlRSearch.getUI()->searchRecruitments(name);
+
                         break;
                     }
                     case 2: {
                         // 4.2 채용 지원
                         cout << "4.2. 채용 지원\n";
+                        ApplyForRecruitment controlApply = ApplyForRecruitment(); // Control Class 생성, 생성자를 통해 Boundary Class 생성 및 서로 레퍼런스 교환
+                        controlApply.getUI()->startInterface(); // 회원 가입 인터페이스 출력, 1.startInterface()
+                        int SSN; // 검색 사업자번호 저장 할 변수
+                        fscanf(in_fp, "%d", &SSN);
+
+                        // 확인용
+                        cout << "검색 사업자번호는: " << SSN << endl;
+
+                        controlApply.getUI()->applyForRecruitment(SSN);
+
                         break;
                     }
                     case 3: {

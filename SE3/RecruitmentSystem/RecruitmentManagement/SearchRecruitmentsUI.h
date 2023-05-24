@@ -2,9 +2,22 @@
 #ifndef USERMANAGEMENT_SEARCHRECRUITMENTSUI_H
 #define USERMANAGEMENT_SEARCHRECRUITMENTSUI_H
 
+#include <iostream>
+#include <string>
+#include "SearchRecruitments.h"
 
-class SearchRecruitmentsUI {
+using namespace std;
+class SearchRecruitments;
 
+class SearchRecruitmentsUI
+{
+private:
+	SearchRecruitments* searchrecruitmentsControl;
+public:
+	SearchRecruitmentsUI(SearchRecruitments* searchrecruitmentsControl);
+	void startInterface(); // interface 출력
+	void searchRecruitments(string companyName); // 회사 이름으로 검색
+	SearchRecruitments* getControl();
 };
 
 

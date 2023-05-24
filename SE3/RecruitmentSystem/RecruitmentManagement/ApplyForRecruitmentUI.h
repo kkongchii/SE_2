@@ -2,9 +2,21 @@
 #ifndef USERMANAGEMENT_APPLYFORRECRUITMENTUI_H
 #define USERMANAGEMENT_APPLYFORRECRUITMENTUI_H
 
+#include <iostream>
+#include <string>
+#include "ApplyForRecruitment.h"
+
+using namespace std;
+class ApplyForRecruitment;
 
 class ApplyForRecruitmentUI {
-
+private:
+	ApplyForRecruitment* applyforrecruitmentControl;
+public:
+	ApplyForRecruitmentUI(ApplyForRecruitment* applyforrecruitmentControl);
+	void startInterface(); // interface 출력
+	void applyForRecruitment(int SSN); // 사업자번호로 검색
+	ApplyForRecruitment* getControl();
 };
 
 
