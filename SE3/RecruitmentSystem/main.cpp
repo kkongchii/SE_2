@@ -51,7 +51,6 @@ void doTask() {
 
     while (!is_program_exit) {
         // 입력파일에서 메뉴 숫자 2개를 읽기
-        cout << "기능 읽어오기\n";
         fscanf(in_fp, "%d %d ", &menu_level_1, &menu_level_2);
 
         // 메뉴 구분 및 해당 연산 수행
@@ -60,55 +59,35 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: // "1.1. 회원가입“ 메뉴 부분
                     {
-                        cout << "1.1. 회원가입" << endl; // 출력 양식
+                        fprintf(out_fp, "1.1. 회원가입\n");
                         SignUp controlSignUp = SignUp(); // Control Class 생성, 생성자를 통해 Boundary Class 생성 및 서로 레퍼런스 교환
                         controlSignUp.getUI()->startInterface(); // 회원 가입 인터페이스 출력, 1.startInterface()
-                        int signupType, number; // 회사 회원 가입인지 일반 회원 가입인지 판단 하는 flag 변수
-                        char name[MAX_STRING], id[MAX_STRING], pw[MAX_STRING]; // 가입 정보 저장 할 변수들
+                        int signupType, number;
+                        char name[MAX_STRING], id[MAX_STRING], pw[MAX_STRING];
                         fscanf(in_fp, "%d ", &signupType); // 가입 유형 읽어오기
                         if (signupType == 1) { // 회사 회원 가입이라면
                             fscanf(in_fp, "%s %d %s %s", name, &number, id, pw); // 가입 정보 읽어오기
-                            cout << "name: " << name << " number: " << number << " id: " << id << " pw: " << pw
-                                 << endl; // 디버깅용 출력문, 가입 정보 제대로 읽어 왔는지 확인
-                            controlSignUp.getUI()->signupCompanyUser(name, number, id, pw);
+                            controlSignUp.getUI()->signupCompanyUser(out_fp, name, number, id, pw);
                             // UI를 통해 회사 회원 가입 요청, 2.signupCompanyUser()
                         } else if (signupType == 2) { // 일반 회원 가입이라면
                             fscanf(in_fp, "%s %d %s %s", name, &number, id, pw);
-                            cout << "name: " << name << " number: " << number << " id: " << id << " pw: " << pw
-                                 << endl;
-                            controlSignUp.getUI()->signupGeneralUser(name, number, id, pw);
+                            controlSignUp.getUI()->signupGeneralUser(out_fp, name, number, id, pw);
                             // UI를 통해 일반 회원 가입 요청, 2.signupGeneralUser()
-                        }
-
-                        // 정상적으로 DB에 추가되었는지 user DB 전체를 출력하는 디버깅용 출력문
-                        cout << endl << "all Users printing..." << endl << "------------------------" << endl;
-                        for (User *user: userDB.getUserList()) {
-                            cout << "Name: " << user->getName() << endl;
-                            cout << "ID: " << user->getId() << endl;
-                            cout << "Password: " << user->getPW() << "\n\n";
                         }
 
                         break;
                     }
                     case 2: {
                         //1.2. 회원탈퇴
-                        cout << "1.2. 회원 탈퇴" << endl; // 출력 양식
+                        fprintf(out_fp, "1.2. 회원 탈퇴\n");
                         Withdrawal controlWithdrawal = Withdrawal(); // Control Class 생성, 생성자를 통해 Boundary Class 생성 및 서로 레퍼런스 교환
                         if(isLogin == 0){ // 로그인이 되어 있지 않다면 탈퇴 과정 진행 불가
-                            cout << "Please log in first.\n" << endl;
+                            fprintf(out_fp, "> Please log in first.\n");
                             continue;
                         }
                         controlWithdrawal.getUI()->startInterface(); // 회원 탈퇴 인터페이스 출력, 1.startInterface()
-                        controlWithdrawal.getUI()->withdrawalUser(currentLoginUser->getId());
+                        controlWithdrawal.getUI()->withdrawalUser(out_fp, currentLoginUser->getId());
                         // UI를 통해 회원 탈퇴 요청, 2.withdrawalUser()
-
-                        // 정상적으로 DB에서 삭제되었는지 user DB 전체를 출력하는 디버깅용 출력문
-                        cout << endl << "all Users printing..." << endl << "------------------------" << endl;
-                        for (User *user: userDB.getUserList()) {
-                            cout << "Name: " << user->getName() << endl;
-                            cout << "ID: " << user->getId() << endl;
-                            cout << "Password: " << user->getPW() << "\n\n";
-                        }
 
                         break;
                     }
@@ -119,32 +98,29 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 2.1. 로그인
-                        cout << "2.1. 로그인" << endl; // 출력 양식
+                        fprintf(out_fp, "2.1. 로그인\n");
                         char id[MAX_STRING], pw[MAX_STRING]; // 로그인 입력 정보를 저장할 변수
                         fscanf(in_fp, "%s %s", id, pw); // 파일에서 로그인 정보 읽어오기
                         if(isLogin != 0){ // 이미 로그인 되어 있다면 로그인 불가능
-                            cout << "Please Logout First\n" << endl;
+                            fprintf(out_fp, "> Please Logout First\n");
                             continue;
                         }
                         LogIn controlLogin = LogIn();
                         controlLogin.getUI()->startInterface(); // Control Class 생성, 생성자를 통해 Boundary Class 생성 및 서로 레퍼런스 교환
-                        cout << "id : " << id << " pw : " << pw << endl; // 디버깅용 출력문, 로그인 정보 제대로 읽어 왔는지 확인
-                        controlLogin.getUI()->login(id, pw); // UI를 통해 로그인 요청, 2.login()
+                        controlLogin.getUI()->login(out_fp, id, pw); // UI를 통해 로그인 요청, 2.login()
                         if(currentLoginUser == nullptr){ // 로그인 실패 시
-                            cout << "Nobody Login, isLogin: " << isLogin << endl << endl; // 로그인 되어 있지 않음을 알림
-                        }else{
-                            cout << currentLoginUser->getName() << " isLogin: " << isLogin << "\n\n"; // 로그인 된 id 출력
+                            fprintf(out_fp,  "> Login Fail\n");
                         }
                         break;
                     }
                     case 2: {
                         // 2.2 로그아웃
-                        cout << "2.2. 로그아웃" << endl; // 출력 양식
+                        fprintf(out_fp, "2.2. 로그아웃\n");
                         if(isLogin){ // 로그인 되어 있지 않으면 로그아웃 불가능
                             LogOut controlLogout = LogOut(); // Control Class 생성, 생성자를 통해 Boundary Class 생성 및 서로 레퍼런스 교환
-                            controlLogout.getUI()->logout(); // UI를 통해 로그아웃 요청, 1.logout()
+                            controlLogout.getUI()->logout(out_fp); // UI를 통해 로그아웃 요청, 1.logout()
                         }else{ // 로그인 되어 있지 않은 상태
-                            cout << "You are not logged in.\n" << endl;
+                            fprintf(out_fp, "> You are not logged in.\n");
                         }
                         break;
                     }
@@ -155,20 +131,20 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 3.1 채용 정보 등록
-                        cout << "3.1. 채용 정보 등록\n";
+                        fprintf(out_fp, "3.1. 채용 정보 등록\n");
                         RegisterRecruitment registerRecruitment = RegisterRecruitment();
+                        registerRecruitment.getUI()->startInterface();
                         char task[MAX_STRING], deadLine[MAX_STRING];
                         int limitApplicantNum;
                         fscanf(in_fp, "%s %d %s", task, &limitApplicantNum, deadLine);
-                        registerRecruitment.getUI()->registerNewRecruitments(task, limitApplicantNum, deadLine);
+                        registerRecruitment.getUI()->registerNewRecruitments(out_fp, task, limitApplicantNum, deadLine);
                         break;
                     }
                     case 2: {
                         // 3.2 등록된 채용 정보 조회
-                        cout << "3.2. 등록된 채용 정보 조회\n";
+                        fprintf(out_fp, "3.2. 등록된 채용 정보 조회\n");
                         InquireCompanyRecruitments inquireCompanyRecruitments = InquireCompanyRecruitments();
-//                        cout << "make control class\n";
-                        inquireCompanyRecruitments.getUI()->inquireRecruitments();
+                        inquireCompanyRecruitments.getUI()->inquireRecruitments(out_fp);
                         break;
                     }
                 }
@@ -178,51 +154,43 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 4.1 채용 정보 검색
-                        cout << "4.1. 채용 정보 검색\n";
+                        fprintf(out_fp, "4.1. 채용 정보 검색\n");
                         SearchRecruitments controlRSearch = SearchRecruitments(); // Control Class 생성, 생성자를 통해 Boundary Class 생성 및 서로 레퍼런스 교환
                         controlRSearch.getUI()->startInterface(); // 회원 가입 인터페이스 출력, 1.startInterface()
                         char name[MAX_STRING]; // 검색 이름 저장 할 변수
                         fscanf(in_fp, "%s", name);
-
-                        // 확인용
-                        cout << "검색이름은: " << name << endl;
-
-                        controlRSearch.getUI()->searchRecruitments(name);
+                        controlRSearch.getUI()->searchRecruitments(out_fp, name);
 
                         break;
                     }
                     case 2: {
                         // 4.2 채용 지원
-                        cout << "4.2. 채용 지원\n";
+                        fprintf(out_fp, "4.2. 채용 지원\n");
                         ApplyForRecruitment controlApply = ApplyForRecruitment(); // Control Class 생성, 생성자를 통해 Boundary Class 생성 및 서로 레퍼런스 교환
                         controlApply.getUI()->startInterface(); // 회원 가입 인터페이스 출력, 1.startInterface()
                         int SSN; // 검색 사업자번호 저장 할 변수
                         fscanf(in_fp, "%d", &SSN);
-
-                        // 확인용
-                        cout << "검색 사업자번호는: " << SSN << endl;
-
-                        controlApply.getUI()->applyForRecruitment(SSN);
+                        controlApply.getUI()->applyForRecruitment(out_fp, SSN);
 
                         break;
                     }
                     case 3: {
                         // 4.3 지원 정보 조회
-                        cout << "4.3. 지원 정보 조회\n";
+                        fprintf(out_fp, "4.3. 지원 정보 조회\n");
                         if(isLogin == 0) break;
                         ViewJobApplications viewJobApplications = ViewJobApplications();
-                        viewJobApplications.getUI()->showJobApplication();
+                        viewJobApplications.getUI()->showJobApplication(out_fp);
                         break;
                     }
                     case 4: {
                         // 4.4 지원 취소
-                        cout << "4.4. 지원 취소\n";
+                        fprintf(out_fp, "4.4. 지원 취소\n");
                         if(isLogin == 0) break;
                         CancelJobApplication cancelJobApplication = CancelJobApplication();
                         cancelJobApplication.getUI()->startInterface(); // 해당 과제에서는 미구현
                         int SSN;
                         fscanf(in_fp, "%d ", &SSN); // 사업자번호 읽어오기
-                        cancelJobApplication.getUI()->cancelJobApplication(SSN);
+                        cancelJobApplication.getUI()->cancelJobApplication(out_fp, SSN);
                         break;
                     }
                 }
@@ -232,16 +200,13 @@ void doTask() {
                 switch (menu_level_2) {
                     case 1: {
                         // 5.1 지원 정보 통계
-                        cout << "5.1. 지원 정보 통계\n";
+                        fprintf(out_fp, "5.1. 지원 정보 통계\n");
                         if(isLogin == 1) {  // 회사 유저
-                            cout << "회사유저통계\n";
                             ViewRecruitmentStatistics viewRecruitmentStatistics = ViewRecruitmentStatistics();
-                            viewRecruitmentStatistics.getUI()->showStatistics();
+                            viewRecruitmentStatistics.getUI()->showStatistics(out_fp);
                         } else if(isLogin == 2) { // 일반 유저
-                            cout << "일반유저통계\n";
                             ViewJobApplicationStatistics viewJobApplicationStatistics = ViewJobApplicationStatistics();
-                            viewJobApplicationStatistics.getUI()->showStatistics();
-                            cout << "일반유저통계 정상종료\n";
+                            viewJobApplicationStatistics.getUI()->showStatistics(out_fp);
                         }
                         break;
                     }
@@ -250,16 +215,16 @@ void doTask() {
             }
             case 6: {
                 switch (menu_level_2) {
-                    case 1: // "6.1. 종료“ 메뉴 부분
+                    case 1: // 6.1. 종료
                     {
-//                        fprintf(out_fp, "6.1. 종료\n");
-                        cout << "6.1 종료"<<endl;
+                        fprintf(out_fp, "6.1. 종료\n");
                         is_program_exit = 1;
                         break;
                     }
                 }
             }
         }
+        fprintf(out_fp, "\n");
     }
     return;
 }

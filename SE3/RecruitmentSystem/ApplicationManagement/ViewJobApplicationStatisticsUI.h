@@ -16,7 +16,7 @@ private:
     ViewJobApplicationStatistics* viewJobApplicationStatisticsControl;
 public:
     ViewJobApplicationStatisticsUI(ViewJobApplicationStatistics* viewJobApplicationStatistics);
-    void showStatistics();
+    void showStatistics(FILE* fp);
     ViewJobApplicationStatistics* getControl();
 };
 

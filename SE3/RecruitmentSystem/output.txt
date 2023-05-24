@@ -1,0 +1,84 @@
+1.1. 회원가입
+> 2 hankook 3456 hk pwd1
+
+1.1. 회원가입
+> 2 company 1234 cp pwd4
+
+1.1. 회원가입
+> 2 yeongbin 9902 yb pwd2
+
+1.1. 회원가입
+> The same id exists.
+
+2.1. 로그인
+> hk pwd1
+
+3.1. 채용 정보 등록
+> accounting 2 2023/05/26
+
+3.1. 채용 정보 등록
+> testing 5 2023/08/26
+
+3.2. 등록된 채용 정보 조회
+> testing 5 2023/08/26
+> accounting 2 2023/05/26
+
+2.2. 로그아웃
+> hk
+
+2.1. 로그인
+> cp pwd4
+
+3.1. 채용 정보 등록
+> testing 20 2023/07/26
+
+2.2. 로그아웃
+> cp
+
+2.1. 로그인
+> yb pwd2
+
+4.1. 채용 정보 검색
+> hankook 3456 testing 5 2023/08/26
+> hankook 3456 accounting 2 2023/05/26
+
+4.2. 채용 지원
+> hankook 3456 testing
+
+4.1. 채용 정보 검색
+> company 1234 testing 20 2023/07/26
+
+4.2. 채용 지원
+> company 1234 testing
+
+4.3. 지원 정보 조회
+> company 1234 testing 20 2023/07/26
+  hankook 3456 testing 5 2023/08/26
+
+4.4. 지원 취소
+> hankook 3456 testing
+
+4.3. 지원 정보 조회
+> company 1234 testing 20 2023/07/26
+
+4.2. 채용 지원
+> hankook 3456 testing
+
+5.1. 지원 정보 통계
+> testing 2
+
+1.2. 회원 탈퇴
+> yb
+
+2.1. 로그인
+> hk pwd1
+
+5.1. 지원 정보 통계
+> accounting 0
+> testing 1
+
+1.2. 회원 탈퇴
+> hk
+
+6.1. 종료
+

@@ -27,6 +27,7 @@ using namespace std;
 // 함수 선언
 void doTask();
 
+void program_exit();
 
 // 변수 선언
 FILE* in_fp, * out_fp;
@@ -50,7 +51,7 @@ void doTask() {
 
     while (!is_program_exit) {
         // 입력파일에서 메뉴 숫자 2개를 읽기
-        cout << "기능 읽어오기\n";
+//        cout << "기능 읽어오기\n";
         fscanf(in_fp, "%d %d ", &menu_level_1, &menu_level_2);
 
         // 메뉴 구분 및 해당 연산 수행
@@ -59,7 +60,7 @@ void doTask() {
             switch (menu_level_2) {
             case 1: // "1.1. 회원가입“ 메뉴 부분
             {
-                cout << "1.1. 회원가입" << endl; // 출력 양식
+                fprintf(out_fp, "%s", "1.1. 회원가입\n");
                 SignUp controlSignUp = SignUp(); // Control Class 생성, 생성자를 통해 Boundary Class 생성 및 서로 레퍼런스 교환
                 controlSignUp.getUI()->startInterface(); // 회원 가입 인터페이스 출력, 1.startInterface()
                 int signupType, number; // 회사 회원 가입인지 일반 회원 가입인지 판단 하는 flag 변수
@@ -67,32 +68,20 @@ void doTask() {
                 fscanf(in_fp, "%d ", &signupType); // 가입 유형 읽어오기
                 if (signupType == 1) { // 회사 회원 가입이라면
                     fscanf(in_fp, "%s %d %s %s", name, &number, id, pw); // 가입 정보 읽어오기
-                    cout << "name: " << name << " number: " << number << " id: " << id << " pw: " << pw
-                        << endl; // 디버깅용 출력문, 가입 정보 제대로 읽어 왔는지 확인
                     controlSignUp.getUI()->signupCompanyUser(name, number, id, pw);
                     // UI를 통해 회사 회원 가입 요청, 2.signupCompanyUser()
                 }
                 else if (signupType == 2) { // 일반 회원 가입이라면
                     fscanf(in_fp, "%s %d %s %s", name, &number, id, pw);
-                    cout << "name: " << name << " number: " << number << " id: " << id << " pw: " << pw
-                        << endl;
                     controlSignUp.getUI()->signupGeneralUser(name, number, id, pw);
                     // UI를 통해 일반 회원 가입 요청, 2.signupGeneralUser()
-                }
-
-                // 정상적으로 DB에 추가되었는지 user DB 전체를 출력하는 디버깅용 출력문
-                cout << endl << "all Users printing..." << endl << "------------------------" << endl;
-                for (User* user : userDB.getUserList()) {
-                    cout << "Name: " << user->getName() << endl;
-                    cout << "ID: " << user->getId() << endl;
-                    cout << "Password: " << user->getPW() << "\n\n";
                 }
 
                 break;
             }
             case 2: {
                 //1.2. 회원탈퇴
-                cout << "1.2. 회원 탈퇴" << endl; // 출력 양식
+                fprintf(out_fp, "%s", "1.2. 회원 탈퇴\n");
                 Withdrawal controlWithdrawal = Withdrawal(); // Control Class 생성, 생성자를 통해 Boundary Class 생성 및 서로 레퍼런스 교환
                 if (isLogin == 0) { // 로그인이 되어 있지 않다면 탈퇴 과정 진행 불가
                     cout << "Please log in first.\n" << endl;
@@ -101,14 +90,6 @@ void doTask() {
                 controlWithdrawal.getUI()->startInterface(); // 회원 탈퇴 인터페이스 출력, 1.startInterface()
                 controlWithdrawal.getUI()->withdrawalUser(currentLoginUser->getId());
                 // UI를 통해 회원 탈퇴 요청, 2.withdrawalUser()
-
-                // 정상적으로 DB에서 삭제되었는지 user DB 전체를 출력하는 디버깅용 출력문
-                cout << endl << "all Users printing..." << endl << "------------------------" << endl;
-                for (User* user : userDB.getUserList()) {
-                    cout << "Name: " << user->getName() << endl;
-                    cout << "ID: " << user->getId() << endl;
-                    cout << "Password: " << user->getPW() << "\n\n";
-                }
 
                 break;
             }
@@ -119,7 +100,7 @@ void doTask() {
             switch (menu_level_2) {
             case 1: {
                 // 2.1. 로그인
-                cout << "2.1. 로그인" << endl; // 출력 양식
+                fprintf(out_fp, "%s", "2.1. 로그인\n");
                 char id[MAX_STRING], pw[MAX_STRING]; // 로그인 입력 정보를 저장할 변수
                 fscanf(in_fp, "%s %s", id, pw); // 파일에서 로그인 정보 읽어오기
                 if (isLogin != 0) { // 이미 로그인 되어 있다면 로그인 불가능

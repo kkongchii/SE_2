@@ -12,15 +12,14 @@ ApplyForRecruitmentUI::ApplyForRecruitmentUI(ApplyForRecruitment* applyforrecrui
 }
 
 void ApplyForRecruitmentUI::startInterface() {
-    cout << "start Interface" << endl;
     // UI를 출력
 }
 
-void ApplyForRecruitmentUI::applyForRecruitment(int SSN) {
-    tuple<string, int, string> applyforprint = applyForRecruitmentControl->addNewJobApplication(SSN);
+void ApplyForRecruitmentUI::applyForRecruitment(FILE *fp, int SSN) {
+    tuple<string, int, string> applyForPrint = applyForRecruitmentControl->addNewJobApplication(SSN);
 
     // 확인용
-    cout << get<0>(applyforprint) << ' ' << get<1>(applyforprint) << ' ' << get<2>(applyforprint) << endl;
+    fprintf(fp, "> %s %d %s\n", get<0>(applyForPrint).c_str(), get<1>(applyForPrint), get<2>(applyForPrint).c_str());
 }
 
 ApplyForRecruitment* ApplyForRecruitmentUI::getControl() {

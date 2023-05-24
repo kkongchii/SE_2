@@ -14,7 +14,7 @@ private:
     ViewJobApplications* viewJobApplicationsControl;
 public:
     ViewJobApplicationsUI(ViewJobApplications* viewJobApplicationsControl);
-    void showJobApplication();
+    void showJobApplication(FILE* fp);
     ViewJobApplications* getControl();
 };
 

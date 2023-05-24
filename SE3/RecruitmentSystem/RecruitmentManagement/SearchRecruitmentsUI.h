@@ -16,7 +16,7 @@ private:
 public:
 	SearchRecruitmentsUI(SearchRecruitments* searchRecruitmentsControl);
 	void startInterface(); // interface 출력
-	void searchRecruitments(string companyName); // 회사 이름으로 검색
+	void searchRecruitments(FILE* fp, string companyName); // 회사 이름으로 검색
 	SearchRecruitments* getControl();
 };
 

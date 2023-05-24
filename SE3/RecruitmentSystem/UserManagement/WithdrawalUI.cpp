@@ -9,15 +9,13 @@ WithdrawalUI::WithdrawalUI(Withdrawal *withdrawalControl) {
 }
 
 void WithdrawalUI::startInterface() {
-    cout << "start Interface" << endl;
     // 탈퇴 여부를 입력받는 withdrawal UI를 출력
     // 해당 과제에서는 미구현
 }
 
-void WithdrawalUI::withdrawalUser(string id) {
+void WithdrawalUI::withdrawalUser(FILE *fp, string id) {
     this->withdrawalControl->deleteUser(id); // Control Class에 회원 삭제 요청, 2.1.deleteUser()
-    cout << "User " << id << " have successfully withdrawn.\n" << endl; // 디버깅용 출력문
-    cout << "> " << id << endl; // 출력 양식
+    fprintf(fp, "> %s\n", id.c_str());
 }
 
 Withdrawal *WithdrawalUI::getContol() {

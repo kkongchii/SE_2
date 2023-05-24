@@ -7,11 +7,11 @@ ViewRecruitmentStatisticsUI::ViewRecruitmentStatisticsUI(ViewRecruitmentStatisti
     this->viewRecruitmentStatisticsControl = viewRecruitmentStatistics;
 }
 
-void ViewRecruitmentStatisticsUI::showStatistics() {
+void ViewRecruitmentStatisticsUI::showStatistics(FILE *fp) {
     vector<pair<string, int>> recruitmentStatistics = this->viewRecruitmentStatisticsControl->showRecruitmentStatistics();
 
     for(auto it = recruitmentStatistics.begin(); it != recruitmentStatistics.end(); it++) {
-        printf("> %s %d\n",
+        fprintf(fp, "> %s %d\n",
                (*it).first.c_str(),
                (*it).second);
     }

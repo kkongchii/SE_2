@@ -19,6 +19,8 @@ RegisterRecruitmentsUI *RegisterRecruitment::getUI() {
 }
 
 
+
+
 #endif //USERMANAGEMENT_REGISTERRECRUITMENT_CPP
 
 
