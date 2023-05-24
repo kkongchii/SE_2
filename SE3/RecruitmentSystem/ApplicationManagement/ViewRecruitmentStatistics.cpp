@@ -19,7 +19,6 @@ vector<pair<string,int>> ViewRecruitmentStatistics::showRecruitmentStatistics() 
         string task = get<2>(recruitment->getRecruitmentDetails());
         taskList.push_back(task);
         countTask[task] += get<5>(recruitment->getRecruitmentDetails());
-        cout << "countTask 추가했음\n";
     }
 
     vector<pair<string, int>> recruitmentStatistics;

@@ -3,7 +3,6 @@
 #include "RecruitmentList.h"
 
 bool compareByDeadline(Recruitment *a, Recruitment *b) {
-    cout << "compare\n";
     return a->getDeadline() > b->getDeadline();
 }
 

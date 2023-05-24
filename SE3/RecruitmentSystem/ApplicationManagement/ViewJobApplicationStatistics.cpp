@@ -10,7 +10,6 @@ ViewJobApplicationStatistics::ViewJobApplicationStatistics() {
 
 vector<pair<string, int>> ViewJobApplicationStatistics::showJobApplicationStatistics() {
     extern User* currentLoginUser;
-    cout << "showJobApplication\n";
 
     vector<Recruitment*> jobApplicationList = ((GeneralUser*) currentLoginUser)->getOwnJobApplicationList()->getJobApplicationList();
     
@@ -20,7 +19,6 @@ vector<pair<string, int>> ViewJobApplicationStatistics::showJobApplicationStatis
         string task = get<2>(jobApplication->getRecruitmentDetails());
         taskList.push_back(task);
         countTask[task] += get<5>(jobApplication->getRecruitmentDetails());
-        cout << "countTask 추가했음\n";
     }
 
     vector<pair<string, int>> jobApplicationStatistics;
