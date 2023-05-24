@@ -8,10 +8,10 @@ InquireCompanyRecruitments::InquireCompanyRecruitments() {
     this->inquireCompanyRecruitmentsUI = new InquireCompanyRecruitmentsUI(this);
 }
 
-vector<tuple<string, int, string, int, string>> InquireCompanyRecruitments::showRecruitments() {
+vector<tuple<string, int, string, int, string, int>> InquireCompanyRecruitments::showRecruitments() {
     extern User* currentLoginUser;
     vector<Recruitment*> recruitmentList = ((CompanyUser*) currentLoginUser)->getOwnRecruitmentList()->getRecruitmentList();
-    vector<tuple<string, int, string, int, string>> recruitmentDetails;
+    vector<tuple<string, int, string, int, string, int>> recruitmentDetails;
 
     for(const auto& recruitment: recruitmentList){
         recruitmentDetails.push_back(recruitment->getRecruitmentDetails());
@@ -23,7 +23,6 @@ vector<tuple<string, int, string, int, string>> InquireCompanyRecruitments::show
 }
 
 InquireCompanyRecruitmentsUI *InquireCompanyRecruitments::getUI() {
-    cout << "get UI\n";
     return this->inquireCompanyRecruitmentsUI;
 }
 

@@ -17,7 +17,7 @@ private:
     InquireCompanyRecruitmentsUI* inquireCompanyRecruitmentsUI;
 public:
     InquireCompanyRecruitments();
-    vector<tuple<string, int, string, int, string>> showRecruitments();
+    vector<tuple<string, int, string, int, string, int>> showRecruitments();
     InquireCompanyRecruitmentsUI* getUI();
 };
 

@@ -10,8 +10,7 @@ InquireCompanyRecruitmentsUI::InquireCompanyRecruitmentsUI(
 }
 
 void InquireCompanyRecruitmentsUI::inquireRecruitments() {
-    vector<tuple<string, int, string, int, string>> list = this->inquireCompanyRecruitmentsControl->showRecruitments();
-    cout << "get Recruitment List" << endl;
+    vector<tuple<string, int, string, int, string, int>> list = this->inquireCompanyRecruitmentsControl->showRecruitments();
     for(const auto& detail : list){
         cout << get<2>(detail) << " " << get<3>(detail) << " " << get<4>(detail) << endl;
     }

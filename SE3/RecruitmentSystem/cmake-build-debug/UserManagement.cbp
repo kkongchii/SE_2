@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="UserManagement"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="UserManagement">
+				<Option output="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/UserManagement.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/."/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/mingw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 UserManagement"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="UserManagement/fast">
+				<Option output="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/UserManagement.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/."/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/mingw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 UserManagement/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/CancelJobApplication.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/CancelJobApplication.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/CancelJobApplicationUI.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/CancelJobApplicationUI.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/ViewJobApplicationStatistics.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/ViewJobApplicationStatistics.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/ViewJobApplicationStatisticsUI.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/ViewJobApplicationStatisticsUI.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/ViewJobApplications.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/ViewJobApplications.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/ViewJobApplicationsUI.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/ViewJobApplicationsUI.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/ViewRecruitmentStatistics.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/ViewRecruitmentStatistics.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/ViewRecruitmentStatisticsUI.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/ViewRecruitmentStatisticsUI.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/ApplyForRecruitment.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/ApplyForRecruitment.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/ApplyForRecruitmentUI.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/ApplyForRecruitmentUI.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/InquireCompanyRecruitments.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/InquireCompanyRecruitments.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/InquireCompanyRecruitmentsUI.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/InquireCompanyRecruitmentsUI.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/RegisterRecruitment.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/RegisterRecruitment.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/RegisterRecruitmentsUI.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/RegisterRecruitmentsUI.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/SearchRecruitments.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/SearchRecruitments.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/SearchRecruitmentsUI.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/SearchRecruitmentsUI.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/LogIn.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/LogInUI.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/LogOut.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/LogOut.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/LogOutUI.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/LogOutUI.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/Login.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/Login.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/LoginUI.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/LoginUI.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/SignUp.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/SignUp.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/SignUpUI.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/SignUpUI.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/Withdrawal.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/Withdrawal.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/WithdrawalUI.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/WithdrawalUI.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/GeneralUser.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/GeneralUser.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/JobApplicationList.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/JobApplicationList.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/Recruitment.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/Recruitment.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/RecruitmentList.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/RecruitmentList.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/User.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/User.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/UserList.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/UserList.h">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/main.cpp">
+			<Option target="UserManagement"/>
+		</Unit>
+		<Unit filename="C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -7,6 +7,7 @@ Recruitment::Recruitment(string task, int limitApplicantNum, string deadline, Co
     this->limitApplicantNum = limitApplicantNum;
     this->deadline = deadline;
     this->companyUser = companyUser;
+    this->applicantNum = 0;
 }
 
 // Recruitment의 전체 멤버변수에 대한 Getter
@@ -15,7 +16,8 @@ Recruitment::Recruitment(string task, int limitApplicantNum, string deadline, Co
 // [2] string task,
 // [3] int limitApplicantNum,
 // [4] string deadline
-tuple<string, int, string, int, string> Recruitment::getRecruitmentDetails() {
+// [5] applicantNum
+tuple<string, int, string, int, string, int> Recruitment::getRecruitmentDetails() {
     string companyName; int SSN;
     tie(companyName, SSN) = this->companyUser->getCompanyUserDetails();
 
@@ -24,8 +26,21 @@ tuple<string, int, string, int, string> Recruitment::getRecruitmentDetails() {
         SSN,
         this->task,
         this->limitApplicantNum,
-        this->deadline
+        this->deadline,
+        this->applicantNum
     };
+}
+
+string Recruitment::getDeadline() {
+    return this->deadline;
+}
+
+int Recruitment::getApplicantNum() {
+    return this->applicantNum;
+}
+
+void Recruitment::setApplicantNum(int num) {
+    this->applicantNum = num;
 }
 
 #endif //USERMANAGEMENT_RECRUITMENT_CPP

@@ -4,6 +4,7 @@
 #include <string>
 #include <tuple>
 #include <vector>
+#include <algorithm>
 #include "Recruitment.h"
 using namespace std;
 
@@ -14,6 +15,7 @@ private:
     vector<Recruitment*> ownedRecruitment;
 public:
     void addNewRecruitment(string task, int limitApplicantNum, string deadline);
+//    bool compareByDeadline(Recruitment* a, Recruitment* b);
     vector<Recruitment*> getRecruitmentList();
 };
 

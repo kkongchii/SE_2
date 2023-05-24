@@ -10,31 +10,22 @@ ViewJobApplicationStatistics::ViewJobApplicationStatistics() {
 
 vector<pair<string, int>> ViewJobApplicationStatistics::showJobApplicationStatistics() {
     extern User* currentLoginUser;
+    cout << "showJobApplication\n";
 
     vector<Recruitment*> jobApplicationList = ((GeneralUser*) currentLoginUser)->getOwnJobApplicationList()->getJobApplicationList();
     
     vector<string> taskList;
     map<string, int> countTask;
-    bool flag;
-    for(auto it = jobApplicationList.begin(); it != jobApplicationList.end(); it++) {
-        string task = get<2>((*it)->getRecruitmentDetails());
-        flag = false;
-        for(int i = 0; i < taskList.size(); i++) {
-            if(taskList[i] == task) {
-                countTask[task]++;
-                flag = true;
-                break;
-            }
-        }
-        if(!flag) {
-            countTask.insert({task, 0});
-            taskList.push_back(task);
-        }
+    for(const auto& jobApplication : jobApplicationList) {
+        string task = get<2>(jobApplication->getRecruitmentDetails());
+        taskList.push_back(task);
+        countTask[task] += get<5>(jobApplication->getRecruitmentDetails());
+        cout << "countTask 추가했음\n";
     }
 
     vector<pair<string, int>> jobApplicationStatistics;
-    for(auto it = taskList.begin(); it != taskList.end(); it++) {
-        jobApplicationStatistics.push_back({(*it), countTask[(*it)]});
+    for(const auto& count : countTask) {
+        jobApplicationStatistics.push_back(make_pair(count.first, count.second));
     }
 
     return jobApplicationStatistics;

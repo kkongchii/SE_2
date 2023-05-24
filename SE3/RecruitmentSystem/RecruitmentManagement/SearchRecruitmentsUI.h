@@ -12,9 +12,9 @@ class SearchRecruitments;
 class SearchRecruitmentsUI
 {
 private:
-	SearchRecruitments* searchrecruitmentsControl;
+	SearchRecruitments* searchRecruitmentsControl;
 public:
-	SearchRecruitmentsUI(SearchRecruitments* searchrecruitmentsControl);
+	SearchRecruitmentsUI(SearchRecruitments* searchRecruitmentsControl);
 	void startInterface(); // interface 출력
 	void searchRecruitments(string companyName); // 회사 이름으로 검색
 	SearchRecruitments* getControl();

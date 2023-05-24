@@ -11,16 +11,10 @@ ViewJobApplicationStatisticsUI::ViewJobApplicationStatisticsUI(ViewJobApplicatio
 void ViewJobApplicationStatisticsUI::showStatistics() {
     vector<pair<string, int>> jobApplicationStatistics = this->viewJobApplicationStatisticsControl->showJobApplicationStatistics();
 
-    for(auto it = jobApplicationStatistics.begin(); it != jobApplicationStatistics.end(); it++) {
-        if(it == jobApplicationStatistics.begin()) {
-            printf("> %s %d",
-                (*it).first.c_str(),
-                (*it).second);
-        } else {
-            printf("  %s %d",
-                (*it).first.c_str(),
-                (*it).second);
-        }
+    for (const auto &jobApplication: jobApplicationStatistics) {
+        printf("> %s %d\n",
+               jobApplication.first.c_str(),
+               jobApplication.second);
     }
 }
 

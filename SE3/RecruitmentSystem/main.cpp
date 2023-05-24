@@ -22,7 +22,7 @@ using namespace std;
 // 상수 선언
 #define MAX_STRING 32
 #define INPUT_FILE_NAME "../input.txt"
-#define OUTPUT_FILE_NAME "output.txt"
+#define OUTPUT_FILE_NAME "../output.txt"
 
 // 함수 선언
 void doTask();
@@ -51,6 +51,7 @@ void doTask() {
 
     while (!is_program_exit) {
         // 입력파일에서 메뉴 숫자 2개를 읽기
+        cout << "기능 읽어오기\n";
         fscanf(in_fp, "%d %d ", &menu_level_1, &menu_level_2);
 
         // 메뉴 구분 및 해당 연산 수행
@@ -166,7 +167,7 @@ void doTask() {
                         // 3.2 등록된 채용 정보 조회
                         cout << "3.2. 등록된 채용 정보 조회\n";
                         InquireCompanyRecruitments inquireCompanyRecruitments = InquireCompanyRecruitments();
-                        cout << "make control class\n";
+//                        cout << "make control class\n";
                         inquireCompanyRecruitments.getUI()->inquireRecruitments();
                         break;
                     }
@@ -207,7 +208,7 @@ void doTask() {
                     }
                     case 3: {
                         // 4.3 지원 정보 조회
-                        cout << "4.1. 지원 정보 조회\n";
+                        cout << "4.3. 지원 정보 조회\n";
                         if(isLogin == 0) break;
                         ViewJobApplications viewJobApplications = ViewJobApplications();
                         viewJobApplications.getUI()->showJobApplication();
@@ -230,18 +231,22 @@ void doTask() {
             case 5: {
                 switch (menu_level_2) {
                     case 1: {
-                        // 4.1 지원 정보 통계
+                        // 5.1 지원 정보 통계
                         cout << "5.1. 지원 정보 통계\n";
                         if(isLogin == 1) {  // 회사 유저
+                            cout << "회사유저통계\n";
                             ViewRecruitmentStatistics viewRecruitmentStatistics = ViewRecruitmentStatistics();
                             viewRecruitmentStatistics.getUI()->showStatistics();
                         } else if(isLogin == 2) { // 일반 유저
+                            cout << "일반유저통계\n";
                             ViewJobApplicationStatistics viewJobApplicationStatistics = ViewJobApplicationStatistics();
                             viewJobApplicationStatistics.getUI()->showStatistics();
+                            cout << "일반유저통계 정상종료\n";
                         }
                         break;
                     }
                 }
+                break;
             }
             case 6: {
                 switch (menu_level_2) {

@@ -4,6 +4,7 @@
 
 
 #include <iostream>
+#include <string>
 #include "SearchRecruitmentsUI.h"
 #include "entity/Recruitment.h"
 
@@ -12,10 +13,10 @@ class SearchRecruitmentsUI;
 
 class SearchRecruitments {
 private:
-    SearchRecruitmentsUI* searchrecruitmentsUI;
+    SearchRecruitmentsUI* searchRecruitmentsUI;
 public:
     SearchRecruitments();
-    vector<tuple<string, int, string, int, string>> showRecruitment(string companyName);
+    vector<tuple<string, int, string, int, string, int>> showRecruitment(string companyName);
     SearchRecruitmentsUI* getUI();
 };
 

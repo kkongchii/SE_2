@@ -4,6 +4,7 @@
 
 void JobApplicationList::addJobApplication(Recruitment* recruitment) {
     this->ownedJobApplication.push_back(recruitment);
+    recruitment->setApplicantNum(recruitment->getApplicantNum()+1);
 }
 
 vector<Recruitment*> JobApplicationList::getJobApplicationList() {

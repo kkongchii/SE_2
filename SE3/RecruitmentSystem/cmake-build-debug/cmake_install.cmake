@@ -1,4 +1,4 @@
-# Install script for directory: C:/Develop/4-1/SE_team2/SE_2/SE3/RecruitmentSystem
+# Install script for directory: C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Develop/4-1/SE_team2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -16,7 +16,7 @@ void CancelJobApplicationUI::startInterface() {
 void CancelJobApplicationUI::cancelJobApplication(int SSN) {
     tuple<string, int, string> canceledJobApplication = this->cancelJobApplicationControl->dropJobApplication(SSN);
 
-    printf("> %s %d %s",
+    printf("> %s %d %s\n",
         get<0>(canceledJobApplication).c_str(),
         get<1>(canceledJobApplication),
         get<2>(canceledJobApplication).c_str()

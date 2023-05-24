@@ -7,11 +7,11 @@
 #include "entity/RecruitmentList.h"
 
 SearchRecruitments::SearchRecruitments() {
-    this->searchrecruitmentsUI = new SearchRecruitmentsUI(this);
+    this->searchRecruitmentsUI = new SearchRecruitmentsUI(this);
     // 레퍼런스 교환
 }
 
-vector<tuple<string, int, string, int, string>> SearchRecruitments::showRecruitment(string companyName) {
+vector<tuple<std::string, int, std::string, int, std::string, int>> SearchRecruitments::showRecruitment(string companyName) {
     extern UserList userDB; // main 함수에 선언 된 userDB 사용
     User* searchedUser = userDB.getSpecificUserByName(companyName); // 반환값이 User*
     CompanyUser* searchedCUser = (CompanyUser*)searchedUser; // RecruitmentList를 가져오기 위해 CompanyUser로 // 2.1.1
@@ -23,15 +23,15 @@ vector<tuple<string, int, string, int, string>> SearchRecruitments::showRecruitm
     // test case에서 하나만 등록하고 추가적인 등록은 없을 것으로 보인다
     // 오류가 날 경우 그냥 tuple 하나만 return하도록 변경하면 될 것 같다
     
-    vector<tuple<string, int, string, int, string>> recruitment;
+    vector<tuple<string, int, string, int, string, int>> recruitmentDetail;
 
-    for (int i = 0; i < searchedRList.size(); i++) {
-        recruitment.push_back(searchedRList[i]->getRecruitmentDetails()); // 2.1.3
+    for (const auto& recruitment : searchedRList) {
+        recruitmentDetail.push_back(recruitment->getRecruitmentDetails()); // 2.1.3
     }
-    return recruitment;
+    return recruitmentDetail;
 }
 SearchRecruitmentsUI* SearchRecruitments::getUI() {
-    return this->searchrecruitmentsUI;
+    return this->searchRecruitmentsUI;
 }
 
 #endif //USERMANAGEMENT_SEARCHRECRUITMENTS_CPP

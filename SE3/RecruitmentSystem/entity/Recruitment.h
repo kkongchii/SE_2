@@ -15,6 +15,7 @@ private:
     string task;
     int limitApplicantNum;
     string deadline;
+    int applicantNum;
     CompanyUser* companyUser;
 public:
     Recruitment(string task, int limitApplicantNum, string deadline, CompanyUser* companyUser); // Recruitment Class 생성자
@@ -25,7 +26,10 @@ public:
     // [2] string task,
     // [3] int limitApplicantNum,
     // [4] string deadline
-    tuple<string, int, string, int, string> getRecruitmentDetails();
+    tuple<string, int, string, int, string, int> getRecruitmentDetails();
+    string getDeadline();
+    int getApplicantNum();
+    void setApplicantNum(int num);
 };
 
 

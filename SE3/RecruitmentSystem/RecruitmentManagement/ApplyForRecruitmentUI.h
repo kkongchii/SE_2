@@ -11,9 +11,9 @@ class ApplyForRecruitment;
 
 class ApplyForRecruitmentUI {
 private:
-	ApplyForRecruitment* applyforrecruitmentControl;
+	ApplyForRecruitment* applyForRecruitmentControl;
 public:
-	ApplyForRecruitmentUI(ApplyForRecruitment* applyforrecruitmentControl);
+	ApplyForRecruitmentUI(ApplyForRecruitment* applyForRecruitmentControl);
 	void startInterface(); // interface 출력
 	void applyForRecruitment(int SSN); // 사업자번호로 검색
 	ApplyForRecruitment* getControl();

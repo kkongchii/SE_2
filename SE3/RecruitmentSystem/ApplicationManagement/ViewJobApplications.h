@@ -18,7 +18,7 @@ private:
     ViewJobApplicationsUI* viewJobApplicationsUI;
 public:
     ViewJobApplications();
-    vector<tuple<string, int, string, int, string>> showUsersJobApplication();
+    vector<tuple<string, int, string, int, string, int>> showUsersJobApplication();
     ViewJobApplicationsUI* getUI();
 };
 

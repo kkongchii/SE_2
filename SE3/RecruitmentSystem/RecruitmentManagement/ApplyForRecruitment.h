@@ -11,7 +11,7 @@ class ApplyForRecruitmentUI;
 
 class ApplyForRecruitment {
 private:
-	ApplyForRecruitmentUI* applyforrecruitmentUI;
+	ApplyForRecruitmentUI* applyForRecruitmentUI;
 public:
 	ApplyForRecruitment();
 	tuple <string, int, string> addNewJobApplication(int SSN); // 사업자번호로 검색
