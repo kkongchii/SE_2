@@ -12318,9 +12318,9 @@
 														"$ref": "AAAAAAGH/76v0xftcR4="
 													},
 													"font": "Arial;13;0",
-													"left": 96.45703125,
+													"left": 96.72998046875,
 													"top": 117,
-													"width": 88.140625,
+													"width": 86.2236328125,
 													"height": 13,
 													"text": "회사 회원 가입"
 												},
@@ -12333,7 +12333,7 @@
 													"font": "Arial;13;1",
 													"left": 77,
 													"top": 117,
-													"width": 14.45703125,
+													"width": 14.72998046875,
 													"height": 13,
 													"text": "sd"
 												}
@@ -12341,7 +12341,7 @@
 											"font": "Arial;13;0",
 											"left": 72,
 											"top": 112,
-											"width": 1041,
+											"width": 1057,
 											"height": 569,
 											"nameLabel": {
 												"$ref": "AAAAAAGH/76v0xfujWA="
@@ -14860,13 +14860,13 @@
 														"$ref": "AAAAAAGINXfJuJZFa6E="
 													},
 													"font": "Arial;15;0",
-													"left": 919.789794921875,
+													"left": 919.794677734375,
 													"top": 437,
-													"width": 183.42041015625,
+													"width": 193.41064453125,
 													"height": 15,
 													"alpha": 0,
-													"distance": 99,
-													"text": "2.1.1 : createCompanyUser"
+													"distance": 104,
+													"text": "2.1.1 : createCompanyUser()"
 												},
 												{
 													"_type": "NodeLabelView",
@@ -15006,7 +15006,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGH/76v0xfrrls="
 									},
-									"name": "createCompanyUser",
+									"name": "createCompanyUser()",
 									"source": {
 										"$ref": "AAAAAAGH/8lGHzDp8SE="
 									},
@@ -42749,9 +42749,9 @@
 														"$ref": "AAAAAAGIAGbfYFJo32Q="
 													},
 													"font": "Arial;13;0",
-													"left": 88.72998046875,
+													"left": 88.45703125,
 													"top": 197,
-													"width": 56.61181640625,
+													"width": 57.5703125,
 													"height": 13,
 													"text": "지원 취소"
 												},
@@ -42764,7 +42764,7 @@
 													"font": "Arial;13;1",
 													"left": 69,
 													"top": 197,
-													"width": 14.72998046875,
+													"width": 14.45703125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -47871,7 +47871,7 @@
 											"font": "Arial;13;0",
 											"left": 61,
 											"top": 2101,
-											"width": 548.92626953125,
+											"width": 627.5546875,
 											"height": 13,
 											"text": "«boundary»"
 										},
@@ -47884,7 +47884,7 @@
 											"font": "Arial;13;1",
 											"left": 61,
 											"top": 2116,
-											"width": 548.92626953125,
+											"width": 627.5546875,
 											"height": 13,
 											"text": "SignUpUI"
 										},
@@ -47919,7 +47919,7 @@
 									"font": "Arial;13;0",
 									"left": 56,
 									"top": 2096,
-									"width": 558.92626953125,
+									"width": 637.5546875,
 									"height": 38,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGH9rNLFNXKOzY="
@@ -47956,7 +47956,7 @@
 											"font": "Arial;13;0",
 											"left": 61,
 											"top": 2139,
-											"width": 548.92626953125,
+											"width": 627.5546875,
 											"height": 13,
 											"text": "-signupControl: Signup*",
 											"horizontalAlignment": 0
@@ -47965,7 +47965,7 @@
 									"font": "Arial;13;0",
 									"left": 56,
 									"top": 2134,
-									"width": 558.92626953125,
+									"width": 637.5546875,
 									"height": 23
 								},
 								{
@@ -47990,7 +47990,7 @@
 											"font": "Arial;13;0",
 											"left": 61,
 											"top": 2162,
-											"width": 548.92626953125,
+											"width": 627.5546875,
 											"height": 13,
 											"text": "+startInterface(): Void",
 											"horizontalAlignment": 0
@@ -48007,7 +48007,7 @@
 											"font": "Arial;13;0",
 											"left": 61,
 											"top": 2177,
-											"width": 548.92626953125,
+											"width": 627.5546875,
 											"height": 13,
 											"text": "+signupGeneralUser(name: String, personalNum: Integer, id: String, password: String): Void",
 											"horizontalAlignment": 0
@@ -48024,7 +48024,7 @@
 											"font": "Arial;13;0",
 											"left": 61,
 											"top": 2192,
-											"width": 548.92626953125,
+											"width": 627.5546875,
 											"height": 13,
 											"text": "+signupCompanyUser(name: String, companyNum: Integer, id: String, password: String): Void",
 											"horizontalAlignment": 0
@@ -48033,7 +48033,7 @@
 									"font": "Arial;13;0",
 									"left": 56,
 									"top": 2157,
-									"width": 558.92626953125,
+									"width": 637.5546875,
 									"height": 53
 								},
 								{
@@ -48073,7 +48073,7 @@
 							"containerChangeable": true,
 							"left": 56,
 							"top": 2096,
-							"width": 558.92626953125,
+							"width": 637.5546875,
 							"height": 137,
 							"nameCompartment": {
 								"$ref": "AAAAAAGH9rNLFNXJ5oI="
@@ -48799,7 +48799,7 @@
 											"font": "Arial;13;0",
 											"left": 61,
 											"top": 2269,
-											"width": 543,
+											"width": 610.9365234375,
 											"height": 13,
 											"text": "«control»"
 										},
@@ -48812,7 +48812,7 @@
 											"font": "Arial;13;1",
 											"left": 61,
 											"top": 2284,
-											"width": 543,
+											"width": 610.9365234375,
 											"height": 13,
 											"text": "SignUp"
 										},
@@ -48847,7 +48847,7 @@
 									"font": "Arial;13;0",
 									"left": 56,
 									"top": 2264,
-									"width": 553,
+									"width": 620.9365234375,
 									"height": 38,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGH9t2qsvsmDAs="
@@ -48884,7 +48884,7 @@
 											"font": "Arial;13;0",
 											"left": 61,
 											"top": 2307,
-											"width": 543,
+											"width": 610.9365234375,
 											"height": 13,
 											"text": "-signupUI: SignUpUI*",
 											"horizontalAlignment": 0
@@ -48893,7 +48893,7 @@
 									"font": "Arial;13;0",
 									"left": 56,
 									"top": 2302,
-									"width": 553,
+									"width": 620.9365234375,
 									"height": 23
 								},
 								{
@@ -48918,7 +48918,7 @@
 											"font": "Arial;13;0",
 											"left": 61,
 											"top": 2330,
-											"width": 543,
+											"width": 610.9365234375,
 											"height": 13,
 											"text": "+addGeneralUser(name: String, personalNum: Integer, id: String, password: String): Void",
 											"horizontalAlignment": 0
@@ -48935,7 +48935,7 @@
 											"font": "Arial;13;0",
 											"left": 61,
 											"top": 2345,
-											"width": 543,
+											"width": 610.9365234375,
 											"height": 13,
 											"text": "+addCompanyUser(name: String, companyNum: Integer, id: String, password: String): Void",
 											"horizontalAlignment": 0
@@ -48944,7 +48944,7 @@
 									"font": "Arial;13;0",
 									"left": 56,
 									"top": 2325,
-									"width": 553,
+									"width": 620.9365234375,
 									"height": 38
 								},
 								{
@@ -48984,7 +48984,7 @@
 							"containerChangeable": true,
 							"left": 56,
 							"top": 2264,
-							"width": 553,
+							"width": 620.9365234375,
 							"height": 137,
 							"nameCompartment": {
 								"$ref": "AAAAAAGH9t2qsvslBjw="
@@ -59128,7 +59128,8 @@
 													"_parent": {
 														"$ref": "AAAAAAGIQ7LcaVviN5w="
 													},
-													"name": "Recruitment*"
+													"name": "Recruitment*",
+													"type": ""
 												},
 												{
 													"_type": "UMLParameter",

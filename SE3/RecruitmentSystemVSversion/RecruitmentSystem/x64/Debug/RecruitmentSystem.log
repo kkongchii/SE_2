@@ -1,47 +1,33 @@
 ﻿  ApplyForRecruitment.cpp
-  ApplyForRecruitmentUI.cpp
-  CancelJobApplication.cpp
-  CancelJobApplicationUI.cpp
-  CompanyUser.cpp
-  GeneralUser.cpp
-  InquireCompanyRecruitments.cpp
-  InquireCompanyRecruitmentsUI.cpp
-  JobApplicationList.cpp
-  Login.cpp
-  LoginUI.cpp
-  LogOut.cpp
-  LogOutUI.cpp
-  main.cpp
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(38,13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(39,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(54,9): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(67,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(69,21): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(76,21): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(124,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(164,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(187,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(202,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(226,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\ApplyForRecruitment.cpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\ApplyForRecruitment.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\ApplyForRecruitmentUI.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\ApplyForRecruitment.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\Recruitment.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\CompanyUser.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\User.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\Recruitment.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\UserList.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\GeneralUser.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
   Recruitment.cpp
-  RecruitmentList.cpp
-  RegisterRecruitment.cpp
-  RegisterRecruitmentsUI.cpp
-  SearchRecruitments.cpp
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\Recruitment.cpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\Recruitment.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\CompanyUser.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\User.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\Recruitment.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
   SearchRecruitmentsUI.cpp
-  코드를 생성하고 있습니다...
-  컴파일하고 있습니다...
-  SignUp.cpp
-  SignUpUI.cpp
-  User.cpp
-  UserList.cpp
-  ViewJobApplications.cpp
-  ViewJobApplicationStatistics.cpp
-  ViewJobApplicationStatisticsUI.cpp
-  ViewJobApplicationsUI.cpp
-  ViewRecruitmentStatistics.cpp
-  ViewRecruitmentStatisticsUI.cpp
-  Withdrawal.cpp
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\SearchRecruitmentsUI.cpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\SearchRecruitmentsUI.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\SearchRecruitmentsUI.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\Recruitment.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\CompanyUser.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\User.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\Recruitment.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
   WithdrawalUI.cpp
-  코드를 생성하고 있습니다...
-  RecruitmentSystem.vcxproj -> C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\x64\Debug\RecruitmentSystem.exe
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\WithdrawalUI.cpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\WithdrawalUI.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\Withdrawal.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\WithdrawalUI.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+  Generating Code...
+  LINK : C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\x64\Debug\RecruitmentSystem.exe not found or not built by the last incremental link; performing full link
+  RecruitmentSystem.vcxproj -> C:\Users\Asus X510u\SEteam2\SE_2\SE3\RecruitmentSystemVSversion\x64\Debug\RecruitmentSystem.exe
