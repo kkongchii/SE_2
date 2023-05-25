@@ -16,7 +16,7 @@ class SignUp{
 private:
     SignUpUI* signupUI; 
 public:
-    SignUp(); 
+    SignUp();
     int addGeneralUser(string name, int personalNum, string id, string password);
     int addCompanyUser(string name, int companyNum, string id, string password);
     SignUpUI* getUI();
