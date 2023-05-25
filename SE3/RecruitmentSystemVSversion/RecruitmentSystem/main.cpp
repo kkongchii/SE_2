@@ -20,17 +20,16 @@
 
 using namespace std;
 
-// ìƒìˆ˜ ì„ ì–¸
+// »ó¼ö ¼±¾ğ
 #define MAX_STRING 32
 #define INPUT_FILE_NAME "../input.txt"
 #define OUTPUT_FILE_NAME "../output.txt"
 
-// í•¨ìˆ˜ ì„ ì–¸
+// ÇÔ¼ö ¼±¾ğ
 void doTask();
 
-void program_exit();
 
-// ë³€ìˆ˜ ì„ ì–¸
+// º¯¼ö ¼±¾ğ
 ifstream in_file;
 ofstream out_file;
 User* currentLoginUser;
@@ -60,31 +59,32 @@ int main() {
 }
 
 void doTask() {
-    // ë©”ë‰´ íŒŒì‹±ì„ ìœ„í•œ level êµ¬ë¶„ì„ ìœ„í•œ ë³€ìˆ˜
+    // ¸Ş´º ÆÄ½ÌÀ» À§ÇÑ level ±¸ºĞÀ» À§ÇÑ º¯¼ö
     int menu_level_1 = 0, menu_level_2 = 0;
     int is_program_exit = 0;
+    cout << "Å×½ºÆ®\n";
 
     while (!is_program_exit) {
-        // ì…ë ¥íŒŒì¼ì—ì„œ ë©”ë‰´ ìˆ«ì 2ê°œë¥¼ ì½ê¸°
+        // ÀÔ·ÂÆÄÀÏ¿¡¼­ ¸Ş´º ¼ıÀÚ 2°³¸¦ ÀĞ±â
         in_file >> menu_level_1 >> menu_level_2;
 
-        // ë©”ë‰´ êµ¬ë¶„ ë° í•´ë‹¹ ì—°ì‚° ìˆ˜í–‰
+        // ¸Ş´º ±¸ºĞ ¹× ÇØ´ç ¿¬»ê ¼öÇà
         switch (menu_level_1) {
         case 1: {
             switch (menu_level_2) {
-            case 1: // "1.1. íšŒì›ê°€ì…â€œ ë©”ë‰´ ë¶€ë¶„
+            case 1: // "1.1. È¸¿ø°¡ÀÔ¡° ¸Ş´º ºÎºĞ
             {
-                out_file << "1.1. íšŒì›ê°€ì…\n";
+                out_file << "1.1. È¸¿ø°¡ÀÔ\n";
                 SignUp controlSignUp = SignUp();
                 controlSignUp.getUI()->startInterface();
                 int signupType, number;
                 string name, id, pw;
                 in_file >> signupType;
-                if (signupType == 1) { // íšŒì‚¬ íšŒì› ê°€ì…ì´ë¼ë©´
+                if (signupType == 1) { // È¸»ç È¸¿ø °¡ÀÔÀÌ¶ó¸é
                     in_file >> name >> number >> id >> pw;
                     controlSignUp.getUI()->signupCompanyUser(out_file, name, number, id, pw);
                 }
-                else if (signupType == 2) { // ì¼ë°˜ íšŒì› ê°€ì…ì´ë¼ë©´
+                else if (signupType == 2) { // ÀÏ¹İ È¸¿ø °¡ÀÔÀÌ¶ó¸é
                     in_file >> name >> number >> id >> pw;
                     controlSignUp.getUI()->signupGeneralUser(out_file, name, number, id, pw);
                 }
@@ -92,8 +92,8 @@ void doTask() {
                 break;
             }
             case 2: {
-                //1.2. íšŒì›íƒˆí‡´
-                out_file << "1.2. íšŒì› íƒˆí‡´\n";
+                //1.2. È¸¿øÅ»Åğ
+                out_file << "1.2. È¸¿ø Å»Åğ\n";
                 Withdrawal controlWithdrawal = Withdrawal();
                 if (isLogin == 0) {
                     out_file << "> Please log in first.\n";
@@ -110,8 +110,8 @@ void doTask() {
         case 2: {
             switch (menu_level_2) {
             case 1: {
-                // 2.1. ë¡œê·¸ì¸
-                out_file << "2.1. ë¡œê·¸ì¸\n";
+                // 2.1. ·Î±×ÀÎ
+                out_file << "2.1. ·Î±×ÀÎ\n";
                 string id, pw;
                 in_file >> id >> pw;
                 if (isLogin != 0) {
@@ -127,8 +127,8 @@ void doTask() {
                 break;
             }
             case 2: {
-                // 2.2 ë¡œê·¸ì•„ì›ƒ
-                out_file << "2.2. ë¡œê·¸ì•„ì›ƒ\n";
+                // 2.2 ·Î±×¾Æ¿ô
+                out_file << "2.2. ·Î±×¾Æ¿ô\n";
                 if (isLogin) {
                     LogOut controlLogout = LogOut();
                     controlLogout.getUI()->logout(out_file);
@@ -144,8 +144,8 @@ void doTask() {
         case 3: {
             switch (menu_level_2) {
             case 1: {
-                // 3.1 ì±„ìš© ì •ë³´ ë“±ë¡
-                out_file << "3.1. ì±„ìš© ì •ë³´ ë“±ë¡\n";
+                // 3.1 Ã¤¿ë Á¤º¸ µî·Ï
+                out_file << "3.1. Ã¤¿ë Á¤º¸ µî·Ï\n";
                 RegisterRecruitment registerRecruitment = RegisterRecruitment();
                 registerRecruitment.getUI()->startInterface();
                 string task, deadLine;
@@ -155,8 +155,8 @@ void doTask() {
                 break;
             }
             case 2: {
-                // 3.2 ë“±ë¡ëœ ì±„ìš© ì •ë³´ ì¡°íšŒ
-                out_file << "3.2. ë“±ë¡ëœ ì±„ìš© ì •ë³´ ì¡°íšŒ\n";
+                // 3.2 µî·ÏµÈ Ã¤¿ë Á¤º¸ Á¶È¸
+                out_file << "3.2. µî·ÏµÈ Ã¤¿ë Á¤º¸ Á¶È¸\n";
                 InquireCompanyRecruitments inquireCompanyRecruitments = InquireCompanyRecruitments();
                 inquireCompanyRecruitments.getUI()->inquireRecruitments(out_file);
                 break;
@@ -167,8 +167,8 @@ void doTask() {
         case 4: {
             switch (menu_level_2) {
             case 1: {
-                // 4.1 ì±„ìš© ì •ë³´ ê²€ìƒ‰
-                out_file << "4.1. ì±„ìš© ì •ë³´ ê²€ìƒ‰\n";
+                // 4.1 Ã¤¿ë Á¤º¸ °Ë»ö
+                out_file << "4.1. Ã¤¿ë Á¤º¸ °Ë»ö\n";
                 SearchRecruitments controlRSearch = SearchRecruitments();
                 controlRSearch.getUI()->startInterface();
                 string name;
@@ -178,8 +178,8 @@ void doTask() {
                 break;
             }
             case 2: {
-                // 4.2 ì±„ìš© ì§€ì›
-                out_file << "4.2. ì±„ìš© ì§€ì›\n";
+                // 4.2 Ã¤¿ë Áö¿ø
+                out_file << "4.2. Ã¤¿ë Áö¿ø\n";
                 ApplyForRecruitment controlApply = ApplyForRecruitment();
                 controlApply.getUI()->startInterface();
                 int SSN;
@@ -189,16 +189,16 @@ void doTask() {
                 break;
             }
             case 3: {
-                // 4.3 ì§€ì› ì •ë³´ ì¡°íšŒ
-                out_file << "4.3. ì§€ì› ì •ë³´ ì¡°íšŒ\n";
+                // 4.3 Áö¿ø Á¤º¸ Á¶È¸
+                out_file << "4.3. Áö¿ø Á¤º¸ Á¶È¸\n";
                 if (isLogin == 0) break;
                 ViewJobApplications viewJobApplications = ViewJobApplications();
                 viewJobApplications.getUI()->showJobApplication(out_file);
                 break;
             }
             case 4: {
-                // 4.4 ì§€ì› ì·¨ì†Œ
-                out_file << "4.4. ì§€ì› ì·¨ì†Œ\n";
+                // 4.4 Áö¿ø Ãë¼Ò
+                out_file << "4.4. Áö¿ø Ãë¼Ò\n";
                 if (isLogin == 0) break;
                 CancelJobApplication cancelJobApplication = CancelJobApplication();
                 cancelJobApplication.getUI()->startInterface();
@@ -213,8 +213,8 @@ void doTask() {
         case 5: {
             switch (menu_level_2) {
             case 1: {
-                // 5.1 ì§€ì› ì •ë³´ í†µê³„
-                out_file << "5.1. ì§€ì› ì •ë³´ í†µê³„\n";
+                // 5.1 Áö¿ø Á¤º¸ Åë°è
+                out_file << "5.1. Áö¿ø Á¤º¸ Åë°è\n";
                 if (isLogin == 1) {
                     ViewRecruitmentStatistics viewRecruitmentStatistics = ViewRecruitmentStatistics();
                     viewRecruitmentStatistics.getUI()->showStatistics(out_file);
@@ -230,9 +230,9 @@ void doTask() {
         }
         case 6: {
             switch (menu_level_2) {
-            case 1: // 6.1. ì¢…ë£Œ
+            case 1: // 6.1. Á¾·á
             {
-                out_file << "6.1. ì¢…ë£Œ\n";
+                out_file << "6.1. Á¾·á\n";
                 is_program_exit = 1;
                 break;
             }
