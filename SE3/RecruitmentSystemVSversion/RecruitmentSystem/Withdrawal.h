@@ -6,12 +6,18 @@
 using namespace std;
 class WithdrawalUI;
 
+/*
+Class : Withdrawal
+Description: È¸¿ø Å»Åğ ±â´ÉÀ» ´ã´çÇÏ´Â Control Å¬·¡½º
+Author: ¹Ú¿µºó
+Created: 2023/05/25
+*/
 class Withdrawal{
 private:
-    WithdrawalUI* withdrawalUI; // UI Classë¥¼ ì €ì¥í•  ë³€ìˆ˜
+    WithdrawalUI* withdrawalUI;
 public:
-    Withdrawal(); // ìƒì„±ì
-    void deleteUser(string id); // UIê°€ ì´ìš©í•˜ëŠ” Controlì˜ íšŒì› íƒˆí‡´ í•¨ìˆ˜
-    WithdrawalUI* getUI(); // getter
+    Withdrawal(); 
+    void deleteUser(string id); 
+    WithdrawalUI* getUI(); 
 };
 #endif //USERMANAGEMENT_WITHDRAWAL_H

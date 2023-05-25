@@ -6,15 +6,19 @@
 using namespace std;
 class SignUpUI;
 
+/*
+Class : SignUp
+Description: È¸¿ø °¡ÀÔ ±â´ÉÀ» ´ã´çÇÏ´Â Control Å¬·¡½º
+Author: ¹Ú¿µºó
+Created: 2023/05/25
+*/
 class SignUp{
 private:
-    SignUpUI* signupUI; // UI Classë¥¼ ì €ì¥í•  ë³€ìˆ˜
+    SignUpUI* signupUI; 
 public:
-    SignUp(); // ìƒì„±ì
+    SignUp(); 
     int addGeneralUser(string name, int personalNum, string id, string password);
-    // UIê°€ ì´ìš©í•˜ëŠ” Controlì˜ ì¼ë°˜ íšŒì› ê°€ì… í•¨ìˆ˜
     int addCompanyUser(string name, int companyNum, string id, string password);
-    // UIê°€ ì´ìš©í•˜ëŠ” Controlì˜ íšŒì‚¬ íšŒì› ê°€ì… í•¨ìˆ˜
-    SignUpUI* getUI(); // getter
+    SignUpUI* getUI();
 };
 #endif //USERMANAGEMENT_SIGNUP_H

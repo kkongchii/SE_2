@@ -9,14 +9,20 @@
 using namespace std;
 class SearchRecruitments;
 
+/*
+Class : SearchRecruitmentsUI
+Description: ÀÏ¹İÈ¸¿øÀÌ È¸»çÀÌ¸§À¸·Î Ã¤¿ë Á¤º¸¸¦ °Ë»öÇÏ´Â UI Å¬·¡½º
+Author: ÀÌÁ¤¿ø
+Created: 2023/05/25
+*/
 class SearchRecruitmentsUI
 {
 private:
 	SearchRecruitments* searchRecruitmentsControl;
 public:
 	SearchRecruitmentsUI(SearchRecruitments* searchRecruitmentsControl);
-	void startInterface(); // interface ì¶œë ¥
-	void searchRecruitments(ofstream& out_file, string companyName); // íšŒì‚¬ ì´ë¦„ìœ¼ë¡œ ê²€ìƒ‰
+	void startInterface(); 
+	void searchRecruitments(ofstream& out_file, string companyName); 
 	SearchRecruitments* getControl();
 };
 

@@ -7,12 +7,18 @@
 
 class LogOutUI;
 
+/*
+Class: LogOut
+Description: ·Î±×¾Æ¿ôÀ» ´ã´çÇÏ´Â Control Å¬·¡½º
+Author: ¹Ú¿µºó
+Created: 2023/05/25
+*/
 class LogOut{
 private:
-    LogOutUI* logOutUI; // UI Classë¥¼ ì €ì¥í•  ë³€ìˆ˜
+    LogOutUI* logOutUI; 
 public:
-    LogOut(); // ìƒì„±ì
-    void userLogout(); // UIê°€ ì´ìš©í•˜ëŠ” Controlì˜ ë¡œê·¸ì•„ì›ƒ í•¨ìˆ˜
+    LogOut(); 
+    void userLogout();
     LogOutUI* getUI();
 
 };

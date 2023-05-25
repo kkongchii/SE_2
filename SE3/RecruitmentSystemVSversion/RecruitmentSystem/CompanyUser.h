@@ -10,6 +10,13 @@ using namespace std;
 
 class RecruitmentList;
 
+/*
+class : CompanyUser
+Description : 회사유저 정보를 위한 Entity 클래스
+Extends : User
+Author : 정한얼
+Created : 2022/05/25
+*/
 class CompanyUser : public User {
 private:
     int companyRegistrationNumber;
@@ -21,7 +28,6 @@ public:
     int getCompanyRegistrationNumber();
     void setCompanyRegistrationNumber(int companyNum);
     RecruitmentList* getOwnRecruitmentList();
-
     pair<string, int> getCompanyUserDetails();
 
 };

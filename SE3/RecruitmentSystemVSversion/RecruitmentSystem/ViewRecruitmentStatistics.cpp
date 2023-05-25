@@ -4,10 +4,26 @@
 
 #include "ViewRecruitmentStatistics.h"
 
+/*
+Function : ViewRecruitmentStatistics::ViewRecruitmentStatistics()
+Description : ViewRecruitmentStatistics Class 생성자, ViewRecruitmentStatisticsUI를 생성하여 해당 레퍼런스를 저장
+ReturnType : X
+Parameter : X
+Author : 정한얼
+Created : 2022/05/25
+*/
 ViewRecruitmentStatistics::ViewRecruitmentStatistics() {
     this->viewRecruitmentStatisticsUI = new ViewRecruitmentStatisticsUI(this);
 }
 
+/*
+Function : vector<pair<string, int>> ViewRecruitmentStatistics::showRecruitmentStatistics()
+Description : 회사 회원 통계 조회 기능을 수행하는 함수, 업무별 (업무, 지원자 수)를 리턴 함
+ReturnType : vector<pair<string, int>>
+Parameter : X
+Author : 정한얼
+Created : 2022/05/25
+*/
 vector<pair<string, int>> ViewRecruitmentStatistics::showRecruitmentStatistics() {
     extern User* currentLoginUser;
 
@@ -29,6 +45,14 @@ vector<pair<string, int>> ViewRecruitmentStatistics::showRecruitmentStatistics()
     return recruitmentStatistics;
 }
 
+/*
+Function : ViewRecruitmentStatisticsUI* ViewRecruitmentStatistics::getUI()
+Description : ViewRecruitmentStatisticsUI의 레퍼런스를 반환하는 Getter
+ReturnType : ViewRecruitmentStatisticsUI*
+Parameter : X
+Author : 정한얼
+Created : 2022/05/25
+*/
 ViewRecruitmentStatisticsUI* ViewRecruitmentStatistics::getUI() {
     return this->viewRecruitmentStatisticsUI;
 }

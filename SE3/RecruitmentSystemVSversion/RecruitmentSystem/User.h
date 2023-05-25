@@ -5,22 +5,33 @@
 
 using namespace std;
 
+/*
+class : User
+Description : À¯Àú Á¤º¸¸¦ À§ÇÑ Entity Å¬·¡½º
+Author : Á¤ÇÑ¾ó
+Created : 2022/05/25
+*/
 class User{
 private:
     string name;
     string id;
     string password;
 public:
-    User(string name, string id, string pw); // User Class ìƒì„±ì, ë‹¹ì¥ ì“¸ ì¼ì€ ì—†ìŒ
+    User(string name, string id, string pw); 
     virtual ~User();
-    virtual string getClassType() = 0; // ìì‹ í´ë˜ìŠ¤ì˜ íƒ€ì…ì„ íŒŒì•…í•˜ê¸° ìœ„í•´ì„œ ì„ ì–¸í•œ ê°€ìƒí•¨ìˆ˜
+    /*
+    Function : virtual User::getClassType()
+    Description : ÀÚ½Ä Å¬·¡½ºÀÇ Å¸ÀÔÀ» ÆÄ¾ÇÇÏ±â À§ÇØ¼­ ¼±¾ğÇÑ °¡»óÇÔ¼ö
+    ReturnType : string
+    Parameter : X
+    */
+    virtual string getClassType() = 0; 
     string getName();
     string getId();
     string getPW();
     void setName(string name);
     void setId(string id);
     void setPW(string id);
-    // ì´ìƒ getter, setter
 };
 
 #endif //USERMANAGEMENT_USER_H

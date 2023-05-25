@@ -9,6 +9,12 @@
 using namespace std;
 class ApplyForRecruitmentUI;
 
+/*
+Class : ApplyForRecruitment
+Description: 채용 지원을 처리하는 Control 클래스
+Author: 이정원
+Created: 2023/05/25
+*/
 class ApplyForRecruitment {
 private:
 	ApplyForRecruitmentUI* applyForRecruitmentUI;

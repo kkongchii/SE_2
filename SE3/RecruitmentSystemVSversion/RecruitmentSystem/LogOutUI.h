@@ -7,12 +7,18 @@
 using namespace std;
 class LogOut;
 
+/*
+Class: LogOutUI
+Description: ·Î±×¾Æ¿ô ±â´ÉÀÇ ÀÔÃâ·ÂÀ» ´ã´çÇÏ´Â UI Å¬·¡½º
+Author: ¹Ú¿µºó
+Created: 2023/05/25
+*/
 class LogOutUI {
 private:
-    LogOut* logoutControl; // Control Classì˜ ë ˆí¼ëŸ°ìŠ¤ë¥¼ ì €ì¥í•  ë³€ìˆ˜
+    LogOut* logoutControl; 
 public:
-    LogOutUI(LogOut* logoutControl); // ìƒì„±ìë¥¼ í†µí•´ Control Classì™€ ë ˆí¼ëŸ°ìŠ¤ êµí™˜
-    void logout(ofstream& out_file); // ì‚¬ìš©ìê°€ ì´ìš©í•˜ëŠ” UIì˜ ë¡œê·¸ì•„ì›ƒ í•¨ìˆ˜
-    LogOut* getControl(); // getter
+    LogOutUI(LogOut* logoutControl); 
+    void logout(ofstream& out_file); 
+    LogOut* getControl(); 
 };
 #endif //USERMANAGEMENT_LOGOUTUI_H

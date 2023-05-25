@@ -11,6 +11,12 @@
 using namespace std;
 class SearchRecruitmentsUI;
 
+/*
+Class : SearchRecruitments
+Description: 회사 이름으로 채용 정보 검색을 처리해주는 Control 클래스
+Author: 이정원
+Created: 2023/05/25
+*/
 class SearchRecruitments {
 private:
     SearchRecruitmentsUI* searchRecruitmentsUI;

@@ -10,12 +10,17 @@ using namespace std;
 
 class Recruitment;
 
+/*
+class : RecruitmentList
+Description : 채용 정보 리스트를 위한 Collection Entity 클래스
+Author : 정한얼
+Created : 2022/05/25
+*/
 class RecruitmentList {
 private:
     vector<Recruitment*> ownedRecruitment;
 public:
     void addNewRecruitment(string task, int limitApplicantNum, string deadline);
-//    bool compareByDeadline(Recruitment* a, Recruitment* b);
     vector<Recruitment*> getRecruitmentList();
 };
 

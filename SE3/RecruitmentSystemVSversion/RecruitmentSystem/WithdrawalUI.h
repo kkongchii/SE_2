@@ -7,14 +7,20 @@
 using namespace std;
 class Withdrawal;
 
+/*
+Class : WithdrawalUI
+Description: È¸¿ø Å»Åğ ±â´ÉÀÇ ÀÔÃâ·ÂÀ» ´ã´çÇÏ´Â UI Å¬·¡½º
+Author: ¹Ú¿µºó
+Created: 2023/05/25
+*/
 class WithdrawalUI{
 private:
-    Withdrawal* withdrawalControl; // Control Classì˜ ë ˆí¼ëŸ°ìŠ¤ë¥¼ ì €ì¥í•  ë³€ìˆ˜
+    Withdrawal* withdrawalControl; 
 
 public:
-    WithdrawalUI(Withdrawal* withdrawalControl); // ìƒì„±ìë¥¼ í†µí•´ Control Classì™€ ë ˆí¼ëŸ°ìŠ¤ êµí™˜
-    void startInterface(); // interfaceë¥¼ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜
-    void withdrawalUser(ofstream& out_file, string id);  // ì‚¬ìš©ìê°€ ì´ìš©í•˜ëŠ” UIì˜ íšŒì› íƒˆí‡´ í•¨ìˆ˜
-    Withdrawal* getContol(); // getter
+    WithdrawalUI(Withdrawal* withdrawalControl); 
+    void startInterface();
+    void withdrawalUser(ofstream& out_file, string id); 
+    Withdrawal* getContol();
 };
 #endif //USERMANAGEMENT_WITHDRAWALUI_H

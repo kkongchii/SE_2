@@ -13,6 +13,12 @@
 using namespace std;
 class ViewJobApplicationsUI;
 
+/*
+class : ViewJobApplications
+Description : 지원 조회 기능 Control 클래스
+Author : 정한얼
+Created : 2022/05/25
+*/
 class ViewJobApplications {
 private:
     ViewJobApplicationsUI* viewJobApplicationsUI;

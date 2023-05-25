@@ -10,6 +10,12 @@ using namespace std;
 
 class CompanyUser;
 
+/*
+class : Recruitment
+Description : Ã¤¿ë Á¤º¸¸¦ À§ÇÑ Entity Å¬·¡½º
+Author : Á¤ÇÑ¾ó
+Created : 2022/05/25
+*/
 class Recruitment {
 private:
     string task;
@@ -18,14 +24,8 @@ private:
     int applicantNum;
     CompanyUser* companyUser;
 public:
-    Recruitment(string task, int limitApplicantNum, string deadline, CompanyUser* companyUser); // Recruitment Class ìƒì„±ì
+    Recruitment(string task, int limitApplicantNum, string deadline, CompanyUser* companyUser); 
 
-    // Recruitmentì˜ ì „ì²´ ë©¤ë²„ë³€ìˆ˜ì— ëŒ€í•œ Getter
-    // [0] string CompanyName,
-    // [1] int SSN,
-    // [2] string task,
-    // [3] int limitApplicantNum,
-    // [4] string deadline
     tuple<string, int, string, int, string, int> getRecruitmentDetails();
     string getDeadline();
     int getApplicantNum();

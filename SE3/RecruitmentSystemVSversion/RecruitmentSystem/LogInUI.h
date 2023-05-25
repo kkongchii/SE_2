@@ -8,14 +8,20 @@
 using namespace std;
 class LogIn;
 
+/*
+Class: LogInUI::LogInUI()
+Description: ·Î±×ÀÎ ±â´ÉÀÇ ÀÔÃâ·ÂÀ» ´ã´çÇÏ´Â UI Å¬·¡½º
+Author: ¹Ú¿µºó
+Created: 2023/05/25
+*/
 class LogInUI {
 private:
-    LogIn *loginControl; // Control Classì˜ ë ˆí¼ëŸ°ìŠ¤ë¥¼ ì €ì¥í•  ë³€ìˆ˜
+    LogIn *loginControl; 
 public:
-    LogInUI(LogIn* loginControl); // ìƒì„±ìë¥¼ í†µí•´ Control Classì™€ ë ˆí¼ëŸ°ìŠ¤ êµí™˜
-    void startInterface(); // interfaceë¥¼ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜
-    void login(ofstream& out_file, string id, string pw); // ì‚¬ìš©ìê°€ ì´ìš©í•˜ëŠ” UIì˜ ë¡œê·¸ì¸ í•¨ìˆ˜
-    LogIn* getControl(); // getter
+    LogInUI(LogIn* loginControl); 
+    void startInterface(); 
+    void login(ofstream& out_file, string id, string pw); 
+    LogIn* getControl(); 
 };
 
 #endif //USERMANAGEMENT_LOGINUI_H

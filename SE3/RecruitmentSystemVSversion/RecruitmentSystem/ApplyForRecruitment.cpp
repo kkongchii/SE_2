@@ -9,7 +9,11 @@
 
 /*
 Function : ApplyForRecruitment::ApplyForRecruitment()
-Description: UI í´ë˜ìŠ¤ì™€ ë ˆí¼ëŸ°ìŠ¤ë¥¼ êµí™˜í•˜ëŠ” í•¨ìˆ˜
+Description: UI Å¬·¡½º¿Í ·¹ÆÛ·±½º¸¦ ±³È¯ÇÏ´Â »ı¼ºÀÚ
+ReturnType: X
+Parameter: X
+Author: ÀÌÁ¤¿ø
+Created: 2023/05/25
 */
 ApplyForRecruitment::ApplyForRecruitment() {
     this->applyForRecruitmentUI = new ApplyForRecruitmentUI(this);
@@ -17,7 +21,11 @@ ApplyForRecruitment::ApplyForRecruitment() {
 
 /*
 Function : tuple < string, int, string> ApplyForRecruitment::addNewJobApplication(int SSN)
-Description: ì…ë ¥í•œ ì‚¬ì—…ì ë²ˆí˜¸ì— í•´ë‹¹í•˜ëŠ” ì±„ìš© ì •ë³´ë¥¼ ë¶ˆëŸ¬ì˜¨ ë’¤, í™œì„±í™” ë˜ì–´ ìˆëŠ” ì±„ìš© ì •ë³´ì— ì§€ì›í•œë‹¤.
+Description: UI Å¬·¡½º¿¡°Ô ¹ŞÀº »ç¾÷ÀÚ ¹øÈ£·Î Ã¤¿ë Á¤º¸¸¦ °Ë»öÇÑ ÈÄ ÇØ´çµÇ´Â Ã¤¿ë Á¤º¸¿¡ Áö¿øÇÑ °á°ú¸¦ UIÅ¬·¡½º·Î ¹İÈ¯ÇÑ´Ù.
+ReturnType: tuple < string, int, string>
+Parameter: int SSN
+Author: ÀÌÁ¤¿ø
+Created: 2023/05/25
 */
 tuple < string, int, string> ApplyForRecruitment::addNewJobApplication(int SSN) {
     extern UserList userDB;
@@ -33,7 +41,6 @@ tuple < string, int, string> ApplyForRecruitment::addNewJobApplication(int SSN) 
 
     tuple <string, int, string, int, string, int> apply = addRecruitment->getRecruitmentDetails();
 
-    
     return {
         get<0>(apply),
         get<1>(apply),
@@ -43,7 +50,11 @@ tuple < string, int, string> ApplyForRecruitment::addNewJobApplication(int SSN) 
 
 /*
 Function : ApplyForRecruitmentUI* ApplyForRecruitment::getUI()
-Description: ìì‹ ì´ ê°–ê³  ìˆëŠ” UI í´ë˜ìŠ¤ ë ˆí¼ëŸ°ìŠ¤ë¥¼ ë°˜í™˜í•œë‹¤.
+Description: ÀÚ½ÅÀÌ °®°í ÀÖ´Â UI Å¬·¡½º ·¡ÆÛ·±½º¸¦ ¹İÈ¯ÇÑ´Ù.
+ReturnType: ApplyForRecruitmentUI*
+Parameter: X
+Author: ÀÌÁ¤¿ø
+Created: 2023/05/25
 */
 ApplyForRecruitmentUI* ApplyForRecruitment::getUI() {
     return this->applyForRecruitmentUI;

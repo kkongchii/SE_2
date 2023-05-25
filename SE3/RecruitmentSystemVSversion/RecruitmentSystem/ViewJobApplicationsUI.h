@@ -9,6 +9,12 @@
 using namespace std;
 class ViewJobApplications;
 
+/*
+class : ViewJobApplicationsUI
+Description : 지원 조회 기능 Boundary 클래스
+Author : 정한얼
+Created : 2022/05/25
+*/
 class ViewJobApplicationsUI {
 private:
     ViewJobApplications* viewJobApplicationsControl;

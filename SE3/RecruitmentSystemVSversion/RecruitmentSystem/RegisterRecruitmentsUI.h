@@ -9,6 +9,12 @@
 class RegisterRecruitment;
 using namespace std;
 
+/*
+Class : RegisterRecruitmentsUI
+Description: 채용 정보 등록 기능의 입출력을 담당하는 UI 클래스
+Author: 주수진
+Created: 2023/05/25
+*/
 class RegisterRecruitmentsUI {
 private:
     RegisterRecruitment* registerRecruitmentControl;

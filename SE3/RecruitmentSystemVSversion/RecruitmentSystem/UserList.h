@@ -7,13 +7,19 @@
 #include "CompanyUser.h"
 using namespace std;
 
+/*
+Class : UserList
+Description : È¸¿ø°¡ÀÔÇÑ ÀüÃ¼ À¯Àú Á¤º¸ ¸®½ºÆ®¸¦ À§ÇÑ Collection Entity Å¬·¡½º
+Author : Á¤ÇÑ¾ó
+Created : 2022/05/25
+*/
 class UserList{
 private:
     vector<User*> userList;
 public:
     int createGeneralUser(string name, int personalNum, string id, string password);
     int createCompanyUser(string name, int companyNum, string id, string password);
-    void deleteUser(string id); // ì‹¤ì œë¡œ ìœ ì €ë¥¼ ì‚­ì œí•˜ëŠ” í•¨ìˆ˜, 2.1.1.deleteUser()
+    void deleteUser(string id); 
     User* userCheck(string id, string pw);
     void userStateChange(User* user);
     User* getSpecificUserByName(string name);

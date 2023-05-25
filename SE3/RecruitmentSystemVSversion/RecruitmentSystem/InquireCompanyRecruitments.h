@@ -12,6 +12,12 @@
 using namespace std;
 class InquireCompanyRecruitmentsUI;
 
+/*
+Class: InquireCompanyRecruitments
+Description: 자사 채용 정보 조회를 담당하는 Control 클래스
+Author: 주수진
+Created: 2023/05/25
+*/
 class InquireCompanyRecruitments {
 private:
     InquireCompanyRecruitmentsUI* inquireCompanyRecruitmentsUI;
