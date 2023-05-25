@@ -20,7 +20,7 @@ void CompanyUser::setCompanyRegistrationNumber(int companyNum) {
 }
 
 string CompanyUser::getClassType() {
-    return "Company"; // 어떤 자식 타입인지 반환하는 함수
+    return "Company";
 }
 
 RecruitmentList* CompanyUser::getOwnRecruitmentList() {

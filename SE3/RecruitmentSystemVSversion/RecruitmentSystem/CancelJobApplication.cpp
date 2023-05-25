@@ -8,12 +8,9 @@ CancelJobApplication::CancelJobApplication() {
     this->cancelJobApplicationUI = new CancelJobApplicationUI(this);
 }
 
-// [0] string CompanyName,
-// [1] int SSN,
-// [2] string task
 tuple<string, int, string> CancelJobApplication::dropJobApplication(int SSN) {
-    extern UserList userDB; // main 함수의 userDB 사용
-    extern User* currentLoginUser; // main 함수의 currentLoginUser를 사용
+    extern UserList userDB; 
+    extern User* currentLoginUser;
 
     vector<Recruitment*> recruitmentList = userDB.getSpecificUserBySSN(SSN)->getOwnRecruitmentList()->getRecruitmentList();
     Recruitment* validRecruitment = recruitmentList[0];

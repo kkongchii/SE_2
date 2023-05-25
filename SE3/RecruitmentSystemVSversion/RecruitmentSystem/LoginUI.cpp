@@ -6,7 +6,6 @@
 
 LogInUI::LogInUI(LogIn* loginControl) {
     this->loginControl = loginControl;
-    // 매개변수로 받은 Control Class를 본인의 변수에 저장
 }
 
 void LogInUI::startInterface() {

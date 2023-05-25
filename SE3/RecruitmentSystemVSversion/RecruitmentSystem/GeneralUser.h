@@ -11,16 +11,16 @@ class JobApplicationList;
 
 class GeneralUser : public User {
 private:
-    int personalRegistrationNumber; // 주민번호
+    int personalRegistrationNumber;
     JobApplicationList* ownJobApplicationList;
 public:
-    GeneralUser(string name, int personalNum, string id, string pw); // GeneralUser Class 생성자
+    GeneralUser(string name, int personalNum, string id, string pw); 
     ~GeneralUser();
-    string getClassType() override; // 자식 클래스의 타입을 파악하기 위해서 재정의한 함수
+    string getClassType() override;
     int getPersonalRegistrationNumber();
     void setPersonalRegistrationNumber(int personalNum);
-    JobApplicationList* getOwnJobApplicationList(); // 지원정보 리스트 반환
-    // 이상 getter, setter
+    JobApplicationList* getOwnJobApplicationList(); 
+    
 };
 #endif //USERMANAGEMENT_GENERALUSER_H
 

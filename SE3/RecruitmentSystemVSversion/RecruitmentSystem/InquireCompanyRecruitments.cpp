@@ -16,8 +16,6 @@ vector<tuple<string, int, string, int, string, int>> InquireCompanyRecruitments:
     for (const auto& recruitment : recruitmentList) {
         recruitmentDetails.push_back(recruitment->getRecruitmentDetails());
     }
-    //    tuple<string, int, string, int, string> t1("company1", 123, "develop", 30, "22/05/20");
-    //    recruitmentDetails.push_back(t1);
 
     return recruitmentDetails;
 }

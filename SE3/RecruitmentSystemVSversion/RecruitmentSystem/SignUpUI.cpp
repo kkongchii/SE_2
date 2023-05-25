@@ -29,7 +29,7 @@ void SignUpUI::signupCompanyUser(ofstream& out_file, string name, int companyNum
         out_file << "> The same id exists." << endl;
         return;
     }
-    out_file << "> 2 " << name << " " << companyNum << " " << id << " " << password << endl;
+    out_file << "> 1 " << name << " " << companyNum << " " << id << " " << password << endl;
 }
 
 

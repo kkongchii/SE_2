@@ -20,7 +20,7 @@ void GeneralUser::setPersonalRegistrationNumber(int personalNum) {
 }
 
 string GeneralUser::getClassType() {
-    return "General"; // 어떤 자식 타입인지 반환하는 함수
+    return "General";
 }
 
 JobApplicationList* GeneralUser::getOwnJobApplicationList() {

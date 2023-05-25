@@ -7,7 +7,6 @@
 
 LogOutUI::LogOutUI(LogOut* logoutControl) {
     this->logoutControl = logoutControl;
-    // 매개변수로 받은 Control Class를 본인의 변수에 저장
 }
 
 void LogOutUI::logout(ofstream& out_file) {

@@ -10,13 +10,6 @@ Recruitment::Recruitment(string task, int limitApplicantNum, string deadline, Co
     this->applicantNum = 0;
 }
 
-// Recruitment의 전체 멤버변수에 대한 Getter
-// [0] string CompanyName,
-// [1] int SSN,
-// [2] string task,
-// [3] int limitApplicantNum,
-// [4] string deadline
-// [5] applicantNum
 tuple<string, int, string, int, string, int> Recruitment::getRecruitmentDetails() {
     string companyName; int SSN;
     tie(companyName, SSN) = this->companyUser->getCompanyUserDetails();

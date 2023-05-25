@@ -10,11 +10,11 @@ bool comp(tuple<string, int, string, int, string, int> t1, tuple<string, int, st
 
 ViewJobApplications::ViewJobApplications() {
     this->viewJobApplicationsUI = new ViewJobApplicationsUI(this);
-    // UI Class를 생성하여 본인의 멤버 변수에 저장, 레퍼런스 교환
+ 
 }
 
 vector<tuple<string, int, string, int, string, int>> ViewJobApplications::showUsersJobApplication() {
-    extern User* currentLoginUser; // main 함수의 currentLoginUser를 사용
+    extern User* currentLoginUser; 
 
     vector<Recruitment*> jobApplicationList = ((GeneralUser*)currentLoginUser)->getOwnJobApplicationList()->getJobApplicationList();
     vector<tuple<string, int, string, int, string, int>> orderedJobApplicationList;

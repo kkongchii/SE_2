@@ -18,5 +18,4 @@ public:
     void inquireRecruitments(ofstream& out_file);
 };
 
-
 #endif //USERMANAGEMENT_INQUIRECOMPANYRECRUITMENTSUI_H

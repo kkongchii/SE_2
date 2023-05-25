@@ -14,7 +14,7 @@ private:
 	ApplyForRecruitmentUI* applyForRecruitmentUI;
 public:
 	ApplyForRecruitment();
-	tuple <string, int, string> addNewJobApplication(int SSN); // ����ڹ�ȣ�� �˻�
+	tuple <string, int, string> addNewJobApplication(int SSN); 
 	ApplyForRecruitmentUI* getUI();
 };
 

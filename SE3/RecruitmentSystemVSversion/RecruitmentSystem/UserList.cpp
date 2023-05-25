@@ -26,13 +26,13 @@ int UserList::createCompanyUser(string name, int companyNum, string id, string p
 
 void UserList::deleteUser(string id) {
     extern int isLogin;
-    extern User* currentLoginUser; // main 함수에 선언된 isLogin, currentLoginUser 사용
-    for (auto it = userList.begin(); it != userList.end(); ++it) { // userList vector에 저장 된 모든 정보를 순회
-        if ((*it)->getId() == id) { // 인자로 받은 지울 id와 같다면
-            delete* it; // 메모리 확보
-            userList.erase(it); // userLiddst에서 삭제
-            isLogin = 0; // 회원이 탈퇴하였으므로 현재 로그인 상태를 0으로 설정
-            currentLoginUser = nullptr; // 회원이 탈퇴하였으므로 현재 유저 상태를 null로 설정
+    extern User* currentLoginUser; 
+    for (auto it = userList.begin(); it != userList.end(); ++it) { 
+        if ((*it)->getId() == id) { 
+            delete* it; 
+            userList.erase(it); 
+            isLogin = 0; 
+            currentLoginUser = nullptr;
             return;
         }
     }

@@ -7,34 +7,44 @@
 #include "RecruitmentList.h"
 #include "JobApplicationList.h"
 
+/*
+Function : ApplyForRecruitment::ApplyForRecruitment()
+Description: UI 클래스와 레퍼런스를 교환하는 함수
+*/
 ApplyForRecruitment::ApplyForRecruitment() {
     this->applyForRecruitmentUI = new ApplyForRecruitmentUI(this);
-    // ���۷��� ��ȯ
 }
 
+/*
+Function : tuple < string, int, string> ApplyForRecruitment::addNewJobApplication(int SSN)
+Description: 입력한 사업자 번호에 해당하는 채용 정보를 불러온 뒤, 활성화 되어 있는 채용 정보에 지원한다.
+*/
 tuple < string, int, string> ApplyForRecruitment::addNewJobApplication(int SSN) {
-    extern UserList userDB; // main �Լ��� ���� �� userDB ���
-    extern User* currentLoginUser; // main �Լ��� currentLoginUser�� ���
+    extern UserList userDB;
+    extern User* currentLoginUser; 
 
-    CompanyUser* searchedCUser = (CompanyUser*)userDB.getSpecificUserBySSN(SSN); // 2.1.1 ����ڹ�ȣ ���� ȸ��ȸ�� ������
-    vector<Recruitment*> searchedRList = searchedCUser->getOwnRecruitmentList()->getRecruitmentList(); // 2.1.2 �� ȸ��ȸ���� ä������ ����Ʈ ������
+    CompanyUser* searchedCUser = (CompanyUser*)userDB.getSpecificUserBySSN(SSN); 
+    vector<Recruitment*> searchedRList = searchedCUser->getOwnRecruitmentList()->getRecruitmentList(); 
 
-    // ���� �ƴ϶� ��� �����̹Ƿ� ��ǻ� �ϳ��� ��µǾ� ���´ٰ� ���� �� �� ����
-    // �׷��� ���⿡���� for�� �� ��
-    Recruitment* addRecruitment = searchedRList[0]; // �ϳ��� ���� ���̶�� �����ؼ�
-    // ������ �����ڼ� ����� ���� ä�� ������ �����ڼ� ��Ҹ� �߰��� �Լ� �ʿ�
 
-    ((GeneralUser*)currentLoginUser)->getOwnJobApplicationList()->addJobApplication(addRecruitment); // �������� ���� ���� ����Ʈ�� �߰�
+    Recruitment* addRecruitment = searchedRList[0]; 
+
+    ((GeneralUser*)currentLoginUser)->getOwnJobApplicationList()->addJobApplication(addRecruitment);
 
     tuple <string, int, string, int, string, int> apply = addRecruitment->getRecruitmentDetails();
 
-    // ����ϴ� ���� �� 3����
+    
     return {
         get<0>(apply),
         get<1>(apply),
         get<2>(apply)
     };
 }
+
+/*
+Function : ApplyForRecruitmentUI* ApplyForRecruitment::getUI()
+Description: 자신이 갖고 있는 UI 클래스 레퍼런스를 반환한다.
+*/
 ApplyForRecruitmentUI* ApplyForRecruitment::getUI() {
     return this->applyForRecruitmentUI;
 }

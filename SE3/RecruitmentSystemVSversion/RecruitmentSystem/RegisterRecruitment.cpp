@@ -18,9 +18,6 @@ RegisterRecruitmentsUI* RegisterRecruitment::getUI() {
     return this->registerRecruitmentsUI;
 }
 
-
-
-
 #endif //USERMANAGEMENT_REGISTERRECRUITMENT_CPP
 
 

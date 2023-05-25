@@ -1,8 +1,8 @@
 1.1. 회원가입
-> 2 hankook 3456 hk pwd1
+> 1 hankook 3456 hk pwd1
 
 1.1. 회원가입
-> 2 company 1234 cp pwd4
+> 1 company 1234 cp pwd4
 
 1.1. 회원가입
 > 2 yeongbin 9902 yb pwd2

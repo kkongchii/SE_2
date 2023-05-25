@@ -12,9 +12,9 @@ vector<Recruitment*> JobApplicationList::getJobApplicationList() {
 }
 
 int JobApplicationList::deleteJobApplication(Recruitment* recruitment) {
-    for (auto it = this->ownedJobApplication.begin(); it != this->ownedJobApplication.end(); ++it) { // JobApplication vector에 저장 된 모든 정보를 순회
-        if ((*it) == recruitment) { // 인자로 받은 지울 recruitment와 같다면
-            this->ownedJobApplication.erase(it); // ownedJobApplication에서 삭제
+    for (auto it = this->ownedJobApplication.begin(); it != this->ownedJobApplication.end(); ++it) {
+        if ((*it) == recruitment) { 
+            this->ownedJobApplication.erase(it); 
             return 0;
         }
     }
