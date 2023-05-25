@@ -53,7 +53,7 @@
 
 4.3. 지원 정보 조회
 > company 1234 testing 20 2023/07/26
-  hankook 3456 testing 5 2023/08/26
+> hankook 3456 testing 5 2023/08/26
 
 4.4. 지원 취소
 > hankook 3456 testing
@@ -79,6 +79,13 @@
 
 1.2. 회원 탈퇴
 > hk
+
+2.2. 로그아웃
+> You are not logged in.
+
+2.1. 로그인
+User does not exist.
+> Login Fail
 
 6.1. 종료
 

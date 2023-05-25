@@ -2,6 +2,8 @@
 #define USERMANAGEMENT_CANCELJOBAPPLICATIONUI_CPP
 
 #include "CancelJobApplicationUI.h"
+#include <fstream>
+
 
 CancelJobApplicationUI::CancelJobApplicationUI(CancelJobApplication* cancelJobApplication) {
     this->cancelJobApplicationControl = cancelJobApplication;
@@ -12,17 +14,13 @@ void CancelJobApplicationUI::startInterface() {
     // 해당 과제에서는 미구현
 }
 
-void CancelJobApplicationUI::cancelJobApplication(FILE* fp, int SSN) {
+void CancelJobApplicationUI::cancelJobApplication(ofstream& out_file, int SSN) {
     tuple<string, int, string> canceledJobApplication = this->cancelJobApplicationControl->dropJobApplication(SSN);
     if (get<1>(canceledJobApplication) == -1) {
-        fprintf(fp, "No JobApplication");
+        out_file << "> No JobApplication";
+        return;
     }
-
-    fprintf(fp, "> %s %d %s\n",
-        get<0>(canceledJobApplication).c_str(),
-        get<1>(canceledJobApplication),
-        get<2>(canceledJobApplication).c_str()
-    );
+    out_file << "> " << get<0>(canceledJobApplication).c_str() << " " << get<1>(canceledJobApplication) << " " << get<2>(canceledJobApplication).c_str() << "\n";
 }
 
 CancelJobApplication* CancelJobApplicationUI::getControl() {

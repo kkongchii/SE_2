@@ -2,6 +2,7 @@
 #define USERMANAGEMENT_WITHDRAWALUI_CPP
 
 #include "WithdrawalUI.h"
+#include <fstream>
 
 WithdrawalUI::WithdrawalUI(Withdrawal* withdrawalControl) {
     this->withdrawalControl = withdrawalControl;
@@ -13,10 +14,11 @@ void WithdrawalUI::startInterface() {
     // 해당 과제에서는 미구현
 }
 
-void WithdrawalUI::withdrawalUser(FILE* fp, string id) {
-    this->withdrawalControl->deleteUser(id); // Control Class에 회원 삭제 요청, 2.1.deleteUser()
-    fprintf(fp, "> %s\n", id.c_str());
+void WithdrawalUI::withdrawalUser(ofstream& out_file, string id) {
+    this->withdrawalControl->deleteUser(id);
+    out_file << "> " << id << endl;
 }
+
 
 Withdrawal* WithdrawalUI::getContol() {
     return this->withdrawalControl;

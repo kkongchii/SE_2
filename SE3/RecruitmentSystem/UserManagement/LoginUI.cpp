@@ -2,6 +2,7 @@
 #define USERMANAGEMENT_LOGINUI_CPP
 
 #include "LogInUI.h"
+#include <fstream>
 
 LogInUI::LogInUI(LogIn* loginControl) {
     this->loginControl = loginControl;
@@ -13,17 +14,17 @@ void LogInUI::startInterface() {
     // 해당 과제에서는 미구현
 }
 
-void LogInUI::login(FILE* fp, string id, string pw) {
-    extern int isLogin; // main 함수의 isLogin 사용
-    this->loginControl->userLogin(id, pw); // Control Class에 로그인 요청, 2.1.userLogin()
-    if (isLogin == 0) { // 로그인 실패 시
-        fprintf(fp, "User does not exist.\n"); // 로그인 실패를 알림
-    } else if (isLogin == 1) { // 회사 회원일 시
-        fprintf(fp, "> %s %s\n", id.c_str(), pw.c_str());
-    } else if (isLogin == 2) { // 일반 회원일 시
-        fprintf(fp, "> %s %s\n", id.c_str(), pw.c_str());
+void LogInUI::login(std::ofstream& out_file, string id, string pw) {
+    extern int isLogin;
+    this->loginControl->userLogin(id, pw);
+
+    if (isLogin == 0) {
+        out_file << "User does not exist." << endl;
+    } else {
+        out_file << "> " << id << " " << pw << endl;
     }
 }
+
 
 LogIn *LogInUI::getControl() {
     return this->loginControl;

@@ -15,7 +15,7 @@ private:
 public:
     CancelJobApplicationUI(CancelJobApplication* cancelJobApplication);
     void startInterface();
-    void cancelJobApplication(FILE *fp, int SSN);
+    void cancelJobApplication(ofstream& out_file, int SSN);
     CancelJobApplication* getControl();
 };
 

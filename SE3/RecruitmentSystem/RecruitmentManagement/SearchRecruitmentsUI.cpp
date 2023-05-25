@@ -3,6 +3,8 @@
 #define USERMANAGEMENT_SEARCHRECRUITMENTSUI_CPP
 
 #include "SearchRecruitmentsUI.h"
+#include <fstream>
+
 
 using namespace std;
 
@@ -16,15 +18,17 @@ void SearchRecruitmentsUI::startInterface() {
     // 해당 과제에서는 미구현
 }
 
-void SearchRecruitmentsUI::searchRecruitments(FILE* fp, string companyName) {
+void SearchRecruitmentsUI::searchRecruitments(ofstream& out_file, string companyName) {
     vector<tuple<string, int, string, int, string, int>> printRecruitment = searchRecruitmentsControl->showRecruitment(companyName); // 2.1
 
-    // 확인용
-    for (int i = 0; i < printRecruitment.size(); i++){
-        fprintf(fp, "> %s %d %s %d %s\n", get<0>(printRecruitment[i]).c_str(), get<1>(printRecruitment[i]),
-                get<2>(printRecruitment[i]).c_str(), get<3>(printRecruitment[i]), get<4>(printRecruitment[i]).c_str());
+    // Output to file
+    for (int i = 0; i < printRecruitment.size(); i++) {
+        out_file << "> " << get<0>(printRecruitment[i]) << " " << get<1>(printRecruitment[i]) << " "
+                 << get<2>(printRecruitment[i]) << " " << get<3>(printRecruitment[i]) << " "
+                 << get<4>(printRecruitment[i]) << endl;
     }
 }
+
 
 SearchRecruitments* SearchRecruitmentsUI::getControl() {
     return this->searchRecruitmentsControl;

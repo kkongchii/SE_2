@@ -3,18 +3,18 @@
 #define USERMANAGEMENT_VIEWJOBAPPLICATIONSTATISTICSUI_CPP
 
 #include "ViewJobApplicationStatisticsUI.h"
+#include <fstream>
+
 
 ViewJobApplicationStatisticsUI::ViewJobApplicationStatisticsUI(ViewJobApplicationStatistics* viewJobApplicationStatistics) {
     this->viewJobApplicationStatisticsControl = viewJobApplicationStatistics;
 }
 
-void ViewJobApplicationStatisticsUI::showStatistics(FILE* fp) {
+void ViewJobApplicationStatisticsUI::showStatistics(ofstream &out_file) {
     vector<pair<string, int>> jobApplicationStatistics = this->viewJobApplicationStatisticsControl->showJobApplicationStatistics();
 
     for (const auto &jobApplication: jobApplicationStatistics) {
-        fprintf(fp, "> %s %d\n",
-               jobApplication.first.c_str(),
-               jobApplication.second);
+        out_file << "> " << jobApplication.first << " " << jobApplication.second << endl;
     }
 }
 

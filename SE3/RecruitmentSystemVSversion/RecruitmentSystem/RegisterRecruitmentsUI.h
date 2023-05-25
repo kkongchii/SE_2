@@ -15,7 +15,7 @@ private:
 public:
     RegisterRecruitmentsUI(RegisterRecruitment* registerRecruitment);
     void startInterface();
-    void registerNewRecruitments(FILE *fp, string task, int limitApplicantNum, string deadLine);
+    void registerNewRecruitments(ofstream& out_file, string task, int limitApplicantNum, string deadLine);
 };
 
 

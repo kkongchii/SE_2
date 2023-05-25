@@ -2,18 +2,18 @@
 #define USERMANAGEMENT_VIEWRECRUITMENTSTATISTICSUI_CPP
 
 #include "ViewRecruitmentStatisticsUI.h"
+#include <fstream>
+
 
 ViewRecruitmentStatisticsUI::ViewRecruitmentStatisticsUI(ViewRecruitmentStatistics* viewRecruitmentStatistics) {
     this->viewRecruitmentStatisticsControl = viewRecruitmentStatistics;
 }
 
-void ViewRecruitmentStatisticsUI::showStatistics(FILE *fp) {
+void ViewRecruitmentStatisticsUI::showStatistics(ofstream &out_file) {
     vector<pair<string, int>> recruitmentStatistics = this->viewRecruitmentStatisticsControl->showRecruitmentStatistics();
 
     for(auto it = recruitmentStatistics.begin(); it != recruitmentStatistics.end(); it++) {
-        fprintf(fp, "> %s %d\n",
-               (*it).first.c_str(),
-               (*it).second);
+        out_file << "> " << (*it).first << " " << (*it).second << endl;
     }
 }
 

@@ -1,6 +1,7 @@
 #ifndef USERMANAGEMENT_SIGNUPUI_CPP
 #define USERMANAGEMENT_SIGNUPUI_CPP
 
+#include <fstream>
 #include "SignUpUI.h"
 
 using namespace std;
@@ -15,23 +16,22 @@ void SignUpUI::startInterface() {
     // 해당 과제에서는 미구현
 }
 
-void SignUpUI::signupGeneralUser(FILE* fp, string name, int personalNum, string id, string password) {
+void SignUpUI::signupGeneralUser(ofstream& out_file, string name, int personalNum, string id, string password) {
     if (signupControl->addGeneralUser(name, personalNum, id, password) == -1) {
-        // Control Class에 일반 유저 생성 요청 후 입력한 id와 동일한 id가 userDB에 존재 시.
-        fprintf(fp, "> The same id exists.\n");// 중복을 알림
+        out_file << "> The same id exists." << endl;
         return;
     }
-    fprintf(fp, "> 2 %s %d %s %s\n", name.c_str(), personalNum, id.c_str(), password.c_str());
+    out_file << "> 2 " << name << " " << personalNum << " " << id << " " << password << endl;
 }
 
-void SignUpUI::signupCompanyUser(FILE* fp, string name, int companyNum, string id, string password) {
+void SignUpUI::signupCompanyUser(ofstream& out_file, string name, int companyNum, string id, string password) {
     if (signupControl->addCompanyUser(name, companyNum, id, password) == -1) {
-        // Control Class에 회사 유저 생성 요청 후 입력한 id와 동일한 id가 userDB에 존재 시.
-        fprintf(fp, "> The same id exists.\n");// 중복을 알림
+        out_file << "> The same id exists." << endl;
         return;
     }
-    fprintf(fp, "> 2 %s %d %s %s\n", name.c_str(), companyNum, id.c_str(), password.c_str());
+    out_file << "> 2 " << name << " " << companyNum << " " << id << " " << password << endl;
 }
+
 
 SignUp* SignUpUI::getControl() {
     return this->signupControl;

@@ -3,6 +3,8 @@
 #define USERMANAGEMENT_APPLYFORRECRUITMENTUI_CPP
 
 #include "ApplyForRecruitmentUI.h"
+#include <fstream>
+
 
 using namespace std;
 
@@ -15,12 +17,13 @@ void ApplyForRecruitmentUI::startInterface() {
     // UI를 출력
 }
 
-void ApplyForRecruitmentUI::applyForRecruitment(FILE *fp, int SSN) {
+void ApplyForRecruitmentUI::applyForRecruitment(ofstream& out_file, int SSN) {
     tuple<string, int, string> applyForPrint = applyForRecruitmentControl->addNewJobApplication(SSN);
 
-    // 확인용
-    fprintf(fp, "> %s %d %s\n", get<0>(applyForPrint).c_str(), get<1>(applyForPrint), get<2>(applyForPrint).c_str());
+    // Output to file
+    out_file << "> " << get<0>(applyForPrint) << " " << get<1>(applyForPrint) << " " << get<2>(applyForPrint) << endl;
 }
+
 
 ApplyForRecruitment* ApplyForRecruitmentUI::getControl() {
     return this->applyForRecruitmentControl;

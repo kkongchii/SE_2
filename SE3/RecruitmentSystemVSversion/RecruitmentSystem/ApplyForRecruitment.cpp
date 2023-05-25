@@ -9,26 +9,26 @@
 
 ApplyForRecruitment::ApplyForRecruitment() {
     this->applyForRecruitmentUI = new ApplyForRecruitmentUI(this);
-    // ·¹ÆÛ·±½º ±³È¯
+    // ï¿½ï¿½ï¿½Û·ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
 }
 
 tuple < string, int, string> ApplyForRecruitment::addNewJobApplication(int SSN) {
-    extern UserList userDB; // main ÇÔ¼ö¿¡ ¼±¾ð µÈ userDB »ç¿ë
-    extern User* currentLoginUser; // main ÇÔ¼öÀÇ currentLoginUser¸¦ »ç¿ë
+    extern UserList userDB; // main ï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ userDB ï¿½ï¿½ï¿½
+    extern User* currentLoginUser; // main ï¿½Ô¼ï¿½ï¿½ï¿½ currentLoginUserï¿½ï¿½ ï¿½ï¿½ï¿½
 
-    CompanyUser* searchedCUser = (CompanyUser*)userDB.getSpecificUserBySSN(SSN); // 2.1.1 »ç¾÷ÀÚ¹øÈ£ °°Àº È¸»çÈ¸¿ø °¡Á®¿È
-    vector<Recruitment*> searchedRList = searchedCUser->getOwnRecruitmentList()->getRecruitmentList(); // 2.1.2 ±× È¸»çÈ¸¿øÀÇ Ã¤¿ëÁ¤º¸ ¸®½ºÆ® °¡Á®¿È
+    CompanyUser* searchedCUser = (CompanyUser*)userDB.getSpecificUserBySSN(SSN); // 2.1.1 ï¿½ï¿½ï¿½ï¿½Ú¹ï¿½È£ ï¿½ï¿½ï¿½ï¿½ È¸ï¿½ï¿½È¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    vector<Recruitment*> searchedRList = searchedCUser->getOwnRecruitmentList()->getRecruitmentList(); // 2.1.2 ï¿½ï¿½ È¸ï¿½ï¿½È¸ï¿½ï¿½ï¿½ï¿½ Ã¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-    // ¼±ÅÃ ¾Æ´Ï¶ó Áï½Ã Áö¿øÀÌ¹Ç·Î »ç½Ç»ó ÇÏ³ª¸¸ Ãâ·ÂµÇ¾î ³ª¿Â´Ù°í º¸¸é µÉ °Í °°´Ù
-    // ±×·¡¼­ ¿©±â¿¡¼­´Â for¹® ¾È ¾¸
-    Recruitment* addRecruitment = searchedRList[0]; // ÇÏ³ª¸¸ ÀÖÀ» °ÍÀÌ¶ó°í °¡Á¤ÇØ¼­
-    // ¾÷¹«º° Áö¿øÀÚ¼ö Ãâ·ÂÀ» À§ÇØ Ã¤¿ë Á¤º¸¿¡ Áö¿øÀÚ¼ö ¿ä¼Ò¸¦ Ãß°¡ÇÒ ÇÔ¼ö ÇÊ¿ä
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´Ï¶ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì¹Ç·ï¿½ ï¿½ï¿½Ç»ï¿½ ï¿½Ï³ï¿½ï¿½ï¿½ ï¿½ï¿½ÂµÇ¾ï¿½ ï¿½ï¿½ï¿½Â´Ù°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+    // ï¿½×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½â¿¡ï¿½ï¿½ï¿½ï¿½ forï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½
+    Recruitment* addRecruitment = searchedRList[0]; // ï¿½Ï³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¶ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ú¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã¤ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ú¼ï¿½ ï¿½ï¿½Ò¸ï¿½ ï¿½ß°ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½ ï¿½Ê¿ï¿½
 
-    ((GeneralUser*)currentLoginUser)->getOwnJobApplicationList()->addJobApplication(addRecruitment); // Áö¿øÀÚÀÇ Áö¿ø Á¤º¸ ¸®½ºÆ®¿¡ Ãß°¡
+    ((GeneralUser*)currentLoginUser)->getOwnJobApplicationList()->addJobApplication(addRecruitment); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ß°ï¿½
 
     tuple <string, int, string, int, string, int> apply = addRecruitment->getRecruitmentDetails();
 
-    // Ãâ·ÂÇÏ´Â °ªÀº ÀÌ 3°³»Ó
+    // ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ 3ï¿½ï¿½ï¿½ï¿½
     return {
         get<0>(apply),
         get<1>(apply),

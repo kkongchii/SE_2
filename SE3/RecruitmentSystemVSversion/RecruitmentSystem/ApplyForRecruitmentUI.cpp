@@ -3,24 +3,27 @@
 #define USERMANAGEMENT_APPLYFORRECRUITMENTUI_CPP
 
 #include "ApplyForRecruitmentUI.h"
+#include <fstream>
+
 
 using namespace std;
 
 ApplyForRecruitmentUI::ApplyForRecruitmentUI(ApplyForRecruitment* applyforrecruitmentControl) {
     this->applyForRecruitmentControl = applyforrecruitmentControl;
-    // ¸Å°³º¯¼ö·Î ¹ŞÀº Control Class¸¦ º»ÀÎÀÇ º¯¼ö¿¡ ÀúÀå
+    // ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ì€ Control Classë¥¼ ë³¸ì¸ì˜ ë³€ìˆ˜ì— ì €ì¥
 }
 
 void ApplyForRecruitmentUI::startInterface() {
-    // UI¸¦ Ãâ·Â
+    // UIë¥¼ ì¶œë ¥
 }
 
-void ApplyForRecruitmentUI::applyForRecruitment(FILE* fp, int SSN) {
+void ApplyForRecruitmentUI::applyForRecruitment(ofstream& out_file, int SSN) {
     tuple<string, int, string> applyForPrint = applyForRecruitmentControl->addNewJobApplication(SSN);
 
-    // È®ÀÎ¿ë
-    fprintf(fp, "> %s %d %s\n", get<0>(applyForPrint).c_str(), get<1>(applyForPrint), get<2>(applyForPrint).c_str());
+    // Output to file
+    out_file << "> " << get<0>(applyForPrint) << " " << get<1>(applyForPrint) << " " << get<2>(applyForPrint) << endl;
 }
+
 
 ApplyForRecruitment* ApplyForRecruitmentUI::getControl() {
     return this->applyForRecruitmentControl;

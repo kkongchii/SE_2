@@ -2,18 +2,21 @@
 #define USERMANAGEMENT_LOGOUTUI_CPP
 
 #include "LogOutUI.h"
+#include <fstream>
+
 
 LogOutUI::LogOutUI(LogOut *logoutControl) {
     this->logoutControl = logoutControl;
     // 매개변수로 받은 Control Class를 본인의 변수에 저장
 }
 
-void LogOutUI::logout(FILE* fp) {
-    extern User* currentLoginUser; // main 함수의 currentLoginUser를 사용
-    string id = currentLoginUser->getId(); // 현재 로그인 한 유저의 id
-    this->logoutControl->userLogout(); // Control Class에 로그아웃 요청, 1.1.userLogout()
-    fprintf(fp, "> %s\n", id.c_str());
+void LogOutUI::logout(ofstream& out_file) {
+    extern User* currentLoginUser;
+    string id = currentLoginUser->getId();
+    this->logoutControl->userLogout();
+    out_file << "> " << id << endl;
 }
+
 
 LogOut *LogOutUI::getControl() {
     return this->logoutControl;

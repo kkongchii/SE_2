@@ -1,47 +1,8 @@
 ﻿  ApplyForRecruitment.cpp
-  ApplyForRecruitmentUI.cpp
-  CancelJobApplication.cpp
-  CancelJobApplicationUI.cpp
-  CompanyUser.cpp
-  GeneralUser.cpp
   InquireCompanyRecruitments.cpp
   InquireCompanyRecruitmentsUI.cpp
-  JobApplicationList.cpp
   LogOut.cpp
-  LogOutUI.cpp
-  Login.cpp
-  LoginUI.cpp
-  Recruitment.cpp
-  RecruitmentList.cpp
-  RegisterRecruitment.cpp
-  RegisterRecruitmentsUI.cpp
-  SearchRecruitments.cpp
-  SearchRecruitmentsUI.cpp
-  SignUp.cpp
-  코드를 생성하고 있습니다...
-  컴파일하고 있습니다...
-  SignUpUI.cpp
-  User.cpp
-  UserList.cpp
-  ViewJobApplicationStatistics.cpp
-  ViewJobApplicationStatisticsUI.cpp
-  ViewJobApplications.cpp
-  ViewJobApplicationsUI.cpp
-  ViewRecruitmentStatistics.cpp
-  ViewRecruitmentStatisticsUI.cpp
-  Withdrawal.cpp
-  WithdrawalUI.cpp
   main.cpp
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(39,13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(40,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(54,9): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(67,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(69,21): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(74,21): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(104,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(141,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(163,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(174,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\RecruitmentSystem\main.cpp(194,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  ViewJobApplicationsUI.cpp
   코드를 생성하고 있습니다...
   RecruitmentSystem.vcxproj -> C:\Develop\4-1\SE_team2\SE_2\SE_2\SE3\RecruitmentSystemVSversion\x64\Debug\RecruitmentSystem.exe

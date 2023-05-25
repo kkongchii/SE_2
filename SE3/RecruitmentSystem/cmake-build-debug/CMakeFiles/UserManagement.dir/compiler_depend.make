@@ -323,7 +323,12 @@ CMakeFiles/UserManagement.dir/ApplicationManagement/CancelJobApplicationUI.cpp.o
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h \
-  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.h
+  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc
 
 CMakeFiles/UserManagement.dir/ApplicationManagement/ViewJobApplicationStatistics.cpp.obj: C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/ViewJobApplicationStatistics.cpp \
   C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/ViewJobApplicationStatistics.h \
@@ -657,7 +662,12 @@ CMakeFiles/UserManagement.dir/ApplicationManagement/ViewJobApplicationStatistics
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h \
-  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.h
+  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc
 
 CMakeFiles/UserManagement.dir/ApplicationManagement/ViewJobApplications.cpp.obj: C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/ViewJobApplications.cpp \
   C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/ViewJobApplications.h \
@@ -979,7 +989,12 @@ CMakeFiles/UserManagement.dir/ApplicationManagement/ViewJobApplicationsUI.cpp.ob
   C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/Recruitment.h \
   C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.h \
   C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/RecruitmentList.h \
-  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.h
+  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc
 
 CMakeFiles/UserManagement.dir/ApplicationManagement/ViewRecruitmentStatistics.cpp.obj: C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/ViewRecruitmentStatistics.cpp \
   C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/ViewRecruitmentStatistics.h \
@@ -1313,7 +1328,12 @@ CMakeFiles/UserManagement.dir/ApplicationManagement/ViewRecruitmentStatisticsUI.
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h \
-  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.h
+  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc
 
 CMakeFiles/UserManagement.dir/RecruitmentManagement/ApplyForRecruitment.cpp.obj: C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/ApplyForRecruitment.cpp \
   C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/ApplyForRecruitment.h \
@@ -1635,7 +1655,12 @@ CMakeFiles/UserManagement.dir/RecruitmentManagement/ApplyForRecruitmentUI.cpp.ob
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h \
-  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/Recruitment.h
+  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/Recruitment.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc
 
 CMakeFiles/UserManagement.dir/RecruitmentManagement/InquireCompanyRecruitments.cpp.obj: C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/InquireCompanyRecruitments.cpp \
   C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/InquireCompanyRecruitments.h \
@@ -1953,7 +1978,12 @@ CMakeFiles/UserManagement.dir/RecruitmentManagement/InquireCompanyRecruitmentsUI
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h \
   C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/Recruitment.h \
   C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/InquireCompanyRecruitments.h \
-  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/RecruitmentList.h
+  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/RecruitmentList.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc
 
 CMakeFiles/UserManagement.dir/RecruitmentManagement/RegisterRecruitment.cpp.obj: C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/RegisterRecruitment.cpp \
   C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/RegisterRecruitment.h \
@@ -2269,7 +2299,12 @@ CMakeFiles/UserManagement.dir/RecruitmentManagement/RegisterRecruitmentsUI.cpp.o
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h \
   C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/Recruitment.h \
-  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.h
+  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc
 
 CMakeFiles/UserManagement.dir/RecruitmentManagement/SearchRecruitments.cpp.obj: C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/SearchRecruitments.cpp \
   C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/RecruitmentManagement/SearchRecruitments.h \
@@ -2590,7 +2625,12 @@ CMakeFiles/UserManagement.dir/RecruitmentManagement/SearchRecruitmentsUI.cpp.obj
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h \
-  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/Recruitment.h
+  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/Recruitment.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc
 
 CMakeFiles/UserManagement.dir/UserManagement/LogOut.cpp.obj: C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/LogOut.cpp \
   C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/LogOut.h \
@@ -2912,7 +2952,12 @@ CMakeFiles/UserManagement.dir/UserManagement/LogOutUI.cpp.obj: C:/Develop/4-1/SE
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h \
-  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.h
+  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc
 
 CMakeFiles/UserManagement.dir/UserManagement/Login.cpp.obj: C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/Login.cpp \
   C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/LogIn.h \
@@ -3234,7 +3279,12 @@ CMakeFiles/UserManagement.dir/UserManagement/LoginUI.cpp.obj: C:/Develop/4-1/SE_
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h \
-  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.h
+  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc
 
 CMakeFiles/UserManagement.dir/UserManagement/SignUp.cpp.obj: C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/SignUp.cpp \
   C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/SignUp.h \
@@ -3398,14 +3448,13 @@ CMakeFiles/UserManagement.dir/UserManagement/SignUp.cpp.obj: C:/Develop/4-1/SE_t
   C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.h
 
 CMakeFiles/UserManagement.dir/UserManagement/SignUpUI.cpp.obj: C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/SignUpUI.cpp \
-  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/SignUpUI.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
-  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
-  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stringfwd.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/postypes.h \
@@ -3528,9 +3577,15 @@ CMakeFiles/UserManagement.dir/UserManagement/SignUpUI.cpp.obj: C:/Develop/4-1/SE
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
-  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc \
+  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/SignUpUI.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
   C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/SignUp.h
 
 CMakeFiles/UserManagement.dir/UserManagement/Withdrawal.cpp.obj: C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/Withdrawal.cpp \
@@ -3828,7 +3883,12 @@ CMakeFiles/UserManagement.dir/UserManagement/WithdrawalUI.cpp.obj: C:/Develop/4-
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
-  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/Withdrawal.h
+  C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/Withdrawal.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc
 
 CMakeFiles/UserManagement.dir/entity/CompanyUser.cpp.obj: C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.cpp \
   C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/entity/CompanyUser.h \
@@ -5035,6 +5095,11 @@ CMakeFiles/UserManagement.dir/main.cpp.obj: C:/Develop/4-1/SE_team2/SE_2/SE_2/SE
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc \
   C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/UserManagement/LogIn.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/vector \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_uninitialized.h \
@@ -5463,6 +5528,16 @@ C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32
 C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h:
 
 C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/CancelJobApplicationUI.cpp:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc:
 
 C:/Develop/4-1/SE_team2/SE_2/SE_2/SE3/RecruitmentSystem/ApplicationManagement/ViewJobApplicationStatistics.cpp:
 

@@ -15,7 +15,7 @@ private:
 public:
 	ApplyForRecruitmentUI(ApplyForRecruitment* applyForRecruitmentControl);
 	void startInterface(); // interface 출력
-	void applyForRecruitment(FILE *fp, int SSN); // 사업자번호로 검색
+	void applyForRecruitment(ofstream &out_file, int SSN); // 사업자번호로 검색
 	ApplyForRecruitment* getControl();
 };
 
