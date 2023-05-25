@@ -8,7 +8,7 @@ Description : 지원 시 지원 정보 리스트에 지원한 채용 정보를 추가하는 함수
 ReturnType : void
 Parameter : Recruitment* recruitment
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 void JobApplicationList::addJobApplication(Recruitment* recruitment) {
     this->ownedJobApplication.push_back(recruitment);
@@ -21,7 +21,7 @@ Description : 지원 정보 리스트(ownedJobApplication) Getter 함수
 ReturnType : vector<Recruitment*>
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 vector<Recruitment*> JobApplicationList::getJobApplicationList() {
     return this->ownedJobApplication;
@@ -33,7 +33,7 @@ Description : 지원 정보 리스트(ownedJobApplication)에서 특정 채용 정보를 삭제하�
 ReturnType : int
 Parameter : Recruitment* recruitment
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 int JobApplicationList::deleteJobApplication(Recruitment* recruitment) {
     for (auto it = this->ownedJobApplication.begin(); it != this->ownedJobApplication.end(); ++it) {

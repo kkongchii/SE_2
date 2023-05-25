@@ -8,7 +8,7 @@ Description : 일반 유저를 생성하고 유저 정보 리스트에 추가하는 함수
 ReturnType : int
 Parameter : string name, int personalNum, string id, string password
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 int UserList::createGeneralUser(string name, int personalNum, string id, string password) {
     for (auto it = userList.begin(); it != userList.end(); ++it) {
@@ -27,7 +27,7 @@ Description : 회사 유저를 생성하고 유저 정보 리스트에 추가하는 함수
 ReturnType : int
 Parameter : string name, int companyNum, string id, string password
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 int UserList::createCompanyUser(string name, int companyNum, string id, string password) {
     for (auto it = userList.begin(); it != userList.end(); ++it) {
@@ -46,7 +46,7 @@ Description : 유저를 삭제하고 유저 정보 리스트에서도 제외시키는 함수
 ReturnType : void
 Parameter : string id
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 void UserList::deleteUser(string id) {
     extern int isLogin;
@@ -68,7 +68,7 @@ Description : 유저의 ID와 PW를 통해 유저 Entity 레퍼런스를 반환하는 함수
 ReturnType : User*
 Parameter : string id, string password
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 User* UserList::userCheck(string id, string pw) {
     for (const auto& user : userList) {
@@ -85,7 +85,7 @@ Description : 로그인한 유저의 상태에 따라 로그아웃(0), 회사회원(1), 일반회원(2)�
 ReturnType : void
 Parameter : User* user
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 void UserList::userStateChange(User* user) {
     extern int isLogin;
@@ -110,7 +110,7 @@ Description : 유저 정보 리스트 Getter 함수
 ReturnType : vector<User*>
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 vector<User*> UserList::getUserList() {
     return this->userList;
@@ -122,7 +122,7 @@ Description : 이름으로 특정 유저 Entity 레퍼런스 반환
 ReturnType : User*
 Parameter : string name
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 User* UserList::getSpecificUserByName(string name) {
     for (User* user : userList) {
@@ -139,7 +139,7 @@ ReturnType : CompanyUser*
 Parameter :
     int number : 사업자 번호
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 CompanyUser* UserList::getSpecificUserBySSN(int number) {
     for (User* user : userList) {

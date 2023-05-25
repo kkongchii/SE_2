@@ -36,6 +36,14 @@ User* currentLoginUser;
 int isLogin = 0;
 UserList userDB;
 
+/*
+Function: int main()
+Description: 채용 정보 시스템 구현, inputFile로 정보를 입력받아 동작
+ReturnType: int
+Parameter: X
+Author: 이정원
+Created: 2023/05/25
+*/
 int main() {
     in_file.open(INPUT_FILE_NAME);
     out_file.open(OUTPUT_FILE_NAME);
@@ -58,6 +66,14 @@ int main() {
     return 0;
 }
 
+/*
+Function: void doTask()
+Description: 입력 받은 메뉴에 따라 해당 기능을 수행하는 함수
+ReturnType: void
+Parameter: X
+Author: 이정원
+Created: 2023/05/25
+*/
 void doTask() {
     // 메뉴 파싱을 위한 level 구분을 위한 변수
     int menu_level_1 = 0, menu_level_2 = 0;

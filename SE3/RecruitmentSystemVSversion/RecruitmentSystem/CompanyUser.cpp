@@ -8,7 +8,7 @@ Description : CompanyUser Class 생성자
 ReturnType : X
 Parameter : string name, int companyNum, string id, string pw 
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 CompanyUser::CompanyUser(string name, int companyNum, string id, string pw) : User(name, id, pw) {
     this->companyRegistrationNumber = companyNum;
@@ -21,7 +21,7 @@ Description : CompanyUser Class 소멸자
 ReturnType : X
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 CompanyUser::~CompanyUser() {
 
@@ -33,7 +33,7 @@ Description : 사업자번호 Getter 함수
 ReturnType : int
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 int CompanyUser::getCompanyRegistrationNumber() {
     return this->companyRegistrationNumber;
@@ -45,7 +45,7 @@ Description : 사업자번호 Setter 함수
 ReturnType : void
 Parameter : int companyNum
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 void CompanyUser::setCompanyRegistrationNumber(int companyNum) {
     this->companyRegistrationNumber = companyNum;
@@ -57,7 +57,7 @@ Description : 자식 클래스의 타입을 파악하기 위해서 재정의한 함수
 ReturnType : string
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 string CompanyUser::getClassType() {
     return "Company";
@@ -69,7 +69,7 @@ Description : 자사 채용정보 리스트(getOwnRecruitmentList) Getter 함수
 ReturnType : RecruitmentList*
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 RecruitmentList* CompanyUser::getOwnRecruitmentList() {
     return this->ownRecruitmentList;
@@ -81,7 +81,7 @@ Description : 회사 정보(회사이름, 사업자번호) Getter 함수
 ReturnType : pair<string, int>
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 pair<string, int> CompanyUser::getCompanyUserDetails() {
     return { this->getName(), this->companyRegistrationNumber };

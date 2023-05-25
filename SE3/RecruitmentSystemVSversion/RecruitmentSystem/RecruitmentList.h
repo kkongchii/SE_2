@@ -14,7 +14,7 @@ class Recruitment;
 class : RecruitmentList
 Description : 채용 정보 리스트를 위한 Collection Entity 클래스
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 class RecruitmentList {
 private:

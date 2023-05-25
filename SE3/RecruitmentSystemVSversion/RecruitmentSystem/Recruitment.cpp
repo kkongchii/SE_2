@@ -8,7 +8,7 @@ Description : Recruitment Class »ı¼ºÀÚ
 ReturnType : X
 Parameter : string task, int limitApplicantNum, string deadline, CompanyUser* companyUser
 Author : Á¤ÇÑ¾ó
-Created : 2022/05/25
+Created : 2023/05/25
 */
 Recruitment::Recruitment(string task, int limitApplicantNum, string deadline, CompanyUser* companyUser) {
     this->task = task;
@@ -24,7 +24,7 @@ Description : RecruitmentÀÇ ÀüÃ¼ ¸â¹öº¯¼ö¿¡ ´ëÇÑ Getter, {È¸»çÀÌ¸§(0), »ç¾÷ÀÚ¹øÈ
 ReturnType : tuple<string, int, string, int, string, int>
 Parameter : X
 Author : Á¤ÇÑ¾ó
-Created : 2022/05/25
+Created : 2023/05/25
 */
 tuple<string, int, string, int, string, int> Recruitment::getRecruitmentDetails() {
     string companyName; int SSN;
@@ -46,7 +46,7 @@ Description : ¸¶°¨ÀÏÀÚ¿¡ ´ëÇÑ Getter()
 ReturnType : string
 Parameter : X
 Author : Á¤ÇÑ¾ó
-Created : 2022/05/25
+Created : 2023/05/25
 */
 string Recruitment::getDeadline() {
     return this->deadline;
@@ -58,7 +58,7 @@ Description : ÇöÀç Áö¿øÀÚ ¼ö¿¡ ´ëÇÑ Getter()
 ReturnType : int
 Parameter : X
 Author : Á¤ÇÑ¾ó
-Created : 2022/05/25
+Created : 2023/05/25
 */
 int Recruitment::getApplicantNum() {
     return this->applicantNum;
@@ -70,7 +70,7 @@ Description : ÇöÀç Áö¿øÀÚ ¼ö¿¡ ´ëÇÑ Setter()
 ReturnType : void
 Parameter : int num
 Author : Á¤ÇÑ¾ó
-Created : 2022/05/25
+Created : 2023/05/25
 */
 void Recruitment::setApplicantNum(int num) {
     this->applicantNum = num;

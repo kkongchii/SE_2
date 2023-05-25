@@ -8,7 +8,7 @@ Description : User Class 생성자
 ReturnType : X
 Parameter : string name, string id, string pw 
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 User::User(string name, string id, string pw) {
     this->name = name;
@@ -22,7 +22,7 @@ Description : User Class 가상 소멸자, CompanyUser와 GeneralUser의 삭제를 위해 필
 ReturnType : X
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 User::~User() {}
 
@@ -32,7 +32,7 @@ Description : 유저 이름 Getter 함수
 ReturnType : string
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 string User::getName() {
     return this->name;
@@ -44,7 +44,7 @@ Description : 유저 ID Getter 함수
 ReturnType : string
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 string User::getId() {
     return this->id;
@@ -56,7 +56,7 @@ Description : 유저 PW Getter 함수
 ReturnType : string
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 string User::getPW() {
     return this->password;
@@ -68,7 +68,7 @@ Description : 유저 이름 Setter 함수
 ReturnType : void
 Parameter : string name
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 void User::setName(string name) {
     this->name = name;
@@ -80,7 +80,7 @@ Description : 유저 ID Setter 함수
 ReturnType : void
 Parameter : string id
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 void User::setId(string id) {
     this->id = id;
@@ -92,7 +92,7 @@ Description : 유저 PW Setter 함수
 ReturnType : void
 Parameter : string pw
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 void User::setPW(string pw) {
     this->password = pw;

@@ -8,7 +8,7 @@ Description : 마감일 정렬을 위한 비교 함수, 가장 큰(최신) 마감일이 0번 인덱스로 
 ReturnType : bool
 Parameter : Recruitment* a, Recruitment* b
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 bool compareByDeadline(Recruitment* a, Recruitment* b) {
     return a->getDeadline() > b->getDeadline();
@@ -20,7 +20,7 @@ Description : 채용 정보 생성 후 채용 정보 리스트에 추가하는 함수
 ReturnType : void
 Parameter : string task, int limitApplicantNum, string deadline
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 void RecruitmentList::addNewRecruitment(string task, int limitApplicantNum, string deadline) {
     extern User* currentLoginUser;
@@ -37,7 +37,7 @@ Description : 채용 정보 리스트(ownedRecruitment) Getter 함수
 ReturnType : vector<Recruitment*>
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 vector<Recruitment*> RecruitmentList::getRecruitmentList() {
     return this->ownedRecruitment;

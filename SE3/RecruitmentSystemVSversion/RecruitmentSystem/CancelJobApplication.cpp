@@ -10,7 +10,7 @@ Description : CancelJobApplication Class 생성자, CancelJobApplicationUI를 생성하
 ReturnType : X
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 CancelJobApplication::CancelJobApplication() {
     this->cancelJobApplicationUI = new CancelJobApplicationUI(this);
@@ -22,7 +22,7 @@ Description : 특정 사업자 번호로 지원 취소 기능을 수행하는 함수, 취소된 지원(채�
 ReturnType : tuple<string, int, string>
 Parameter : int SSN
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 tuple<string, int, string> CancelJobApplication::dropJobApplication(int SSN) {
     extern UserList userDB; 
@@ -53,7 +53,7 @@ Description : CancelJobApplicationUI의 레퍼런스를 반환하는 Getter
 ReturnType : CancelJobApplicationUI*
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 CancelJobApplicationUI* CancelJobApplication::getUI() {
     return this->cancelJobApplicationUI;

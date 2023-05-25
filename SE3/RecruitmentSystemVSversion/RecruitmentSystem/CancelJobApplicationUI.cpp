@@ -10,7 +10,7 @@ Description : CancelJobApplicationUI Class 생성자, CancelJobApplication로 �
 ReturnType : X
 Parameter : CancelJobApplication* cancelJobApplication
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 CancelJobApplicationUI::CancelJobApplicationUI(CancelJobApplication* cancelJobApplication) {
     this->cancelJobApplicationControl = cancelJobApplication;
@@ -22,7 +22,7 @@ Description : 지원 취소 기능의 최초 인터페이스 출력용 함수, �
 ReturnType : void
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 void CancelJobApplicationUI::startInterface() {
     // 지원 취소를 위해 본인의 지원정보 리스트를 보여주는 UI를 출력
@@ -35,7 +35,7 @@ Description : 특정 사업자 번호로 지원 취소 기능에 대한 결과�
 ReturnType : void
 Parameter : ofstream& out_file, int SSN 
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 void CancelJobApplicationUI::cancelJobApplication(ofstream& out_file, int SSN) {
     tuple<string, int, string> canceledJobApplication = this->cancelJobApplicationControl->dropJobApplication(SSN);
@@ -52,7 +52,7 @@ Description : CancelJobApplication의 레퍼런스를 반환하는 Getter
 ReturnType : CancelJobApplication*
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 CancelJobApplication* CancelJobApplicationUI::getControl() {
     return this->cancelJobApplicationControl;

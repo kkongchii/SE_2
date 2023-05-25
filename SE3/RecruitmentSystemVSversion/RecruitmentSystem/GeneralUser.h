@@ -14,7 +14,7 @@ class : GeneralUser
 Description : 일반유저 정보를 위한 Entity 클래스
 Extends : User
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 class GeneralUser : public User {
 private:

@@ -10,7 +10,7 @@ Description :  회사이름의 오름차순 정렬을 위한 비교 함수
 ReturnType : bool
 Parameter : tuple<string, int, string, int, string, int> t1, tuple<string, int, string, int, string, int> t2
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 bool comp(tuple<string, int, string, int, string, int> t1, tuple<string, int, string, int, string, int> t2) {
     return get<0>(t1) < get<0>(t2);
@@ -22,7 +22,7 @@ Description : ViewJobApplications Class 생성자, ViewJobApplicationsUI를 생성하여
 ReturnType : X
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 ViewJobApplications::ViewJobApplications() {
     this->viewJobApplicationsUI = new ViewJobApplicationsUI(this);
@@ -35,7 +35,7 @@ Description : 지원 조회 기능을 수행하는 함수, 조회한 회사이름, 사업자번호, 업무,
 ReturnType : vector<tuple<string, int, string, int, string, int>>
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 vector<tuple<string, int, string, int, string, int>> ViewJobApplications::showUsersJobApplication() {
     extern User* currentLoginUser; 
@@ -57,7 +57,7 @@ Description : ViewJobApplicationsUI의 레퍼런스를 반환하는 Getter
 ReturnType : ViewJobApplicationsUI*
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 ViewJobApplicationsUI* ViewJobApplications::getUI() {
     return this->viewJobApplicationsUI;

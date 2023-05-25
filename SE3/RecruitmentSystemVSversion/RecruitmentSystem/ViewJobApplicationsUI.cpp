@@ -10,7 +10,7 @@ Description : ViewJobApplicationsUI Class 생성자, ViewJobApplications로부터 레퍼
 ReturnType : X
 Parameter : ViewJobApplications* viewJobApplicationsControl
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 ViewJobApplicationsUI::ViewJobApplicationsUI(ViewJobApplications* viewJobApplicationsControl) {
     this->viewJobApplicationsControl = viewJobApplicationsControl;
@@ -22,7 +22,7 @@ Description : 지원 조회 기능에 대한 결과를 출력하는 함수
 ReturnType : void
 Parameter : ofstream& out_file
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 void ViewJobApplicationsUI::showJobApplication(ofstream& out_file) {
     vector<tuple<string, int, string, int, string, int>> orderedJobApplicationList = this->getControl()->showUsersJobApplication();
@@ -38,7 +38,7 @@ Description : ViewJobApplications의 레퍼런스를 반환하는 Getter
 ReturnType : ViewJobApplications*
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 ViewJobApplications* ViewJobApplicationsUI::getControl() {
     return this->viewJobApplicationsControl;

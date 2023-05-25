@@ -11,7 +11,7 @@ Description : ViewJobApplicationStatisticsUI Class 생성자, ViewJobApplicationSta
 ReturnType : X
 Parameter : ViewJobApplicationStatistics* viewJobApplicationStatistics
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 ViewJobApplicationStatisticsUI::ViewJobApplicationStatisticsUI(ViewJobApplicationStatistics* viewJobApplicationStatistics) {
     this->viewJobApplicationStatisticsControl = viewJobApplicationStatistics;
@@ -23,7 +23,7 @@ Description : 일반 회원 통계 조회 기능에 대한 결과를 출력하는 함수
 ReturnType : void
 Parameter : ofstream& out_file
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 void ViewJobApplicationStatisticsUI::showStatistics(ofstream& out_file) {
     vector<pair<string, int>> jobApplicationStatistics = this->viewJobApplicationStatisticsControl->showJobApplicationStatistics();
@@ -39,7 +39,7 @@ Description : ViewJobApplicationStatistics의 레퍼런스를 반환하는 Getter
 ReturnType : ViewJobApplicationStatistics*
 Parameter : X
 Author : 정한얼
-Created : 2022/05/25
+Created : 2023/05/25
 */
 ViewJobApplicationStatistics* ViewJobApplicationStatisticsUI::getControl() {
     return this->viewJobApplicationStatisticsControl;
