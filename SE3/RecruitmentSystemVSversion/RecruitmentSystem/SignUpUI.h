@@ -10,7 +10,7 @@ class SignUp;
 /*
 Class : SignUpUI
 Description: 회원 가입 기능의 입출력을 담당하는 UI 클래스
-Author: 박영빈
+Author: 이정원
 Created: 2023/05/25
 */
 class SignUpUI{

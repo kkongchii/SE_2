@@ -9,7 +9,7 @@ class SignUpUI;
 /*
 Class : SignUp
 Description: 회원 가입 기능을 담당하는 Control 클래스
-Author: 박영빈
+Author: 주수진
 Created: 2023/05/25
 */
 class SignUp{

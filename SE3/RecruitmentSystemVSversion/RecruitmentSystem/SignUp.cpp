@@ -9,7 +9,7 @@ Function : SignUp::SignUp()
 Description: UI Class와 레퍼런스를 교환하는 생성자
 ReturnType: X
 Parameter: X
-Author: 박영빈
+Author: 이정원
 Created: 2023/05/25
 */
 SignUp::SignUp() {
@@ -21,7 +21,7 @@ Function : int SignUp::addGeneralUser(string name, int personalNum, string id, s
 Description: 일반 유저를 생성하여 유저 컬렉션에 추가한 뒤 결과를 리턴하는 함수
 ReturnType: int
 Parameter: string name, int personalNum, string id, string password
-Author: 박영빈
+Author: 이정원
 Created: 2023/05/25
 */
 int SignUp::addGeneralUser(string name, int personalNum, string id, string password) {
@@ -35,7 +35,7 @@ Function : int SignUp::addCompanyUser(string name, int companyNum, string id, st
 Description: 회사 유저를 생성하여 유저 컬렉션에 추가한 뒤 결과를 리턴하는 함수
 ReturnType: int
 Parameter: string name, int companyNum, string id, string password
-Author: 박영빈
+Author: 주수진
 Created: 2023/05/25
 */
 int SignUp::addCompanyUser(string name, int companyNum, string id, string password) {
@@ -49,7 +49,7 @@ Function : SignUpUI* SignUp::getUI()
 Description: 보유 중인 UI Class의 레퍼런스를 리턴
 ReturnType: X
 Parameter: X
-Author: 박영빈
+Author: 이정원
 Created: 2023/05/25
 */
 SignUpUI* SignUp::getUI() {
